@@ -1,1 +1,99 @@
-Coming soon.
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Sharemind SDK</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Sharemind SDK Beta</h1>
+  <h2>Introducing the Sharemind Software Development Kit</h2>
+  <p>Sharemind is a <a href="http://sharemind.cyber.ee/">novel database and
+  application server</a> that can process encrypted data without decrypting it.
+  Its is based on secure multi-party computation and has been used to protect
+  privacy and business secrets in various applications.</p>
+  <p>The experimental Sharemind SDK contains the SecreC 2 programming language
+  that separates public data and secrets on a type system level and an emulator
+  that you can use to estimate the running time of your application in a fully
+  encrypted environment. Your SecreC programs will be fully compatible with the
+  Sharemind Application Server, that runs the code using full cryptographic
+  protection and provides support for enterprise applications.</p>
+
+  <h2>Download version 2015.01</h2>
+  <p>There are two ways for getting the SDK.</p>
+  <ol>
+    <li>Download a preinstalled virtual machine image from
+    <a href="http://sharemind.cyber.ee/sdk.html">http://sharemind.cyber.ee/sdk.html</a>.
+    This can be used with a tool like
+    <a href="https://www.virtualbox.org/">VirtualBox</a>.</li>
+    <li>Build the tools from source code at
+    <a href="https://github.com/sharemind-sdk/build-sdk">https://github.com/sharemind-sdk/build-sdk</a>.
+    </li>
+  </ol>
+
+  <h2>Getting started</h2>
+  <p>The following assumes that you have installed the virtual machine image
+  into a tool like <a href="https://www.virtualbox.org/">VirtualBox</a>.</p>
+  <ol>
+    <li>Run the Qt Creator tool from the desktop.</li>
+    <li>Open an example program from <i>/home/sharemind/demos</i> with
+    <i>Ctrl+O</i> (or select <i>File->Open File or Project...</i> from the
+    menu).</li>
+    <li>Compile the program with <i>Ctrl+F1</i> (or select
+    <i>Tools->External->Sharemind SDK->Compile SecreC</i> from the menu).</li>
+    <li>Run the program in the emulator with <i>Ctrl+F2</i> (or select
+    <i>Tools->External->Sharemind SDK->Run SecreC</i> from the menu).</li>
+    <li>Read the printed output and the estimated running time from the console window.</li>
+  </ol>
+
+  <h2>Documentation</h2>
+  <p>The following developer resources are currently available:</p>
+  <ul>
+    </li><a href="stdlib/reference/index.html">http://sharemind-sdk.github.io/stdlib/reference/</a></li>
+  </ul>
+
+  <h2>Support and feedback</h2>
+  <p>We are very interested in your feedback. Please report technical issues at
+  <a href="https://github.com/sharemind-sdk/build-sdk/issues">https://github.com/sharemind-sdk/build-sdk/issues</a>.
+  </p>
+  <p>We would also like to know, what features to focus on next. What did you
+  try to do with the SDK? What new features would you like? Please let us know
+  at <a href="mailto:sharemind@cyber.ee">sharemind@cyber.ee</a></p>
+
+  <h2>Known issues</h2>
+  <p>The SDK is limited to developing and profiling single secure programs. To
+  license the full Sharemind system,
+  <a href="http://sharemind.cyber.ee/sdk.html">please contact Cybernetica</a>.
+  </p>
+
+  <p>These issues affect version 2015.01:</p>
+  <ul>
+    <li>This version does not yet have any database support.</li>
+    <li>The performance models currently represent a deployment with direct 1
+    Gbit network connections between the servers. Future versions will be more
+    configurable.</li>
+    <li>Not all private operations have performance models. However, most of the
+    arithmetic is modelled well.</li>
+  </ul>
+
+  <p>Please report other issues at
+  <a href="https://github.com/sharemind-sdk/build-sdk/issues">https://github.com/sharemind-sdk/build-sdk/issues</a>.
+  </p>
+
+  <h2>Acknowledgments</h2>
+  <p>The SecreC 2 language and virtual machine were developed with support from
+  the United States DARPA
+  <a href="http://www.darpa.mil/Our_Work/I2O/Programs/PROgramming_Computation_on_EncryptEd_Data_(PROCEED).aspx">PROCEED</a>
+  programme.</p>
+  <p>The SecreC statistics library has been developed within the FP 7
+  <a href="http://www.usable-security.eu/">UaESMC</a> project.</p>
+  <p>The emulator has been built with support from European Union Framework
+  Programme 7 project <a href="http://practice-project.eu/">PRACTICE</a>.</p>
+
+  <div class="logos">
+    <a href="http://cyber.ee/"><img src="img/logo-cybernetica.png" alt="Cybernetica" width="280" height="41"></a>
+    <a href="http://practice-project.eu/"><img src="img/logo-practice.png" alt="PRACTICE" width="220" height="101"></a>
+    <a href="http://www.usable-security.eu/"><img src="img/logo-uaesmc.png" alt="UaESMC" width="168" height="168"></a>
+  </div
+</body>
+</html>
