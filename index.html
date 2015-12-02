@@ -19,13 +19,14 @@
   Sharemind Application Server, that runs the code using full cryptographic
   protection and provides support for enterprise applications.</p>
 
-  <h2>Download version 2015.01</h2>
+  <h2>Download version 2015.12</h2>
   <p>There are two ways for getting the SDK.</p>
   <ol>
     <li>Download a preinstalled virtual machine image from
     <a href="http://sharemind.cyber.ee/sdk.html">http://sharemind.cyber.ee/sdk.html</a>.
-    This can be used with a tool like
-    <a href="https://www.virtualbox.org/">VirtualBox</a>.</li>
+    The image can be used with virtualization products like
+    <a href="https://www.virtualbox.org/">VirtualBox</a> or
+    <a href="http://www.vmware.com/">VMWare</a>.</li>
     <li>Build the tools from source code at
     <a href="https://github.com/sharemind-sdk/build-sdk">https://github.com/sharemind-sdk/build-sdk</a>.
     </li>
@@ -45,6 +46,62 @@
     <i>Tools->External->Sharemind SDK->Run SecreC</i> from the menu).</li>
     <li>Read the printed output and the estimated running time from the console window.</li>
   </ol>
+
+  <h2>Supported protocol suites</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Emulator</th>
+      <th>AppServ/AcadServ</th>
+      <th>Standalone runtime</th>
+    </tr>
+    <tr>
+      <td>shared3p</td>
+      <td>Secret-shared data, collected on three servers, passive security</td>
+      <td><a href="https://github.com/sharemind-sdk/mod_shared3p_emu">Supported</a></td>
+      <td>Supported</td>
+      <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
+    </tr>
+    <tr>
+      <td>shared2p</td>
+      <td>Secret-shared data, collected on two servers, passive security</td>
+      <td>-</td>
+      <td>In development</td>
+      <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
+    </tr>
+    <tr>
+      <td>sharednp</td>
+      <td>Secret-shared data, collected on N servers, passive security</td>
+      <td>-</td>
+      <td>In development</td>
+      <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
+    </tr>
+    <tr>
+      <td>shared2a</td>
+      <td>Secret-shared data, collected on two servers, active security</td>
+      <td>-</td>
+      <td>In development</td>
+      <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
+    </tr>
+    <tr>
+      <td>aby</td>
+      <td>Additive, boolean and Yao's circuits, collected on two servers, passive security</td>
+      <td><a href="https://github.com/sharemind-sdk/mod_aby_emu">Supported</a></td>
+      <td>-</td>
+      <td><a href="https://github.com/encryptogroup/ABY">ABY</a></td>
+    </tr>
+    <tr>
+      <td>spdz_fresco</td>
+      <td>Arithmetic circuits, collected on two servers, active security</td>
+      <td><a href="https://github.com/sharemind-sdk/mod_spdz_fresco_emu">Supported</a></td>
+      <td>-</td>
+      <td><a href="http://alexandra.dk/">Fresco</a></td>
+    </tr>
+  </table>
+
+  <p>NOTE: The protocols have no limit on the number of customers. E.g., you can
+  have any number of data sources or data users.</p>
 
   <h2>Documentation</h2>
   <p>The following developer resources are currently available:</p>
@@ -66,14 +123,13 @@
   <a href="http://sharemind.cyber.ee/sdk.html">please contact Cybernetica</a>.
   </p>
 
-  <p>These issues affect version 2015.01:</p>
+  <p>These issues affect version 2015.12:</p>
   <ul>
-    <li>This version does not yet have any database support.</li>
     <li>The performance models currently represent a deployment with direct 1
     Gbit network connections between the servers. Future versions will be more
     configurable.</li>
-    <li>Not all private operations have performance models. However, most of the
-    arithmetic is modelled well.</li>
+    <li>Not all private operations have performance models. Currently, only
+    unsigned integer operations have models.</li>
   </ul>
 
   <p>Please report other issues at
@@ -83,8 +139,8 @@
   <h2>Performance</h2>
   <p>Secure computing has its distinct overhead. Also, optimizing algorithms for
   secure computing is a complex task. E.g., parallel operations are much more
-  efficient (try multiplying two integers vs multiplying two 100 000-element
-  vectors). For further information see
+  efficient than sequential operations (try multiplying two integers vs
+  multiplying two 100 000-element vectors). For further information see
   <a href="http://sharemind.cyber.ee/research.html">our research page</a>.</p>
 
   <h2>Acknowledgments</h2>
@@ -97,7 +153,7 @@
   <a href="http://www.usable-security.eu/">UaESMC</a> project.</p>
   <p>The emulator has been built with support from European Union Framework
   Programme 7 project <a href="http://practice-project.eu/">PRACTICE</a>.</p>
-  <p>The emulation techniques were developed with support from 
+  <p>The emulation techniques were developed with support from
   <a href="http://www.stacc.ee/">Software Technologies and Applications Competence Center STACC</a>.</p>
   <div class="logos">
     <a href="http://cyber.ee/"><img src="img/logo-cybernetica.png" alt="Cybernetica" width="280" height="41"></a>
