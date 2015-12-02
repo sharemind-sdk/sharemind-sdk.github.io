@@ -10,6 +10,8 @@ var searchData=
   ['matrixlookupcolumn',['matrixLookupColumn',['../group__matrixlookupcolumn.html',1,'']]],
   ['matrixlookuprow',['matrixLookupRow',['../group__matrixlookuprow.html',1,'']]],
   ['matrixmultiplication',['matrixMultiplication',['../group__matrixmultiplication.html',1,'']]],
+  ['matrixmultiplication_5b_5b3_5d_5d',['matrixMultiplication[[3]]',['../group__matrixmultiplication__cube.html',1,'']]],
+  ['matrixmultiplication_5b_5b2_5d_5d',['matrixMultiplication[[2]]',['../group__matrixmultiplication__mat.html',1,'']]],
   ['matrixupdate',['matrixUpdate',['../group__matrixupdate.html',1,'']]],
   ['matrixupdatecolumn',['matrixUpdateColumn',['../group__matrixupdatecolumn.html',1,'']]],
   ['matrixupdaterow',['matrixUpdateRow',['../group__matrixupdaterow.html',1,'']]],

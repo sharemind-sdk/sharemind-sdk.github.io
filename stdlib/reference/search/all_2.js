@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['ceiling',['ceiling',['../group__shared3p__ceiling.html#ga8cdb7278b1808ea322a3461540cd1b54',1,'ceiling(D float32 value):&#160;shared3p.sc'],['../group__shared3p__ceiling.html#ga2c0aa8bd8229a6bdc614772be82a283a',1,'ceiling(D float64 value):&#160;shared3p.sc'],['../group__shared3p__ceiling.html#gaa0fc95cba3137d4f3e5cbfc1fb810d82',1,'ceiling(D float32[[1]] arr):&#160;shared3p.sc'],['../group__shared3p__ceiling.html#ga477715450e0c5325dc812a3f663b4ce2',1,'ceiling(D float64[[1]] arr):&#160;shared3p.sc']]],
+  ['ceiling',['ceiling',['../group__shared3p__ceiling.html#gab8c11497e7bc628934fbd8c854673a8b',1,'ceiling(D float32 value):&#160;shared3p.sc'],['../group__shared3p__ceiling.html#ga1ab72f438c5d4b3fdee41cc3be9d64b6',1,'ceiling(D float64 value):&#160;shared3p.sc'],['../group__shared3p__ceiling.html#ga6028b29abe6a8e7f037f5879b3d8525f',1,'ceiling(D float32[[1]] arr):&#160;shared3p.sc'],['../group__shared3p__ceiling.html#ga6f8c2fd1652715050a7781e9ef84862a',1,'ceiling(D float64[[1]] arr):&#160;shared3p.sc']]],
   ['chisquared',['chiSquared',['../group__chisq.html',1,'']]],
   ['chisquared_28with_20codebook_29',['chiSquared(with codebook)',['../group__chisq__cb.html',1,'']]],
   ['chisquared',['chiSquared',['../group__chisq.html#ga7852a824ae16f3813503e272dc7fc9fb',1,'chiSquared(D uint32[[2]] contTable):&#160;shared3p_statistics_testing.sc'],['../group__chisq.html#ga4d6a8157fb8f0bdd9465d7b274ed1fa3',1,'chiSquared(D uint64[[2]] contTable):&#160;shared3p_statistics_testing.sc'],['../group__chisq__cb.html#ga15beadb486f690e5b85c091c8f8d7e5f',1,'chiSquared(D uint32[[1]] data, D bool[[1]] cases, D bool[[1]] controls, uint32[[2]] codeBook):&#160;shared3p_statistics_testing.sc'],['../group__chisq__cb.html#gad538de1261998a93e183487381c4a1b7',1,'chiSquared(D uint64[[1]] data, D bool[[1]] cases, D bool[[1]] controls, uint64[[2]] codeBook):&#160;shared3p_statistics_testing.sc']]],
@@ -36,5 +36,6 @@ var searchData=
   ['crossproduct_5b_5b2_5d_5d',['crossProduct[[2]]',['../group__shared3p__crossproduct__mat.html',1,'']]],
   ['crossproduct_5b_5b1_5d_5d',['crossProduct[[1]]',['../group__shared3p__crossproduct__vec.html',1,'']]],
   ['constants',['constants',['../group__shared3p__glm__constants.html',1,'']]],
+  ['constants',['constants',['../group__shared3p__pca__return__values.html',1,'']]],
   ['constants',['constants',['../group__shared3p__regression__method.html',1,'']]]
 ];

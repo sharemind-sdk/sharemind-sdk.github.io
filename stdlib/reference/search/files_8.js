@@ -12,10 +12,12 @@ var searchData=
   ['shared3p_5fstatistics_5fdistribution_2esc',['shared3p_statistics_distribution.sc',['../shared3p__statistics__distribution_8sc.html',1,'']]],
   ['shared3p_5fstatistics_5fglm_2esc',['shared3p_statistics_glm.sc',['../shared3p__statistics__glm_8sc.html',1,'']]],
   ['shared3p_5fstatistics_5foutliers_2esc',['shared3p_statistics_outliers.sc',['../shared3p__statistics__outliers_8sc.html',1,'']]],
+  ['shared3p_5fstatistics_5fpca_2esc',['shared3p_statistics_pca.sc',['../shared3p__statistics__pca_8sc.html',1,'']]],
   ['shared3p_5fstatistics_5fregression_2esc',['shared3p_statistics_regression.sc',['../shared3p__statistics__regression_8sc.html',1,'']]],
   ['shared3p_5fstatistics_5fsummary_2esc',['shared3p_statistics_summary.sc',['../shared3p__statistics__summary_8sc.html',1,'']]],
   ['shared3p_5fstatistics_5ftesting_2esc',['shared3p_statistics_testing.sc',['../shared3p__statistics__testing_8sc.html',1,'']]],
   ['shared3p_5fstring_2esc',['shared3p_string.sc',['../shared3p__string_8sc.html',1,'']]],
   ['shared3p_5ftable_5fdatabase_2esc',['shared3p_table_database.sc',['../shared3p__table__database_8sc.html',1,'']]],
-  ['stdlib_2esc',['stdlib.sc',['../stdlib_8sc.html',1,'']]]
+  ['stdlib_2esc',['stdlib.sc',['../stdlib_8sc.html',1,'']]],
+  ['structs_2esc',['structs.sc',['../structs_8sc.html',1,'']]]
 ];

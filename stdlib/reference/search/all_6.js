@@ -7,6 +7,8 @@ var searchData=
   ['glm_5fsole_5fmethod_5fgauss',['GLM_SOLE_METHOD_GAUSS',['../group__shared3p__glm__constants.html#ga50916a3fbfd4a0e54be74342785f6134',1,'shared3p_statistics_glm.sc']]],
   ['glm_5fsole_5fmethod_5finvert',['GLM_SOLE_METHOD_INVERT',['../group__shared3p__glm__constants.html#ga92e9dc9c9e99e35ee9fed44600d19ac1',1,'shared3p_statistics_glm.sc']]],
   ['glm_5fsole_5fmethod_5flu_5fdecomposition',['GLM_SOLE_METHOD_LU_DECOMPOSITION',['../group__shared3p__glm__constants.html#ga2d20bfb75b394b95f349d147b056d5e3',1,'shared3p_statistics_glm.sc']]],
+  ['gspca',['gspca',['../group__shared3p__gspca.html#ga321ce25f3bb5c6acdb5ee643832a3bc7',1,'gspca(D float32[[2]] X, uint n_components, uint iterations, uint8 returnValues):&#160;shared3p_statistics_pca.sc'],['../group__shared3p__gspca.html#ga476c36740f3acce0954bc7afe417e5ad',1,'gspca(D float64[[2]] X, uint n_components, uint iterations, uint8 returnValues):&#160;shared3p_statistics_pca.sc']]],
   ['generalizedlinearmodel',['generalizedLinearModel',['../group__shared3p__generalized__linear__model.html',1,'']]],
-  ['generalizedlinearmodel_28with_20method_20parameter_29',['generalizedLinearModel(with method parameter)',['../group__shared3p__generalized__linear__model__method.html',1,'']]]
+  ['generalizedlinearmodel_28with_20method_20parameter_29',['generalizedLinearModel(with method parameter)',['../group__shared3p__generalized__linear__model__method.html',1,'']]],
+  ['gspca',['gspca',['../group__shared3p__gspca.html',1,'']]]
 ];

@@ -26,5 +26,6 @@ var searchData=
   ['crossproduct_5b_5b2_5d_5d',['crossProduct[[2]]',['../group__shared3p__crossproduct__mat.html',1,'']]],
   ['crossproduct_5b_5b1_5d_5d',['crossProduct[[1]]',['../group__shared3p__crossproduct__vec.html',1,'']]],
   ['constants',['constants',['../group__shared3p__glm__constants.html',1,'']]],
+  ['constants',['constants',['../group__shared3p__pca__return__values.html',1,'']]],
   ['constants',['constants',['../group__shared3p__regression__method.html',1,'']]]
 ];

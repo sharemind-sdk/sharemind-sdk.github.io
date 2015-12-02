@@ -36,6 +36,8 @@ var searchData=
   ['tdbvmapaddtype',['tdbVmapAddType',['../group__tdb__vmap__add__type.html',1,'']]],
   ['tdbvmapaddvalue_28scalar_29',['tdbVmapAddValue(scalar)',['../group__tdb__vmap__add__value__scalar.html',1,'']]],
   ['tdbvmapaddvalue_28vector_29',['tdbVmapAddValue(vector)',['../group__tdb__vmap__add__value__vector.html',1,'']]],
+  ['tdbvmapaddvlentype',['tdbVmapAddVlenType',['../group__tdb__vmap__add__vlen__type.html',1,'']]],
+  ['tdbvmapaddvlenvalue',['tdbVmapAddVlenValue',['../group__tdb__vmap__add__vlen__value.html',1,'']]],
   ['tdbvmapclear',['tdbVmapClear',['../group__tdb__vmap__clear.html',1,'']]],
   ['tdbvmapcount',['tdbVmapCount',['../group__tdb__vmap__count.html',1,'']]],
   ['tdbvmapdelete',['tdbVmapDelete',['../group__tdb__vmap__delete.html',1,'']]],
