@@ -15,5 +15,7 @@ var searchData=
   ['bl_5fstrtrim',['bl_strTrim',['../group__bl__strtrim.html',1,'']]],
   ['bloominsertmany',['bloomInsertMany',['../group__bloominsertmany.html',1,'']]],
   ['bloomquerymany',['bloomQueryMany',['../group__bloomquerymany.html',1,'']]],
-  ['bit_20extraction',['bit extraction',['../group__shared3p__bit__extract.html',1,'']]]
+  ['bit_20extraction',['bit extraction',['../group__shared2p__bit__extract.html',1,'']]],
+  ['bit_20extraction',['bit extraction',['../group__shared3p__bit__extract.html',1,'']]],
+  ['borderinginverse',['borderingInverse',['../group__shared3p__borderinginverse.html',1,'']]]
 ];

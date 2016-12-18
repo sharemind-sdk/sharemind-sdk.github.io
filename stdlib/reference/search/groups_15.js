@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zeroextend',['zeroExtend',['../group__zeroextend.html',1,'']]]
+  ['wilcoxonranksum',['wilcoxonRankSum',['../group__wilcoxon__rank__sum.html',1,'']]],
+  ['wilcoxonsignedrank',['wilcoxonSignedRank',['../group__wilcoxon__signed__rank.html',1,'']]]
 ];
