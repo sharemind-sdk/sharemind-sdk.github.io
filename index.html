@@ -132,7 +132,7 @@
   <h5>Core server functionality</h5>
   <ul>
     <li>Added a new key-value based database module <tt>mod_keydb</tt>, which supports reading and writing of public or private data according to public keys. Writing to the key-value database is faster, since distributed synchronization can be postponed to when the data is read. This is useful in applications, where large amounts of data is written to the database concurrently.</li>
-    <li>UUIDs are now generated for the servers and protection domains, based on the value of <tt>Server.UuidNamespace</tt> and names of servers and protection domains are specified in the configuration file. Foremost, these UUIDs are used by the Sharemind application server internally to improve the performance and stability of networking protocols, but also help to solve some common configuration mismatch errors made during deployment of Sharemind clusters.</li>
+    <li>UUIDs are now generated for the servers and protection domains, based on the value of <tt>Server.UuidNamespace</tt> and names of servers and protection domains specified in the configuration file. Foremost, these UUIDs are used by the Sharemind application server internally to improve the performance and stability of networking protocols, but also help to solve some common configuration mismatch errors made during deployment of Sharemind clusters.</li>
     <li>Improved logging output</li>
       <ul>
         <li>UUIDs for namespaces and servers are now logged on startup. During deployment, such output from participating parties can be compared to verify a correct layout of the Sharemind cluster.</li>
