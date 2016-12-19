@@ -46,55 +46,59 @@
 
   <h2>Supported protocol suites</h2>
   <table>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Emulator</th>
-      <th>AppServ/AcadServ</th>
-      <th>Standalone runtime</th>
-    </tr>
-    <tr>
-      <td>shared3p</td>
-      <td>Secret-shared data, collected on three servers, passive security</td>
-      <td><a href="https://github.com/sharemind-sdk/mod_shared3p_emu">Supported</a></td>
-      <td>Supported</td>
-      <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
-    </tr>
-    <tr>
-      <td>shared2p</td>
-      <td>Secret-shared data, collected on two servers, passive security</td>
-      <td>-</td>
-      <td>In development</td>
-      <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
-    </tr>
-    <tr>
-      <td>sharednp</td>
-      <td>Secret-shared data, collected on N servers, passive security</td>
-      <td>-</td>
-      <td>In development</td>
-      <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
-    </tr>
-    <tr>
-      <td>shared2a</td>
-      <td>Secret-shared data, collected on two servers, active security</td>
-      <td>-</td>
-      <td>In development</td>
-      <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
-    </tr>
-    <tr>
-      <td>aby</td>
-      <td>Additive, boolean and Yao's circuits, collected on two servers, passive security</td>
-      <td><a href="https://github.com/sharemind-sdk/mod_aby_emu">Supported</a></td>
-      <td>-</td>
-      <td><a href="https://github.com/encryptogroup/ABY">ABY</a></td>
-    </tr>
-    <tr>
-      <td>spdz_fresco</td>
-      <td>Arithmetic circuits, collected on two servers, active security</td>
-      <td><a href="https://github.com/sharemind-sdk/mod_spdz_fresco_emu">Supported</a></td>
-      <td>-</td>
-      <td><a href="http://alexandra.dk/">Fresco</a></td>
-    </tr>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Emulator</th>
+        <th>AppServ/AcadServ</th>
+        <th>Standalone runtime</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>shared3p</td>
+        <td>Secret-shared data, collected on three servers, passive security</td>
+        <td><a href="https://github.com/sharemind-sdk/mod_shared3p_emu">Supported</a></td>
+        <td>Supported</td>
+        <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
+      </tr>
+      <tr>
+        <td>shared2p</td>
+        <td>Secret-shared data, collected on two servers, passive security</td>
+        <td>-</td>
+        <td>In development</td>
+        <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
+      </tr>
+      <tr>
+        <td>sharednp</td>
+        <td>Secret-shared data, collected on N servers, passive security</td>
+        <td>-</td>
+        <td>In development</td>
+        <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
+      </tr>
+      <tr>
+        <td>shared2a</td>
+        <td>Secret-shared data, collected on two servers, active security</td>
+        <td>-</td>
+        <td>In development</td>
+        <td><a href="https://sharemind.cyber.ee/">Sharemind</a></td>
+      </tr>
+      <tr>
+        <td>aby</td>
+        <td>Additive, boolean and Yao's circuits, collected on two servers, passive security</td>
+        <td><a href="https://github.com/sharemind-sdk/mod_aby_emu">Supported</a></td>
+        <td>-</td>
+        <td><a href="https://github.com/encryptogroup/ABY">ABY</a></td>
+      </tr>
+      <tr>
+        <td>spdz_fresco</td>
+        <td>Arithmetic circuits, collected on two servers, active security</td>
+        <td><a href="https://github.com/sharemind-sdk/mod_spdz_fresco_emu">Supported</a></td>
+        <td>-</td>
+        <td><a href="http://alexandra.dk/">Fresco</a></td>
+      </tr>
+    </tbody>
   </table>
 
   <p>NOTE: The protocols have no limit on the number of clients. E.g., you can
