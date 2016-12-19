@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Sharemind SDK</title>
@@ -9,9 +9,8 @@
   <h1>Sharemind SDK 2016.12 Beta</h1>
   <h2>Introducing the Sharemind Software Development Kit</h2>
   <p><b>What is Sharemind?</b> Sharemind is a novel database and
-  application server</a> that collects data in an encrypted form and uses techniques like homomorphic encryption, secure multi-party computation and hardware isolation to process it <i>without leaking the private inputs even to the machine memory</i>, providing <i>end-to-end encrypted data processing</i>.</p>
-  <p><b>How to use Sharemind?</b> The <a href="http://sharemind.cyber.ee/">Sharemind Application Server</a> is a commercial offering</a> from <a href="http://www.cyber.ee/">Cybernetica</a> that offers consulting, licensing and engineering services for secure computing applications. Find contacts on the <a href="http://sharemind.cyber.ee/">Sharemind web page</a>.</p>
-  </p>
+  application server that collects data in an encrypted form and uses techniques like homomorphic encryption, secure multi-party computation and hardware isolation to process it <i>without leaking the private inputs even to the machine memory</i>, providing <i>end-to-end encrypted data processing</i>.</p>
+  <p><b>How to use Sharemind?</b> The <a href="http://sharemind.cyber.ee/">Sharemind Application Server</a> is a commercial offering from <a href="http://www.cyber.ee/">Cybernetica</a> that offers consulting, licensing and engineering services for secure computing applications. Find contacts on the <a href="http://sharemind.cyber.ee/">Sharemind web page</a>.</p>
   <p><b>Can I try Sharemind?</b> The Sharemind Software Development Kit (SDK) that you can download on this page contains the SecreC 2 programming language that separates public data and secrets on a type system level and an emulator that you can use to try out the privacy-preserving programming paradigm and estimate the running time of your application in a fully encrypted environment. <b>WARNING: performance of a program run on the emulator can be significantly worse than the final performance of a solution engineered by expert developers.</b></p>
   <p><b>How can I deploy later?</b> Your SecreC programs will be fully compatible with the Sharemind Application Server, that runs the code using full cryptographic
   protection and provides support for enterprise applications.</p>
@@ -131,18 +130,18 @@
 
   <h5>Core server functionality</h5>
   <ul>
-    <li>Added a new key-value based database module <tt>mod_keydb</tt>, which supports reading and writing of public or private data according to public keys. Writing to the key-value database is faster, since distributed synchronization can be postponed to when the data is read. This is useful in applications, where large amounts of data is written to the database concurrently.</li>
-    <li>UUIDs are now generated for the servers and protection domains, based on the value of <tt>Server.UuidNamespace</tt> and names of servers and protection domains specified in the configuration file. Foremost, these UUIDs are used by the Sharemind application server internally to improve the performance and stability of networking protocols, but also help to solve some common configuration mismatch errors made during deployment of Sharemind clusters.</li>
-    <li>Improved logging output</li>
+    <li>Added a new key-value based database module <span class="tt">mod_keydb</span>, which supports reading and writing of public or private data according to public keys. Writing to the key-value database is faster, since distributed synchronization can be postponed to when the data is read. This is useful in applications, where large amounts of data is written to the database concurrently.</li>
+    <li>UUIDs are now generated for the servers and protection domains, based on the value of <var>Server.UuidNamespace</var> and names of servers and protection domains specified in the configuration file. Foremost, these UUIDs are used by the Sharemind application server internally to improve the performance and stability of networking protocols, but also help to solve some common configuration mismatch errors made during deployment of Sharemind clusters.</li>
+    <li>Improved logging output
       <ul>
         <li>UUIDs for namespaces and servers are now logged on startup. During deployment, such output from participating parties can be compared to verify a correct layout of the Sharemind cluster.</li>
-      </ul>
-    <li>Configuration file changes</li>
+      </ul></li>
+    <li>Configuration file changes
       <ul>
-        <li>Servers are now identified by name and not by number. For the local server the name can be set using the <tt>Server.Name</tt> configuration option, for remote servers the name is included in the respective section header (e.g. <tt>[Server Bob]</tt>). Each server is assigned an UUID based on the server name and the <tt>Server.UuidNamespace</tt> configuration string, and the actual order (the numbers) of the servers is calculated during startup based on the sorting of their UUIDs.</li>
-        <li>The <tt>Server.LogFile</tt> and <tt>Server.ProfileLogFile</tt> configuration log file names are now allowed to include the following fixed-length <tt>strftime</tt> escapes compatible with C99/SU: <tt>%%</tt>, <tt>%u</tt>, <tt>%w</tt>, <tt>%C</tt>, <tt>%d</tt>, <tt>%e</tt>, <tt>%H</tt>, <tt>%I</tt>, <tt>%m</tt>, <tt>%M</tt>, <tt>%p</tt>, <tt>%S</tt>, <tt>%U</tt>, <tt>%V</tt>, <tt>%W</tt>, <tt>%y</tt>, <tt>%j</tt>, <tt>%Y</tt>, <tt>%R</tt>, <tt>%z</tt>, <tt>%T</tt>, <tt>%D</tt>, <tt>%F</tt>.</li>
-        <li>The number of GC threads in the application server can now be set using the <tt>Server.NumGcThreads</tt> configuration option.</li>
-      </ul>
+        <li>Servers are now identified by name and not by number. For the local server the name can be set using the <var>Server.Name</var> configuration option, for remote servers the name is included in the respective section header (e.g. <code>[Server Bob]</code>). Each server is assigned an UUID based on the server name and the <var>Server.UuidNamespace</var> configuration string, and the actual order (the numbers) of the servers is calculated during startup based on the sorting of their UUIDs.</li>
+        <li>The <var>Server.LogFile</var> and <var>Server.ProfileLogFile</var> configuration log file names are now allowed to include the following fixed-length <code>strftime</code> escapes compatible with C99/SU: <code>%%</code>, <code>%u</code>, <code>%w</code>, <code>%C</code>, <code>%d</code>, <code>%e</code>, <code>%H</code>, <code>%I</code>, <code>%m</code>, <code>%M</code>, <code>%p</code>, <code>%S</code>, <code>%U</code>, <code>%V</code>, <code>%W</code>, <code>%y</code>, <code>%j</code>, <code>%Y</code>, <code>%R</code>, <code>%z</code>, <code>%T</code>, <code>%D</code>, <code>%F</code>.</li>
+        <li>The number of GC threads in the application server can now be set using the <var>Server.NumGcThreads</var> configuration option.</li>
+      </ul></li>
     <li>Changed VM default FPU state to not crash on any floating-point exceptions (to replicate AMD64 default behaviour).</li>
   </ul>
 
@@ -153,13 +152,13 @@
   </ul>
   <h5>SecreC</h5>
   <ul>
-    <li>SecreC compiler</li>
+    <li>SecreC compiler
     <ul>
       <li>Added a new language capability, which allows defining data types that are specific to a protection domain kind (PDK) in the PDK declaration. All protection domain data types must now be defined in this way. This allows receiving compile-time errors instead of run-time errors in cases where types or operations are used, which are not supported by the PDK implementation.</li>
       <li>All operator definitions are now explicitly declared in standard library modules instead of hard-coded in the compiler. </li>
-      <li>Added support for defining type conversion operators with the name <tt>cast</tt>. Conversions must now be explicitly defined in SecreC.</li>
-    </ul> 
-    <li>Standard library</li>
+      <li>Added support for defining type conversion operators with the name <code>cast</code>. Conversions must now be explicitly defined in SecreC.</li>
+    </ul></li>
+    <li>Standard library
     <ul>
       <li>shared3p: Added shared3p protection domain kind data types and operator definitions.</li>
       <li>shared3p: Added functions for computing the inverse of a matrix.</li>
@@ -167,8 +166,8 @@
       <li>shared3p: Added functions for oblivious choice with scalar condition for xor_uint values.</li>
       <li>shared3p: Added functions for fast matrix multiplication.</li>
       <li>shared3p: Added function for computing standard errors of a generalized linear model's parameters.</li>
-    </ul>
-    <li>Standard library tests</li>
+    </ul></li>
+    <li>Standard library tests
     <ul>
       <li>Added tests for the table database functions.</li>
       <li>Added tests for the statistics functions.</li>
@@ -176,29 +175,29 @@
       <li>Added tests for string operations.</li>
       <li>Added tests for fast matrix multiplication.</li>
       <li>Added missing type conversion tests.</li>
-    </ul>
-    <li>Documentation</li>
+    </ul></li>
+    <li>Documentation
     <ul>
       <li>Added documentation for the table database.</li>
       <li>Added documentation for the key-value database.</li>
       <li>Added info for functions where overflows may occur on large inputs.</li>
       <li>Added info for functions where some private information leaks occur.</li>
-    </ul>
+    </ul></li>
   </ul>
   <h4>Removed features</h4>
 
   <h5>Core server functionality</h5>
   <ul>
-    <li>The <tt>--debugRunSingle</tt> command line option for the application server was removed.</li>
-    <li>Uploading of files was removed together with the application server support for development mode (<tt>Server.Mode</tt> configuration option).</li>
+    <li>The <code>--debugRunSingle</code> command line option for the application server was removed.</li>
+    <li>Uploading of files was removed together with the application server support for development mode (<var>Server.Mode</var> configuration option).</li>
   </ul>
   <h5>SecreC</h5>
   <ul>
-    <li>SecreC compiler</li>
+    <li>SecreC compiler
     <ul>
-      <li>Removed built-in <tt>xor_uintX</tt> types and the <tt>xor_uint</tt> type alias for <tt>xor_uint64</tt>. Xor-types are now declared explicitly in every protection domain's standard library module that uses them.</li>
-      <li>Logical AND and OR operators for private booleans <tt>&&</tt>, <tt>||</tt> are replaced with <tt>&</tt>, <tt>|</tt> respectively.</li>
-    </ul>
+      <li>Removed built-in <code>xor_uintX</code> types and the <code>xor_uint</code> type alias for <code>xor_uint64</code>. Xor-types are now declared explicitly in every protection domain's standard library module that uses them.</li>
+      <li>Logical AND and OR operators for private booleans <code>&&</code>, <code>||</code> are replaced with <code>&</code>, <code>|</code> respectively.</li>
+    </ul></li>
   </ul>
 
   <h4>Fixed issues</h4>
@@ -222,11 +221,11 @@
   </ul>
   <h5>SecreC</h5>
   <ul>
-    <li>SecreC compiler</li>
+    <li>SecreC compiler
     <ul>
       <li>Fixed various bugs related to integer and string literals.</li>
       <li>Fixed various bugs related to procedure templates and structure types.</li>
-    </ul>
+    </ul></li>
     <li>Fixed various bugs in the standard library functions and tests.</li>
   </ul>
   <h3>2015.12</h3>
@@ -284,6 +283,6 @@
     <a href="http://practice-project.eu/"><img src="img/logo-practice.png" alt="PRACTICE" width="220" height="101"></a>
     <a href="http://www.usable-security.eu/"><img src="img/logo-uaesmc.png" alt="UaESMC" width="168" height="168"></a>
     <a href="http://www.stacc.ee/"><img src="img/logo-stacc.png" alt="STACC" width="135" height="57"></a>
-  </div
+  </div>
 </body>
 </html>
