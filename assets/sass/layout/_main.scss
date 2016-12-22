@@ -1,0 +1,19 @@
+/* Main */
+
+    .main {
+        @include padding(4em, 0);
+
+        @include breakpoint(small) {
+            @include padding(3em, 0);
+
+            .button {
+                width: 100%;
+            }
+        }
+
+        @include breakpoint(xsmall) {
+            .button {
+                width: 100%;
+            }
+        }
+    }

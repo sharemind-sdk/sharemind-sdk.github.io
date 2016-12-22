@@ -1,0 +1,18 @@
+/* Copyright */
+
+    #copyright {
+        background: #161616;
+        text-align: center;
+
+        p {
+            @include padding(2em, 0);
+            margin: 0;
+            padding-bottom: 2em;
+            color:  rgba(255,255,255,.4);
+        }
+
+        a {
+            color:  rgba(255,255,255,.7);
+        }
+
+    }

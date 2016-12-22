@@ -1,0 +1,95 @@
+/* Banner */
+
+    #banner {
+        @include padding(8em, 0);
+        position: relative;
+        background: url(../images/header.jpg) no-repeat top center;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+        top: 0;
+        width: 100%;
+
+        #small-banner-text {
+            display: none;
+        }
+
+        h2 {
+            color: #fff;
+            font-weight: 300;
+            font-size: 5em;
+            line-height: 1em;
+            margin: 0 0 0.5em 0;
+            padding: 0;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.7em;
+            margin-bottom: 1.75em;
+        }
+
+        @include breakpoint(large) {
+            @include padding(5em, 0);
+
+            h2 {
+                font-size: 4.3em;
+            }
+        }
+
+        @include breakpoint(medium) {
+            @include padding(6em, 2em);
+            background-size: 1040px;
+
+            h2 {
+                font-size: 2.8em;
+            }
+
+            p {
+                font-size: 1.4em;
+            }
+        }
+
+        @include breakpoint(small) {
+            @include padding(4em, 2em);
+
+            #large-banner-text {
+                display: none;
+            }
+            #small-banner-text {
+                display: block;
+            }
+
+            h2 {
+                display:none;
+            }
+
+            p {
+                font-size: 1.8em;
+                margin-bottom: 1.3em;
+            }
+
+            .button {
+                width: 350px;
+            }
+        }
+
+        @include breakpoint(xsmall) {
+            @include padding(4em, 1em);
+            padding-bottom: 1em;
+
+            .button {
+                width: 100%;
+            }
+
+            p {
+                font-size: 1.5em;
+            }
+        }
+
+        @include breakpoint(xxsmall) {
+            p {
+                font-size: 1.3em;
+            }
+        }
+    }

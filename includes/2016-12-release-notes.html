@@ -1,0 +1,111 @@
+<h3>Compatibility notes</h3>
+
+This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK and Sharemind Controller library, including on the network protocols, configuration and API/ABI levels.
+
+<h4>Execution environment</h4>
+<ul>
+  <li>Dropped support for GCC compilers before version 4.8 and libstdc++ versions before 6.0.18.
+  <li>Intel TBB is no longer required.
+</ul>
+<h3>New features</h3>
+
+<h4>Core server functionality</h4>
+<ul>
+  <li>Added a new key-value based database module <span class="tt">mod_keydb</span>, which supports reading and writing of public or private data according to public keys. Writing to the key-value database is faster, since distributed synchronization can be postponed to when the data is read. This is useful in applications, where large amounts of data is written to the database concurrently.</li>
+  <li>UUIDs are now generated for the servers and protection domains, based on the value of <var>Server.UuidNamespace</var> and names of servers and protection domains specified in the configuration file. Foremost, these UUIDs are used by the Sharemind application server internally to improve the performance and stability of networking protocols, but also help to solve some common configuration mismatch errors made during deployment of Sharemind clusters.</li>
+  <li>Improved logging output
+    <ul>
+      <li>UUIDs for namespaces and servers are now logged on startup. During deployment, such output from participating parties can be compared to verify a correct layout of the Sharemind cluster.</li>
+    </ul></li>
+  <li>Configuration file changes
+    <ul>
+      <li>Servers are now identified by name and not by number. For the local server the name can be set using the <var>Server.Name</var> configuration option, for remote servers the name is included in the respective section header (e.g. <code>[Server Bob]</code>). Each server is assigned an UUID based on the server name and the <var>Server.UuidNamespace</var> configuration string, and the actual order (the numbers) of the servers is calculated during startup based on the sorting of their UUIDs.</li>
+      <li>The <var>Server.LogFile</var> and <var>Server.ProfileLogFile</var> configuration log file names are now allowed to include the following fixed-length <code>strftime</code> escapes compatible with C99/SU: <code>%%</code>, <code>%u</code>, <code>%w</code>, <code>%C</code>, <code>%d</code>, <code>%e</code>, <code>%H</code>, <code>%I</code>, <code>%m</code>, <code>%M</code>, <code>%p</code>, <code>%S</code>, <code>%U</code>, <code>%V</code>, <code>%W</code>, <code>%y</code>, <code>%j</code>, <code>%Y</code>, <code>%R</code>, <code>%z</code>, <code>%T</code>, <code>%D</code>, <code>%F</code>.</li>
+      <li>The number of GC threads in the application server can now be set using the <var>Server.NumGcThreads</var> configuration option.</li>
+    </ul></li>
+  <li>Changed VM default FPU state to not crash on any floating-point exceptions (to replicate AMD64 default behaviour).</li>
+</ul>
+
+<h4>shared3p_emu protection domain</h4>
+<ul>
+  <li>Updated performance models in shared3p_emu to reflect new protocols and improved performance of shared3p protocols. Now there are performance models for 610 protocols (compared to 88 in SDK 2015.12).</li>
+  <li>Added missing operations that were available in the shared3p module but missing in shared3p_emu module.</li>
+</ul>
+<h4>SecreC</h4>
+<ul>
+  <li>SecreC compiler
+  <ul>
+    <li>Added a new language capability, which allows defining data types that are specific to a protection domain kind (PDK) in the PDK declaration. All protection domain data types must now be defined in this way. This allows receiving compile-time errors instead of run-time errors in cases where types or operations are used, which are not supported by the PDK implementation.</li>
+    <li>All operator definitions are now explicitly declared in standard library modules instead of hard-coded in the compiler. </li>
+    <li>Added support for defining type conversion operators with the name <code>cast</code>. Conversions must now be explicitly defined in SecreC.</li>
+  </ul></li>
+  <li>Standard library
+  <ul>
+    <li>shared3p: Added shared3p protection domain kind data types and operator definitions.</li>
+    <li>shared3p: Added functions for computing the inverse of a matrix.</li>
+    <li>shared3p: Added functions for computing X * X^T and X^T * X for matrices.</li>
+    <li>shared3p: Added functions for oblivious choice with scalar condition for xor_uint values.</li>
+    <li>shared3p: Added functions for fast matrix multiplication.</li>
+    <li>shared3p: Added function for computing standard errors of a generalized linear model's parameters.</li>
+  </ul></li>
+  <li>Standard library tests
+  <ul>
+    <li>Added tests for the table database functions.</li>
+    <li>Added tests for the statistics functions.</li>
+    <li>Added tests for sorting functions.</li>
+    <li>Added tests for string operations.</li>
+    <li>Added tests for fast matrix multiplication.</li>
+    <li>Added missing type conversion tests.</li>
+  </ul></li>
+  <li>Documentation
+  <ul>
+    <li>Added documentation for the table database.</li>
+    <li>Added documentation for the key-value database.</li>
+    <li>Added info for functions where overflows may occur on large inputs.</li>
+    <li>Added info for functions where some private information leaks occur.</li>
+  </ul></li>
+</ul>
+<h3>Removed features</h3>
+
+<h4>Core server functionality</h4>
+<ul>
+  <li>The <code>--debugRunSingle</code> command line option for the application server was removed.</li>
+  <li>Uploading of files was removed together with the application server support for development mode (<var>Server.Mode</var> configuration option).</li>
+</ul>
+<h4>SecreC</h4>
+<ul>
+  <li>SecreC compiler
+  <ul>
+    <li>Removed built-in <code>xor_uintX</code> types and the <code>xor_uint</code> type alias for <code>xor_uint64</code>. Xor-types are now declared explicitly in every protection domain's standard library module that uses them.</li>
+    <li>Logical AND and OR operators for private booleans <code>&&</code>, <code>||</code> are replaced with <code>&</code>, <code>|</code> respectively.</li>
+  </ul></li>
+</ul>
+
+<h3>Fixed issues</h3>
+
+<h4>Core server functionality</h4>
+<ul>
+  <li>Fixed multiple invalid memory accesses, crashes and hangs in the application server.</li>
+  <li>Fixed multiple issues causing high CPU usage in the application server.</li>
+  <li>Fixed multiple resource leaks in the application server.</li>
+  <li>Fixed public conversions between float32/float64 and uint64 in the VM yielding incorrect results.</li>
+  <li>Fixed a file descriptor leak in the HDF5 based table database.</li>
+  <li>Fixed variable length data types in the table database not accepting values with size zero.</li>
+</ul>
+<h4>shared3p_emu protection domain</h4>
+<ul>
+    <li>Changed AES key expansion to give the same output as the emulated module.</li>
+    <li>Fixed casting float type values to other types. Now correctly casts towards zero.</li>
+    <li>Fixed casting float type values to booleans.</li>
+    <li>Fixed division and modulo protocols giving error on division by zero. Now they behave similarly to the emulated protocols.</li>
+    <li>Fixed various bugs in the implementation of multiple operations.</li>
+</ul>
+<h4>SecreC</h4>
+<ul>
+  <li>SecreC compiler
+  <ul>
+    <li>Fixed various bugs related to integer and string literals.</li>
+    <li>Fixed various bugs related to procedure templates and structure types.</li>
+  </ul></li>
+  <li>Fixed various bugs in the standard library functions and tests.</li>
+</ul>

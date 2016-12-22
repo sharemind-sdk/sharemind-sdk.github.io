@@ -1,0 +1,89 @@
+/* Footer */
+
+    #footer {
+        @include padding(4em, 0);
+        background: #fff;
+        text-align: center;
+        width: 100%;
+
+        p {
+            margin-bottom: 0.9em;
+            color: _palette(fg-light);
+        }
+
+        .logos-wrapper {
+            padding-top: 1em;
+            margin: 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            a {
+                padding-left: 2em;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                &:first-child {
+                    padding-left: 0;
+                }
+            }
+        }
+
+        ul.icons {
+            li {
+                display: inline-block;
+                margin: 0 1em;
+
+                a {
+                    color: _palette(accent2, bg);
+                    font-size: 1.75em;
+                    display: inline-block;
+                    @include vendor('transition', ('color #{_duration(nav)} ease-in-out', 'background-color #{_duration(nav)} ease-in-out'));
+                }
+
+                a:hover {
+                    color: lighten(_palette(accent2, bg), 15%);
+                }
+            }
+        }
+
+
+        @include breakpoint(medium) {
+
+            .logos {
+                flex-direction: column;
+
+                a {
+                    padding-left: 0;
+                    flex-direction: row;
+                    margin-bottom: 2em;
+                }
+            }
+
+        }
+
+        @include breakpoint(small) {
+            @include padding(3em, 0);
+
+            .logos-wrapper {
+                flex-direction: column;
+            }
+
+            .copyright {
+                li {
+                    display: block;
+                    border-left: 0;
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+
+    }
