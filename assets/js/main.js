@@ -127,8 +127,8 @@
                 });
 
             // Close nav on link click
-                for (var $navLink of $navLinks) {
-                    $navLink.addEventListener('click', function(event) {
+                for (var i = 0; i < $navLinks.length; i++) {
+                    $navLinks[i].addEventListener('click', function(event) {
                         $nav.classList.remove('visible');
                     });
                 }
