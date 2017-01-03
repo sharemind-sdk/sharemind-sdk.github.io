@@ -27,7 +27,7 @@
       <a id="nav-button" href="#nav">Menu</a>
     </header>
 
-  <!-- Nav -->
+    <!-- Nav -->
     <nav id="nav">
       <ul class="links">
         <li><a href="index.html#download">Download SDK</a></li>
@@ -36,21 +36,12 @@
         <li><a href="#release-notes">Release notes</a></li>
       </ul>
       <ul class="actions vertical">
-        <li><a href="https://sharemind.cyber.ee/sdk.html" class="button fit">Download VM</a></li>
-        <li><a href="https://github.com/sharemind-sdk/build-sdk" class="button fit">Build from source</a></li>
+        <li><a href="https://sharemind.cyber.ee/sdk.html" target="_blank" class="button fit">Download VM</a></li>
+        <li><a href="https://github.com/sharemind-sdk/build-sdk" target="_blank" class="button fit">Build from source</a></li>
       </ul>
     </nav>
 
-    <!-- Banner -->
-    <section id="banner">
-      <h2>Sharemind&reg; SDK 2016.12 Beta</h2>
-      <p id="large-banner-text">Rapidly prototype privacy-preserving applications for free using<br>the Sharemind&reg; Software Development Kit</p>
-      <p id="small-banner-text">Rapidly prototype<br>privacy-preserving applications<br>for free using the Sharemind&reg;<br>Software Development Kit</p>
-      <ul class="actions">
-        <li><a href="https://sharemind.cyber.ee/sdk.html" class="button">Download preinstalled VM</a></li>
-        <li><a href="https://github.com/sharemind-sdk/build-sdk" class="button">Build from source</a></li>
-      </ul>
-    </section>
+    <div id="banner-include"></div>
 
     <a class="anchor" id="release-notes"></a>
     <div class="main container">
@@ -62,7 +53,7 @@
       <a class="anchor adjusted" id="2016-12"></a>
       <section>
         <h2>2016.12</h2>
-        <div data-include-html="includes/2016-12-release-notes.html"></div>
+        <div id="2016-12-include"></div>
       </section>
 
       <hr>
@@ -91,63 +82,11 @@
 
     </div>
 
-
-    <!-- Moto -->
-    <div id="moto">
-      <div class="container">
-        <p>Process private data without compromising privacy using Sharemind&reg;</p>
-      </div>
-    </div>
-    <!-- /Moto -->
-
-    <!-- Footer -->
-      <footer id="footer">
-        <div class="container">
-          <section>
-            <h2>Get in touch to learn more</h2>
-            <ul class="icons">
-              <li><a href="https://twitter.com/sharemind" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-              <li><a href="mailto:sharemind@cyber.ee" class="icon fa-envelope"><span class="label">Mail</span></a></li>
-            </ul>
-          </section>
-          <section>
-            <h3>Acknowledgements</h3>
-            <p>The SecreC 2 language and virtual machine were developed with support from the United States DARPA <a href="http://www.darpa.mil/program/programming-computation-on-encrypted-data">PROCEED</a> programme.</p>
-            <p>The emulator has been built with support from European Union Framework Programme 7 project <a href="https://practice-project.eu/">PRACTICE</a>.</p>
-            <p>The SecreC statistics library has been developed within the European Union Framework Programme 7 project <a href="http://www.usable-security.eu/">UaESMC</a> project.</p>
-            <p>The emulation techniques were developed with support from <a href="http://www.stacc.ee/">Software Technologies and Applications Competence Center STACC</a>.</p>
-          </section>
-          <div class="row 0% logos-wrapper">
-            <div class="5u 6u(large) 5u(medium) 12u$(small) logos">
-              <a href="https://cyber.ee/"><img src="assets/images/logo-cybernetica.png" alt="Cybernetica" width="280" height="41"></a>
-              <a href="https://practice-project.eu/"><img src="assets/images/logo-practice.png" alt="PRACTICE" width="220" height="101"></a>
-            </div>
-
-            <div class="4u 12u$(small) logos">
-              <a href="http://www.usable-security.eu/"><img src="assets/images/logo-uaesmc.png" alt="UaESMC" width="168" height="168"></a>
-              <a href="http://www.stacc.ee/"><img src="assets/images/logo-stacc.png" alt="STACC" width="135" height="57"></a>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <div id="copyright">
-        <p>
-          Sharemind® is a registered trademark of Cybernetica.
-          <br>
-          All rights reserved. Copyright <a href="https://cyber.ee/en/" target="_blank">Cybernetica AS</a>.
-          <br>
-          Designed with <a href="http://skel.io" target="_blank">Skel</a>
-        </p>
-      </div>
+    <div id="footer-include"></div>
 
     <!-- Scripts -->
-      <script src="assets/js/skel.min.js"></script>
-      <script src="assets/js/jquery-3.1.1.min.js"></script>
-      <script src="assets/js/main.js"></script>
-      <script src="assets/js/w3data.js"></script>
-      <script>
-        w3IncludeHTML();
-      </script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
