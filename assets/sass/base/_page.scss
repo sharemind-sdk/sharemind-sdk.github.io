@@ -41,7 +41,7 @@
     }
 
     // Ensures page width is always >=320px.
-    @include breakpoint(xsmall) {
+    @include breakpoint(xxsmall) {
         html, body {
             min-width: 320px;
             width: auto !important;  /* Firefox will set width as auto */
