@@ -2,8 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import 'libs/skel';
-@import 'font-awesome.min.css';
-@import 'gotham-font.css';
+
 
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',
@@ -35,6 +34,11 @@
 			)
 		)
 	));
+
+// Fonts.
+
+@import 'fonts/font-awesome';
+@import 'fonts/gotham-font';
 
 // Base.
 
