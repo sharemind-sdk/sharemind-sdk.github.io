@@ -1,0 +1,30 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>New features</h3>
+
+<h4>shared3p_emu protection domain</h4>
+<ul>
+  <li>Added <code>stable_sort</code> syscall together with its performance model.</li>
+</ul>
+
+<h4>SecreC standard library</h4>
+<ul>
+  <li>Method <code>quicksort</code> now uses C++ syscall instead of SecreC-only implementation for better performance. Deprecated method <code>quickquicksort</code>.</li>
+  <li>Standard library functions now use <code>quicksort</code> in place of slower sorting networks.</li>
+  <li>Added a sort order flag for stable sorting algorithms <code>quicksort</code> and <code>unsafeSort</code>.</li>
+  <li>Added <code>log</code>, <code>log10</code> and <code>pow</code> functions for shared3p protection domain.</li>
+</ul>
+
+<h3>Fixed issues</h3>
+
+<h4>mod_tabledb_hdf5</h4>
+<ul>
+  <li>Fixed a crash that occured when the number of rows was queried for a non-existing HDF5 database table.</li>
+</ul>
+
+<h4>SecreC compiler</h4>
+<ul>
+  <li>Reduced assembler memory footprint.</li>
+</ul>
