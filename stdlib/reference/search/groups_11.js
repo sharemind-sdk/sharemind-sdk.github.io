@@ -8,8 +8,6 @@ var searchData=
   ['shared2p_2esc',['shared2p.sc',['../group__shared2p.html',1,'']]],
   ['shared2p_5frandom_2esc',['shared2p_random.sc',['../group__shared2p__random.html',1,'']]],
   ['sign',['sign',['../group__shared2p__sign.html',1,'']]],
-  ['sin',['sin',['../group__shared2p__sin.html',1,'']]],
-  ['sqrt',['sqrt',['../group__shared2p__sqrt.html',1,'']]],
   ['sum',['sum',['../group__shared2p__sum.html',1,'']]],
   ['sum_28parts_29',['sum(parts)',['../group__shared2p__sum__k.html',1,'']]],
   ['sum',['sum',['../group__shared2p__sum__vec.html',1,'']]],

@@ -15,6 +15,7 @@ var searchData=
   ['publish',['publish',['../group__shared2p__publish.html',1,'']]],
   ['parametersstandarderrors',['parametersStandardErrors',['../group__shared3p__params__stderr.html',1,'']]],
   ['pcaresult',['PCAResult',['../group__shared3p__pca__result.html',1,'']]],
+  ['pow',['pow',['../group__shared3p__pow.html',1,'']]],
   ['product',['product',['../group__shared3p__product.html',1,'']]],
   ['product_28parts_29',['product(parts)',['../group__shared3p__product__k.html',1,'']]],
   ['product',['product',['../group__shared3p__product__vec.html',1,'']]],

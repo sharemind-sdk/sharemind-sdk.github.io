@@ -19,7 +19,6 @@ var searchData=
   ['cut',['cut',['../group__cut.html',1,'']]],
   ['cut_28multiple_20samples_29',['cut(multiple samples)',['../group__cut__n.html',1,'']]],
   ['constants',['constants',['../group__hypothesis__testing__constants.html',1,'']]],
-  ['ceiling',['ceiling',['../group__shared2p__ceiling.html',1,'']]],
   ['choose',['choose',['../group__shared2p__choose.html',1,'']]],
   ['ceiling',['ceiling',['../group__shared3p__ceiling.html',1,'']]],
   ['cholesky',['cholesky',['../group__shared3p__cholesky.html',1,'']]],
