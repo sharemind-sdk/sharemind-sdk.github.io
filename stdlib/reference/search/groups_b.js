@@ -15,14 +15,12 @@ var searchData=
   ['matrixupdate',['matrixUpdate',['../group__matrixupdate.html',1,'']]],
   ['matrixupdatecolumn',['matrixUpdateColumn',['../group__matrixupdatecolumn.html',1,'']]],
   ['matrixupdaterow',['matrixUpdateRow',['../group__matrixupdaterow.html',1,'']]],
-  ['max',['max',['../group__max.html',1,'']]],
   ['max',['max',['../group__max1.html',1,'']]],
   ['max_28pointwise_29',['max(pointwise)',['../group__max2.html',1,'']]],
   ['max_28parts_29',['max(parts)',['../group__max3.html',1,'']]],
   ['maximum',['maximum',['../group__maximum.html',1,'']]],
   ['mean',['mean',['../group__mean.html',1,'']]],
   ['mean_28filter_29',['mean(filter)',['../group__mean__filter.html',1,'']]],
-  ['min',['min',['../group__min.html',1,'']]],
   ['min',['min',['../group__min1.html',1,'']]],
   ['min_28pointwise_29',['min(pointwise)',['../group__min2.html',1,'']]],
   ['min_28parts_29',['min(parts)',['../group__min3.html',1,'']]],
@@ -46,9 +44,9 @@ var searchData=
   ['max',['max',['../group__shared3p__max.html',1,'']]],
   ['max_282_20vectors_29',['max(2 vectors)',['../group__shared3p__max__2.html',1,'']]],
   ['max_28parts_29',['max(parts)',['../group__shared3p__max__k.html',1,'']]],
-  ['max',['max',['../group__shared3p__max__vec.html',1,'']]],
+  ['max',['max',['../group__shared3p__max__vec.html',1,'(Global Namespace)'],['../group__max.html',1,'(Global Namespace)']]],
   ['min',['min',['../group__shared3p__min.html',1,'']]],
   ['min_282_20vectors_29',['min(2 vectors)',['../group__shared3p__min__2.html',1,'']]],
   ['min_28parts_29',['min(parts)',['../group__shared3p__min__k.html',1,'']]],
-  ['min',['min',['../group__shared3p__min__vec.html',1,'']]]
+  ['min',['min',['../group__shared3p__min__vec.html',1,'(Global Namespace)'],['../group__min.html',1,'(Global Namespace)']]]
 ];

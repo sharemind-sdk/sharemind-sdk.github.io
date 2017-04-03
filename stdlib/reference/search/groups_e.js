@@ -5,10 +5,8 @@ var searchData=
   ['printarray',['printArray',['../group__printarray.html',1,'']]],
   ['printmatrix',['printMatrix',['../group__printmatrix.html',1,'']]],
   ['printvector',['printVector',['../group__printvector.html',1,'']]],
-  ['product',['product',['../group__product.html',1,'']]],
   ['product',['product',['../group__product1.html',1,'']]],
   ['product_28parts_29',['product(parts)',['../group__product2.html',1,'']]],
-  ['publish',['publish',['../group__publish.html',1,'']]],
   ['product',['product',['../group__shared2p__product.html',1,'']]],
   ['product_28parts_29',['product(parts)',['../group__shared2p__product__k.html',1,'']]],
   ['product',['product',['../group__shared2p__product__vec.html',1,'']]],
@@ -18,6 +16,6 @@ var searchData=
   ['pow',['pow',['../group__shared3p__pow.html',1,'']]],
   ['product',['product',['../group__shared3p__product.html',1,'']]],
   ['product_28parts_29',['product(parts)',['../group__shared3p__product__k.html',1,'']]],
-  ['product',['product',['../group__shared3p__product__vec.html',1,'']]],
-  ['publish',['publish',['../group__shared3p__publish.html',1,'']]]
+  ['product',['product',['../group__shared3p__product__vec.html',1,'(Global Namespace)'],['../group__product.html',1,'(Global Namespace)']]],
+  ['publish',['publish',['../group__shared3p__publish.html',1,'(Global Namespace)'],['../group__publish.html',1,'(Global Namespace)']]]
 ];
