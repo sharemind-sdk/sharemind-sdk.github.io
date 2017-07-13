@@ -1,0 +1,17 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>Features</h3>
+
+<h4>Emulator</h4>
+<ul>
+  <li>Sharemind components no longer search for their configuration from the shell's working directory. Sharemind Emulator looks for its configuration according to the <em>XDG Base Directory Specification</em>, i.e. from <code>$XDG_CONFIG_HOME/sharemind/emulator.conf</code>, where <code>$XDG_CONFIG_HOME</code> defaults to <code>$HOME/.config:/etc/xdg</code> if it is not defined in the environment. Sharemind components support the <code>--conf</code> command-line parameter override these defaults.</li>
+  <li>Files referenced in Sharemind configuration files are loaded relative the shell's working directory. Use the <code>%{CurrentFileDirectory}</code> placeholder that is replaced with the absolute path of the current configuration file.</li>
+  <li>Sharemind Emulator binary has been renamed: <code>Emulator</code> -> <code>sharemind-emulator</code></li>
+</ul>
+
+<h4>SecreC standard library</h4>
+<ul>
+  <li>Added <code>isSuffixOf</code> function to SecreC standard library.</li>
+</ul>

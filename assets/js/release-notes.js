@@ -6,6 +6,9 @@ $(function() {
         $.get("includes/banner.html", function(data) {
             $("#banner-include").html(data);
         }),
+        $.get("includes/2017-06-release-notes.html", function(data) {
+            $("#2017-06-include").html(data);
+        }),
         $.get("includes/2017-03-release-notes.html", function(data) {
             $("#2017-03-include").html(data);
         }),
