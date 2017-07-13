@@ -16,6 +16,8 @@ var searchData=
   ['isnegligible',['isNegligible',['../group__shared3p__isnegligible.html#gab445b6358f9f71fb4d8d7e7c2ca59670',1,'isNegligible(D float32 a):&#160;shared3p.sc'],['../group__shared3p__isnegligible.html#ga57bac61ba6e5135dcb97d40708bb1011',1,'isNegligible(D float64 a):&#160;shared3p.sc'],['../group__shared3p__isnegligible.html#ga9775e3c36a801cfe02ce20712b8b69c2',1,'isNegligible(D float32[[1]] a):&#160;shared3p.sc'],['../group__shared3p__isnegligible.html#ga69bbf39eaad64dc79add75a6e11b2ba3',1,'isNegligible(D float64[[1]] a):&#160;shared3p.sc'],['../group__isnegligible.html#gab445b6358f9f71fb4d8d7e7c2ca59670',1,'isNegligible(D float32 a):&#160;stdlib.sc'],['../group__isnegligible.html#ga57bac61ba6e5135dcb97d40708bb1011',1,'isNegligible(D float64 a):&#160;stdlib.sc'],['../group__isnegligible.html#ga9775e3c36a801cfe02ce20712b8b69c2',1,'isNegligible(D float32[[1]] a):&#160;stdlib.sc'],['../group__isnegligible.html#ga69bbf39eaad64dc79add75a6e11b2ba3',1,'isNegligible(D float64[[1]] a):&#160;stdlib.sc']]],
   ['isprefixof',['isPrefixOf',['../group__isprefixof__string.html#ga05e990c733ea424b211f2f867eb115a4',1,'stdlib.sc']]],
   ['isprefixof',['isPrefixOf',['../group__isprefixof__string.html',1,'']]],
+  ['issuffixof',['isSuffixOf',['../group__issuffixof__string.html#ga9a1ac42af3fe8af287fe8fbbb12894cb',1,'stdlib.sc']]],
+  ['issuffixof',['isSuffixOf',['../group__issuffixof__string.html',1,'']]],
   ['inv',['inv',['../group__shared3p__inv.html',1,'']]],
   ['isnegligible',['isNegligible',['../group__shared3p__isnegligible.html',1,'(Global Namespace)'],['../group__isnegligible.html',1,'(Global Namespace)']]],
   ['inverseshuffle_28key_29',['inverseShuffle(key)',['../group__shuffle3.html',1,'']]],

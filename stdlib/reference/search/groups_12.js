@@ -22,6 +22,7 @@ var searchData=
   ['tdbgetcolumnnames',['tdbGetColumnNames',['../group__tdb__get__column__names.html',1,'']]],
   ['tdbgetcolumntypes',['tdbGetColumnTypes',['../group__tdb__get__column__types.html',1,'']]],
   ['tdbgetrowcount',['tdbGetRowCount',['../group__tdb__get__row__count.html',1,'']]],
+  ['tdbgettablenames',['tdbGetTableNames',['../group__tdb__get__table__names.html',1,'']]],
   ['tdbvmapgetvalue_28string_29',['tdbVmapGetValue(string)',['../group__tdb__get__value__string.html',1,'']]],
   ['tdbinsertrow',['tdbInsertRow',['../group__tdb__insert__row.html',1,'']]],
   ['tdbopenconnection',['tdbOpenConnection',['../group__tdb__open__connection.html',1,'']]],
