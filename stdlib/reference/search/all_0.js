@@ -7,6 +7,6 @@ var searchData=
   ['_5fludecomp',['_ludecomp',['../group__shared3p__statistics__regression.html#ga22f4e61284f0142debceb886d29c4c64',1,'shared3p_statistics_regression.sc']]],
   ['_5fluresult',['_luResult',['../struct__lu_result.html',1,'']]],
   ['_5fmaxfirstloc',['_maxFirstLoc',['../group__shared3p__statistics__regression.html#gae2dd46a38d1f5764e9df151769a5372a',1,'shared3p_statistics_regression.sc']]],
-  ['_5frandomize',['_randomize',['../group__randomize.html#ga2f8553373355d4d043331685df196ca0',1,'shared2p_random.sc']]],
+  ['_5frandomize',['_randomize',['../group__s2p__randomize.html#ga2f8553373355d4d043331685df196ca0',1,'shared2p_random.sc']]],
   ['_5fsolvelu',['_solveLU',['../group__shared3p__statistics__regression.html#ga5ccf145e7b30ce0aa4c8ab99873bc8bc',1,'shared3p_statistics_regression.sc']]]
 ];

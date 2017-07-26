@@ -70,23 +70,65 @@ Expressions</h1>
 <p>Many of the expressions implicitly operate point-wise on arrays and, in many cases, scalar values are automatically converted into a higher-dimensional array, if the size of resulting array is derivable from the context. For example, if one argument of addition operator is matrix and other is constant scalar 1, then the scalar is converted into properly sized matrix before point-wise addition is performed. This feature is desirable in several data mining operations and simplifies the development of such code.</p>
 <h2><a class="anchor" id="arithmetic_operators"></a>
 Arithmetic Operators</h2>
-<p>SecreC supports the following arithmetic operators: (a) + for addition, (b) - for subtraction, (c) * for multiplication, (d) / for division, (e) % for modulo, and (f) - for numeric unary negation. Arithmetic operators can be called on mixed security typed parameters. The resulting security type is always the stricter of parameters, and the value with the looser security type is implicitly classified. If operator is called on mixed security typed parameters a type error is raised. Calling binary operators on expressions of mixed data types is forbidden, and requires explicit data type cast. The types of arithmetic operators are informally described in Table 1.</p>
+<p>SecreC supports the following arithmetic operators:</p>
+<ol type="1">
+<li><code>+</code> for addition,</li>
+<li><code>-</code> for subtraction,</li>
+<li><code>*</code> for multiplication,</li>
+<li><code>/</code> for division,</li>
+<li><code>%</code> for integer modulo,</li>
+<li><code>-</code> for numeric unary negation, and</li>
+<li><code>++</code>,<code>--</code> for incrementing/decrementing integers.</li>
+</ol>
+<p>Arithmetic operators can be called on mixed security typed parameters. The resulting security type is always the stricter of parameters, and the value with the looser security type is implicitly classified. Calling binary operators on expressions of mixed data types, however, is forbidden, and requires explicit data type cast. The types of arithmetic operators are informally described in Table 1.</p>
 <p>Table 1: Public scalar operator types</p>
 <table class="doxtable">
 <tr>
 <th align="left">Operator </th><th align="left">Return </th><th align="left">Parameters  </th></tr>
 <tr>
-<td align="left"><code>&amp;&amp;,</code>||<code>,!</code> </td><td align="left"><b>bool</b> </td><td align="left"><b>bool</b> </td></tr>
+<td align="left"><code>!</code> </td><td align="left"><b>bool</b> </td><td align="left"><b>bool</b> </td></tr>
+<tr>
+<td align="left"><code>&amp;,</code>|<code>,^</code> </td><td align="left">Argument type </td><td align="left"><b>bool</b>, unsigned integer types </td></tr>
+<tr>
+<td align="left"><code>&lt;&lt;, &gt;&gt;, ~</code> </td><td align="left">Argument type </td><td align="left">Unsigned integer types </td></tr>
 <tr>
 <td align="left"><code>&lt;,&gt;,&lt;=,&gt;=,==,!=</code> </td><td align="left"><b>bool</b> </td><td align="left">Any types </td></tr>
 <tr>
-<td align="left"><code>+,*,/,%,++</code> </td><td align="left">Argument type </td><td align="left">Integer types </td></tr>
-<tr>
-<td align="left"><code>-,--</code> </td><td align="left">Argument type </td><td align="left">Signed integer types </td></tr>
+<td align="left"><code>+,-,*,/,%,++,--</code> </td><td align="left">Argument type </td><td align="left">Integer and floating-point types </td></tr>
 </table>
+<h2><a class="anchor" id="relational_operators"></a>
+Relational operators</h2>
+<p>Following relational operators are supported:</p>
+<ol type="1">
+<li>equality <code>==</code>,</li>
+<li>inequality <code>!=</code>,</li>
+<li>less-than <code>&lt;</code>,</li>
+<li>less-or-equal <code>&lt;=</code>,</li>
+<li>greater-than <code>&gt;</code>, and</li>
+<li>greater-or-equal <code>&gt;=</code>.</li>
+</ol>
+<p>Relational operators always return boolean value. Arguments can be of any built-in data type. Arguments have to be of the same data type, but can be called on mixed security types in which case the result is the stricter of the two. If needed scalars are implicitly converted to arrays.</p>
 <h2><a class="anchor" id="logical_operators"></a>
 Logical operators</h2>
-<p>Following relational operators are supported: (a) == equality, (b) != inequality, (c) &lt; less-than, (d) &lt;= less-or-equal, (e) &gt; greater-than, and (f) &gt;= greater-or-equal. Relational operators always return boolean value. Arguments can be boolean, and integer typed. Arguments have to be of the same data type, but can be called on mixed security types in which case the result is the stricter of the two. If needed scalars are implicitly converted to arrays. SecreC supports following logical operations: (a) &amp;&amp; for conjunction, (b) || for disjunction, and (c) ! for logical unary negation. All require arguments and return types to be boolean. As with arithmetic and relational expressions boolean expressions can be called on mixed security typed parameters, and implicit scalar to array conversion is performed when required. However, calling boolean expressions on mixed security types has an important caveat. It’s common for strict languages to evaluate logical boolean expressions lazily (known as <em>short-circuit evaluation</em> ). For example, if the first branch of conjunction expression evaluates to false the second branch is never evaluated. This is also the case in SecreC for boolean expressions called on public scalar values, but not if any of the arguments is private or scalar. The reason for this behavior is that any changes in control flow are publicly visible, and that can cause unwanted private data to leak into public space. To avoid leaking information in such manner the logical expression on private data always evaluate both branches. Due to the point-wise behavior a short-circuit evaluation is not possible for boolean expressions if one of the arguments is a non-scalar.</p>
+<p>SecreC supports following Boolean logic operations for the <b>bool</b> data type:</p>
+<ol type="1">
+<li><code>&amp;</code> for conjunction,</li>
+<li><code>|</code> for disjunction,</li>
+<li><code>^</code> for exclusive-OR (XOR), and</li>
+<li><code>!</code> for logical unary negation.</li>
+</ol>
+<p>All require arguments and return types to be boolean. As with arithmetic and relational expressions boolean expressions can be called on mixed security typed parameters, and implicit scalar to array conversion is performed when required. However, calling boolean expressions on mixed security types has an important caveat. It’s common for strict languages to evaluate logical boolean expressions lazily (known as <em>short-circuit evaluation</em> ). For example, if the first branch of conjunction expression evaluates to false the second branch is never evaluated. This is also the case in SecreC for boolean expressions called on public scalar values, but not if any of the arguments is private or scalar. The reason for this behavior is that any changes in control flow are publicly visible, and that can cause unwanted private data to leak into public space. To avoid leaking information in such manner the logical expression on private data always evaluate both branches. Due to the point-wise behavior a short-circuit evaluation is not possible for boolean expressions if one of the arguments is a non-scalar.</p>
+<h2><a class="anchor" id="bitwise_operators"></a>
+Bitwise operators</h2>
+<p>The following operators are supported for bit manipulation of unsigned integer types:</p>
+<ol type="1">
+<li><code>&amp;</code> for bitwise AND,</li>
+<li><code>|</code> for bitwise OR,</li>
+<li><code>^</code> for bitwise exclusive-OR (XOR),</li>
+<li><code>~</code> for the bitwise complement (flips all bits), and</li>
+<li><code>&lt;&lt; , &gt;&gt;</code> for bitwise left shift and right shift respectively.</li>
+</ol>
+<p>Bitwise expressions can be called on mixed security typed parameters, and implicit scalar to array conversion is performed when required.</p>
 <h2><a class="anchor" id="casting_operators"></a>
 Casting operators</h2>
 <p>SecreC does not support implicit type casts, but does support explicit C-style data-type conversion. To perform a type cast a parenthesised data-type is written before an expression. Non-zero integer typed values cast to <b>true</b> boolean type, and zero values casts to <b>false</b>. Conversely, booleans cast to 1 in case of <b>true</b> and 0 in case of <b>false</b>. Non-public data type conversions are allowed.</p>
@@ -109,7 +151,7 @@ Declassify operator</h2>
 <p>Listing 6: Declassify example </p><div class="fragment"><div class="line"><span class="keyword">private</span> <span class="keywordtype">int</span> val;</div><div class="line"><span class="comment">// read the val from database</span></div><div class="line"><span class="comment">// do some computation on data</span></div><div class="line"><span class="keywordtype">bool</span> result = declassify (val &lt; 0);</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 13 2017 17:29:30 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jul 26 2017 17:36:38 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.13
 </small></address>
