@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['shared3p',['shared3p',['../group__shared3p__statistics__regression.html#ga2850770338c5b568e8b6434bb5d202a2',1,'shared3p_statistics_regression.sc']]],
-  ['sharemind_5ftdb_5fconsensus_5ferror',['SHAREMIND_TDB_CONSENSUS_ERROR',['../group___sharemind_tdb_error.html#ga46f8c456ba9336a859c145a89737cde2',1,'table_database.sc']]],
-  ['sharemind_5ftdb_5fgeneral_5ferror',['SHAREMIND_TDB_GENERAL_ERROR',['../group___sharemind_tdb_error.html#ga984bf11afae45352ab34ab9eb036c655',1,'table_database.sc']]],
-  ['sharemind_5ftdb_5finvalid_5fargument',['SHAREMIND_TDB_INVALID_ARGUMENT',['../group___sharemind_tdb_error.html#gafaf7a784b06d0d9389ec54016da1de63',1,'table_database.sc']]],
-  ['sharemind_5ftdb_5fio_5ferror',['SHAREMIND_TDB_IO_ERROR',['../group___sharemind_tdb_error.html#ga56c706364b9e4e029b430e0576f0b2ca',1,'table_database.sc']]],
-  ['sharemind_5ftdb_5fok',['SHAREMIND_TDB_OK',['../group___sharemind_tdb_error.html#gae94034a460db964d445dd21c2463eafa',1,'table_database.sc']]],
-  ['sharemind_5ftdb_5ftable_5falready_5fexists',['SHAREMIND_TDB_TABLE_ALREADY_EXISTS',['../group___sharemind_tdb_error.html#gaede2f20292817ca63c5ae4ecae3bb89f',1,'table_database.sc']]],
-  ['sharemind_5ftdb_5ftable_5fnot_5ffound',['SHAREMIND_TDB_TABLE_NOT_FOUND',['../group___sharemind_tdb_error.html#ga65a757de5319e4ee5c1db07c5e32fa9d',1,'table_database.sc']]],
-  ['sharemind_5ftdb_5funknown_5ferror',['SHAREMIND_TDB_UNKNOWN_ERROR',['../group___sharemind_tdb_error.html#ga8e8beaf999d0191bc1957312eb6fa042',1,'table_database.sc']]]
+  ['pca_5freturn_5floads',['PCA_RETURN_LOADS',['../group__shared3p__pca__return__values.html#ga671dd2cdfd039b4f3b3775729a762f6d',1,'shared3p_statistics_pca.sc']]],
+  ['pca_5freturn_5fproportions',['PCA_RETURN_PROPORTIONS',['../group__shared3p__pca__return__values.html#ga57600234321f2f912c5464d86bec7c3c',1,'shared3p_statistics_pca.sc']]],
+  ['pca_5freturn_5fresidual',['PCA_RETURN_RESIDUAL',['../group__shared3p__pca__return__values.html#gac0acec2c36ed1001b8340090efad29e5',1,'shared3p_statistics_pca.sc']]],
+  ['pca_5freturn_5fscores',['PCA_RETURN_SCORES',['../group__shared3p__pca__return__values.html#gadfacc64dc96137d1f50130398d66d49d',1,'shared3p_statistics_pca.sc']]],
+  ['pca_5freturn_5fvariances',['PCA_RETURN_VARIANCES',['../group__shared3p__pca__return__values.html#gac3ef968484538aa46b7e8942e7345bea',1,'shared3p_statistics_pca.sc']]],
+  ['perm',['perm',['../struct__lu_result.html#ac7fdbde743071786a0496d84b3066026',1,'_luResult::perm()'],['../shared3p__statistics__regression_8sc.html#ac7fdbde743071786a0496d84b3066026',1,'perm():&#160;shared3p_statistics_regression.sc']]],
+  ['proportions',['proportions',['../struct_p_c_a_result.html#a58a05b27ce59869299b9c34609be0e00',1,'PCAResult']]]
 ];

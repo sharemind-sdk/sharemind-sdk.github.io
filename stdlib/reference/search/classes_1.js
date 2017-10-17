@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scancursor',['ScanCursor',['../struct_scan_cursor.html',1,'']]]
+  ['glmresult',['GLMResult',['../struct_g_l_m_result.html',1,'']]]
 ];

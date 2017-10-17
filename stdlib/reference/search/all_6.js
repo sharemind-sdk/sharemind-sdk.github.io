@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['family',['family',['../struct_g_l_m_result.html#accff59be507237aac2231befb0c23689',1,'GLMResult']]],
   ['findsortingpermutation',['findSortingPermutation',['../group__findsortingpermutation.html#ga77a82918930d7b99254f3a28d7790523',1,'findSortingPermutation(D bool[[1]] arr):&#160;shared3p_string.sc'],['../group__findsortingpermutation.html',1,'(Global Namespace)']]],
   ['fivenumbersummary',['fiveNumberSummary',['../group__five__number__summary.html',1,'']]],
   ['fivenumbersummary',['fiveNumberSummary',['../group__five__number__summary.html#gad8ac72eb7598c1cc0fb209469636a27c',1,'fiveNumberSummary(D int32[[1]] data, D bool[[1]] isAvailable):&#160;shared3p_statistics_summary.sc'],['../group__five__number__summary.html#gab108ad07dde7cc2adba48c890c3f81e7',1,'fiveNumberSummary(D int64[[1]] data, D bool[[1]] isAvailable):&#160;shared3p_statistics_summary.sc']]],

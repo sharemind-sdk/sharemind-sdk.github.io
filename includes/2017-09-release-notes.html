@@ -1,0 +1,14 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>Fixed issues</h3>
+
+<ul>
+  <li>Fixed a API/ABI mismatch in Sharemind's logging component that caused crashes.</li>
+  <li>SecreC compiler now disallows infinite types in SecreC code. Previously they caused segfaults in the compiler.</li>
+  <li>Fixed SecreC global struct initialisation bugs.</li>
+  <li>Fixed SecreC typechecker to catch an issue where a scalar is used as an array. Previously they caused segfaults in the compiler.</li>
+  <li>Fixed SecreC typechecker to catch an issue where a wrong operator (e.g. &quot;+&quot;) was used for Booleans. Previously they caused segfaults in the compiler.</li>
+  <li>Convert integers to floats in SecreC standard library chi-squared test to avoid possible overflows.</li>
+</ul>
