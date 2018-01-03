@@ -1,0 +1,24 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>Features</h3>
+
+<h4>Emulator</h4>
+
+<ul>
+  <li>On platforms, where <a href="https://github.com/redis/hiredis"><i>hiredis</i></a> is available from a package, the <tt>mod_keydb</tt> key-value storage engine now uses <i>hiredis</i> C client library for connecting to the Redis backend. This replaces the <i>cpp_redis</i> dependency on these platforms.</li>
+</ul>
+
+<h4>SecreC standard library</h4>
+
+<ul>
+  <li>Added <tt>tdbVmapSetValueAsColumn</tt> method in the <tt>table_database</tt> module to insert vectors as database table columns. This can be used to insert multiple rows at a time by providing a vector for each column in the table.</li>
+</ul>
+
+<h3>Stability and usability improvements</h3>
+
+<ul>
+  <li>Improved error message for a missing <tt>argument</tt> to a SecreC program.</li>
+  <li>Improved descriptions for several SecreC standard library functions.</li>
+ </ul>

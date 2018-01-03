@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2017.09</span>
+   &#160;<span id="projectnumber">2017.12</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -68,7 +68,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Arrays in SecreC</p>
-<h1><a class="anchor" id="arrays"></a>
+<h1><a class="anchor" id="arrays_section"></a>
 Arrays</h1>
 <p>SecreC is strongly focused on arrays, and the majority of arithmetic, relational and logical operations operate point-wise on them. The main motivation for this behaviour is that private operations are individually slow on some protection domain implementations, and usually require a great deal of network communication overhead. Performing private operations in parallel reduces the time cost involved.The network communication cost is reduced too, as it’s more efficient to send data in bulk rather than sending small packets individually for each operation. SecreC supports multidimensional rectangular arrays. The arrays are more similar to those in Fortran than those in C or Java. The main difference is that multi dimensional arrays in both C and Java are so called Iliffe vectors [Ili61] storing single dimensional vector of pointers to arrays of one dimension less. Like in Fortran arrays in SecreC are always stored as a contiguous block of memory. Every array is associated with sizes of all its dimensions, we call tuple of those a shape of the array. The shape, unlike dimensionality, is a dynamic property and can freely change in the process of program evaluation. The shape is also always a public property, even for arrays containing private data.</p>
 <h2><a class="anchor" id="assigning_arrays"></a>
@@ -96,11 +96,11 @@ Array Primitives</h2>
 <p><br />
 </p><pre class="fragment">    reshape
 </pre><p>Returns an array with the same data, but a different shape than the original. The first argument is the initial array and the rest of the arguments specify the new shape. A run-time check is performed to check that the number of elements in the old and new arrays are equal. The returned array inherits the values and the security type of the original array. A common idiom is to combine the use of reshape and size for flattening multi-dimensional arrays into a vector form.</p>
-<p>Listing 8: Array flattening </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> [[2]] <a class="code" href="shared3p__statistics__regression_8sc.html#a0e23d45a54014dfa475ae2c7ce7952b4">mat</a> (5, 5);</div><div class="line"><span class="keywordtype">int</span> [[1]] arr = reshape (<a class="code" href="shared3p__statistics__regression_8sc.html#a0e23d45a54014dfa475ae2c7ce7952b4">mat</a> , size (<a class="code" href="shared3p__statistics__regression_8sc.html#a0e23d45a54014dfa475ae2c7ce7952b4">mat</a> ));</div><div class="line"><span class="comment">// size (arr) == 25</span></div></div><!-- fragment --><p>It is possible to use reshape to create a temporary constant array from a scalar with fixed size. This supplies a convenient tool for changing both the size and value of an already created array, or for constructing temporary constant arrays of given size.</p>
+<p>Listing 8: Array flattening </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> [[2]] mat (5, 5);</div><div class="line"><span class="keywordtype">int</span> [[1]] arr = reshape (mat , size (mat ));</div><div class="line"><span class="comment">// size (arr) == 25</span></div></div><!-- fragment --><p>It is possible to use reshape to create a temporary constant array from a scalar with fixed size. This supplies a convenient tool for changing both the size and value of an already created array, or for constructing temporary constant arrays of given size.</p>
 <p>Listing 9: Temporary constant array </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> [[1]] arr (100);</div><div class="line"><span class="comment">// some computation on arr</span></div><div class="line">arr = reshape (1, 10);</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 16 2017 16:18:14 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 3 2018 13:40:00 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

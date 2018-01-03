@@ -5,7 +5,7 @@ var searchData=
   ['keydb_5fconnect_28string_29',['keydb_connect(string)',['../group__keydb__connect.html',1,'']]],
   ['keydb_5fdel_28string_29',['keydb_del(string)',['../group__keydb__del.html',1,'']]],
   ['keydb_5fdisconnect_28void_29',['keydb_disconnect(void)',['../group__keydb__disconnect.html',1,'']]],
-  ['keydb_5fget_28string_2c_20proxy_29',['keydb_get(string, proxy)',['../group__keydb__get.html',1,'']]],
+  ['keydb_5fget_28string_29',['keydb_get(string)',['../group__keydb__get.html',1,'']]],
   ['keydb_5fscan_28string_29',['keydb_scan(string)',['../group__keydb__scan.html',1,'']]],
   ['keydb_5fscan_5fnext_28cursor_29',['keydb_scan_next(cursor)',['../group__keydb__scan__next.html',1,'']]],
   ['keydb_5fset_28string_2c_20value_29',['keydb_set(string, value)',['../group__keydb__set.html',1,'']]],
@@ -19,5 +19,7 @@ var searchData=
   ['kl_5fstrindexof',['kl_strIndexOf',['../group__kl__strindexof.html',1,'']]],
   ['kl_5fstrislessthan',['kl_strIsLessThan',['../group__kl__strislessthan.html',1,'']]],
   ['kl_5fstrlength',['kl_strLength',['../group__kl__strlength.html',1,'']]],
-  ['kl_5fstrlevenshtein',['kl_strLevenshtein',['../group__kl__strlevenshtein.html',1,'']]]
+  ['kl_5fstrlevenshtein',['kl_strLevenshtein',['../group__kl__strlevenshtein.html',1,'']]],
+  ['keydb_5fget',['keydb_get',['../group__shared3p__keydb__get.html',1,'']]],
+  ['keydb_5fset',['keydb_set',['../group__shared3p__keydb__set.html',1,'']]]
 ];

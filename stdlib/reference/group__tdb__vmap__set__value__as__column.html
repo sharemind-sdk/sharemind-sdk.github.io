@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SecreC 2 language: _luResult&lt; shared3p, T &gt; Struct Template Reference</title>
+<title>SecreC 2 language: tdbVmapSetValueAsColumn</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2017.09</span>
+   &#160;<span id="projectnumber">2017.12</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -47,6 +47,7 @@ $(function() {
 });
 /* @license-end */</script>
 <div id="main-nav"></div>
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -61,58 +62,50 @@ $(function() {
 </iframe>
 </div>
 
-</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Data Fields</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">_luResult&lt; shared3p, T &gt; Struct Template Reference<div class="ingroups"><a class="el" href="group__shared3p__statistics__regression.html">shared3p_statistics_regression.sc</a></div></div>  </div>
+<div class="title">tdbVmapSetValueAsColumn<div class="ingroups"><a class="el" href="group__table__database.html">table_database.sc</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Data Fields</h2></td></tr>
-<tr class="memitem:a0e23d45a54014dfa475ae2c7ce7952b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__shared3p__statistics__regression.html#gabfbdb14b3e3206ff105810e0403a0f1a">D</a> T [[2]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__lu_result.html#a0e23d45a54014dfa475ae2c7ce7952b4">mat</a></td></tr>
-<tr class="separator:a0e23d45a54014dfa475ae2c7ce7952b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7fdbde743071786a0496d84b3066026"><td class="memItemLeft" align="right" valign="top">uint [[1]]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct__lu_result.html#ac7fdbde743071786a0496d84b3066026">perm</a></td></tr>
-<tr class="separator:ac7fdbde743071786a0496d84b3066026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gac75ebfce9182a4591b57720da08fb45a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__set__value__as__column.html#gac75ebfce9182a4591b57720da08fb45a">tdbVmapSetValueAsColumn</a> (uint64 id)</td></tr>
+<tr class="separator:gac75ebfce9182a4591b57720da08fb45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Field Documentation</h2>
-<a id="a0e23d45a54014dfa475ae2c7ce7952b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e23d45a54014dfa475ae2c7ce7952b4">&#9670;&nbsp;</a></span>mat</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<p>Configure the vector map to accept values as column vectors. This can be used to insert multiple rows at a time by providing a vector for each column in the table. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">id</td><td>- vector map id </td></tr>
+  </table>
+  </dd>
+</dl>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gac75ebfce9182a4591b57720da08fb45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac75ebfce9182a4591b57720da08fb45a">&#9670;&nbsp;</a></span>tdbVmapSetValueAsColumn()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="group__shared3p__statistics__regression.html#gabfbdb14b3e3206ff105810e0403a0f1a">D</a> T [[2]] mat</td>
+          <td class="memname">void tdbVmapSetValueAsColumn </td>
+          <td>(</td>
+          <td class="paramtype">uint64&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac7fdbde743071786a0496d84b3066026"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7fdbde743071786a0496d84b3066026">&#9670;&nbsp;</a></span>perm</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">uint [[1]] perm</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="shared3p__statistics__regression_8sc.html">shared3p_statistics_regression.sc</a></li>
-</ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 16 2017 16:18:15 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 3 2018 13:40:01 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

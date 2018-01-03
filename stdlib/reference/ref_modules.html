@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2017.09</span>
+   &#160;<span id="projectnumber">2017.12</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -68,14 +68,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Modules in SecreC</p>
-<h1><a class="anchor" id="ref_modules"></a>
+<h1><a class="anchor" id="ref_modules_section"></a>
 Modules</h1>
 <p>SecreC supports very simple module system. A module name can be declared with <b>module</b> keyword, and module can be imported using a <b>import</b> keyword. Filename of the module must match with the modules name. Imported modules are searched within paths specified to the compiler. Importing a module will make all of the global symbols defined within the imported module visible. Modules can not be separately compiled and linked, they simply offer a way to break code into components.</p>
-<p>Listing 1: Module syntax </p><div class="fragment"><div class="line">module <a class="code" href="group__shared3p__statistics__regression.html#ga2850770338c5b568e8b6434bb5d202a2">shared3p</a>;</div><div class="line"><span class="keyword">import</span> common;</div><div class="line">...</div></div><!-- fragment --><p>Imported symbols will not be exported by a module. If an imported symbol is redefined, a type error is raised. Procedures and templates with the same name but different parameters are considered to be different symbols. </p>
+<p>Listing 1: Module syntax </p><div class="fragment"><div class="line">module shared3p;</div><div class="line"><span class="keyword">import</span> common;</div><div class="line">...</div></div><!-- fragment --><p>Imported symbols will not be exported by a module. If an imported symbol is redefined, a type error is raised. Procedures and templates with the same name but different parameters are considered to be different symbols. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Oct 16 2017 16:18:14 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jan 3 2018 13:40:00 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

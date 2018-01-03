@@ -1,5 +1,9 @@
 var searchData=
 [
-  ['mat',['mat',['../struct__lu_result.html#a0e23d45a54014dfa475ae2c7ce7952b4',1,'_luResult::mat()'],['../shared3p__statistics__regression_8sc.html#a0e23d45a54014dfa475ae2c7ce7952b4',1,'mat():&#160;shared3p_statistics_regression.sc']]],
-  ['means',['means',['../struct_g_l_m_result.html#a3312ec8acfbbacc4e36323b6a70a31b4',1,'GLMResult']]]
+  ['pca_5freturn_5floads',['PCA_RETURN_LOADS',['../group__shared3p__pca__return__values.html#ga671dd2cdfd039b4f3b3775729a762f6d',1,'shared3p_statistics_pca.sc']]],
+  ['pca_5freturn_5fproportions',['PCA_RETURN_PROPORTIONS',['../group__shared3p__pca__return__values.html#ga57600234321f2f912c5464d86bec7c3c',1,'shared3p_statistics_pca.sc']]],
+  ['pca_5freturn_5fresidual',['PCA_RETURN_RESIDUAL',['../group__shared3p__pca__return__values.html#gac0acec2c36ed1001b8340090efad29e5',1,'shared3p_statistics_pca.sc']]],
+  ['pca_5freturn_5fscores',['PCA_RETURN_SCORES',['../group__shared3p__pca__return__values.html#gadfacc64dc96137d1f50130398d66d49d',1,'shared3p_statistics_pca.sc']]],
+  ['pca_5freturn_5fvariances',['PCA_RETURN_VARIANCES',['../group__shared3p__pca__return__values.html#gac3ef968484538aa46b7e8942e7345bea',1,'shared3p_statistics_pca.sc']]],
+  ['proportions',['proportions',['../struct_p_c_a_result.html#a58a05b27ce59869299b9c34609be0e00',1,'PCAResult']]]
 ];

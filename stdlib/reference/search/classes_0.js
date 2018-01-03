@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5fluresult',['_luResult',['../struct__lu_result.html',1,'']]]
+  ['glmresult',['GLMResult',['../struct_g_l_m_result.html',1,'']]]
 ];

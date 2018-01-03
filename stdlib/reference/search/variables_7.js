@@ -1,9 +1,4 @@
 var searchData=
 [
-  ['linear_5fregression_5fconjugate_5fgradient',['LINEAR_REGRESSION_CONJUGATE_GRADIENT',['../group__shared3p__regression__method.html#gabb613dfa0d0110858078d3a570d4af0d',1,'shared3p_statistics_regression.sc']]],
-  ['linear_5fregression_5fgauss',['LINEAR_REGRESSION_GAUSS',['../group__shared3p__regression__method.html#ga4ba6d3ccf53a51eb87c705e2b88cf9f9',1,'shared3p_statistics_regression.sc']]],
-  ['linear_5fregression_5finvert',['LINEAR_REGRESSION_INVERT',['../group__shared3p__regression__method.html#ga105292f262fa33fac9f3001936ec35e6',1,'shared3p_statistics_regression.sc']]],
-  ['linear_5fregression_5flu_5fdecomposition',['LINEAR_REGRESSION_LU_DECOMPOSITION',['../group__shared3p__regression__method.html#ga0ff3ea5b3d547c28d687b98b59504794',1,'shared3p_statistics_regression.sc']]],
-  ['linearpredictors',['linearPredictors',['../struct_g_l_m_result.html#a9f030c0ad62d8b272cdc98048d7b363f',1,'GLMResult']]],
-  ['loads',['loads',['../struct_p_c_a_result.html#a3221128de12aef1fa0054f00c8bebe72',1,'PCAResult']]]
+  ['means',['means',['../struct_g_l_m_result.html#a3312ec8acfbbacc4e36323b6a70a31b4',1,'GLMResult']]]
 ];
