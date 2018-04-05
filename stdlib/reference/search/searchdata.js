@@ -4,7 +4,7 @@ var indexSectionsWithContent =
   1: "gps",
   2: "acdefkmopstv",
   3: "_abcdefghiklmnopqrstuvwz",
-  4: "acfgiklmprsuv",
+  4: "acfgiklmnprsuv",
   5: "abcdefghiklmnopqrstuvwz",
   6: "acdefmostv"
 };

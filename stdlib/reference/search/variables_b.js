@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['uint16_5fmax',['UINT16_MAX',['../stdlib_8sc.html#ac37195bfb5a6a6af5d57d5c6371c47f7',1,'stdlib.sc']]],
-  ['uint16_5fmin',['UINT16_MIN',['../stdlib_8sc.html#a488cea249e72808f9396790d735d8be4',1,'stdlib.sc']]],
-  ['uint32_5fmax',['UINT32_MAX',['../stdlib_8sc.html#afe34eafd127b0dc8df8218632a5bbb91',1,'stdlib.sc']]],
-  ['uint32_5fmin',['UINT32_MIN',['../stdlib_8sc.html#a359c1f2647020e945e0eedc261609bb7',1,'stdlib.sc']]],
-  ['uint64_5fmax',['UINT64_MAX',['../stdlib_8sc.html#a9bc0e88f9a05bef58e049fd496ed51a5',1,'stdlib.sc']]],
-  ['uint64_5fmin',['UINT64_MIN',['../stdlib_8sc.html#aa5629718b4e845e47f12bc410565fc30',1,'stdlib.sc']]],
-  ['uint8_5fmax',['UINT8_MAX',['../stdlib_8sc.html#af614c8469f8d6715e2fa5ca71d927cb2',1,'stdlib.sc']]],
-  ['uint8_5fmin',['UINT8_MIN',['../stdlib_8sc.html#a7d41e2f76c6a4f0b634b4c823b0c6582',1,'stdlib.sc']]]
+  ['scores',['scores',['../struct_p_c_a_result.html#a7d8e422c4d2206048dd814ea5ec4115f',1,'PCAResult']]],
+  ['sharemind_5ftdb_5fconsensus_5ferror',['SHAREMIND_TDB_CONSENSUS_ERROR',['../group___sharemind_tdb_error.html#ga46f8c456ba9336a859c145a89737cde2',1,'table_database.sc']]],
+  ['sharemind_5ftdb_5fgeneral_5ferror',['SHAREMIND_TDB_GENERAL_ERROR',['../group___sharemind_tdb_error.html#ga984bf11afae45352ab34ab9eb036c655',1,'table_database.sc']]],
+  ['sharemind_5ftdb_5finvalid_5fargument',['SHAREMIND_TDB_INVALID_ARGUMENT',['../group___sharemind_tdb_error.html#gafaf7a784b06d0d9389ec54016da1de63',1,'table_database.sc']]],
+  ['sharemind_5ftdb_5fio_5ferror',['SHAREMIND_TDB_IO_ERROR',['../group___sharemind_tdb_error.html#ga56c706364b9e4e029b430e0576f0b2ca',1,'table_database.sc']]],
+  ['sharemind_5ftdb_5fok',['SHAREMIND_TDB_OK',['../group___sharemind_tdb_error.html#gae94034a460db964d445dd21c2463eafa',1,'table_database.sc']]],
+  ['sharemind_5ftdb_5ftable_5falready_5fexists',['SHAREMIND_TDB_TABLE_ALREADY_EXISTS',['../group___sharemind_tdb_error.html#gaede2f20292817ca63c5ae4ecae3bb89f',1,'table_database.sc']]],
+  ['sharemind_5ftdb_5ftable_5fnot_5ffound',['SHAREMIND_TDB_TABLE_NOT_FOUND',['../group___sharemind_tdb_error.html#ga65a757de5319e4ee5c1db07c5e32fa9d',1,'table_database.sc']]],
+  ['sharemind_5ftdb_5funknown_5ferror',['SHAREMIND_TDB_UNKNOWN_ERROR',['../group___sharemind_tdb_error.html#ga8e8beaf999d0191bc1957312eb6fa042',1,'table_database.sc']]]
 ];

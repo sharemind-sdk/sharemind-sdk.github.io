@@ -2,6 +2,7 @@ var searchData=
 [
   ['veclength',['vecLength',['../group__shared3p__veclength.html',1,'']]],
   ['vectorupdate',['vectorUpdate',['../group__shared3p__vectorupdate.html',1,'']]],
+  ['vector_20map',['Vector map',['../tdb_vmap.html',1,'']]],
   ['variables',['Variables',['../variables.html',1,'']]],
   ['variables_2esc',['variables.sc',['../variables_8sc.html',1,'']]],
   ['variance',['variance',['../group__variance.html#ga336fef7e1899e1edd62670f025a588d9',1,'variance(D int32[[1]] data):&#160;shared3p_statistics_summary.sc'],['../group__variance.html#ga43126f2f12f5f87ce0fb3b5605550d4c',1,'variance(D int64[[1]] data):&#160;shared3p_statistics_summary.sc'],['../group__variance__filter.html#gaba214aca9a29426bb63c07f9a8bfacba',1,'variance(D int32[[1]] data, D bool[[1]] mask):&#160;shared3p_statistics_summary.sc'],['../group__variance__filter.html#ga6ca37c92571e0a72995280d43f473453',1,'variance(D int64[[1]] data, D bool[[1]] mask):&#160;shared3p_statistics_summary.sc'],['../group__variance.html',1,'(Global Namespace)']]],

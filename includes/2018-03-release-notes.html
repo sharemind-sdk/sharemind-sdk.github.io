@@ -1,0 +1,31 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>Features</h3>
+
+<h4>Emulator</h4>
+
+<ul>
+  <li>Sharemind Emulator introduces a new access control system that manages access on three levels: authorized users, which users can run which SecreC programs, and which SecreC programs have access to which data resources. All three levels of this access policy are configured in a single access policy configuration file, referenced by the <code>AccessControl.PoliciesFile</code> property in the main Emulator configuration file. The new configuration syntax is explained in the provided example file. This new access control system is shared between Sharemind Application Server, Sharemind Academic Server and Sharemind Emulator and the access policy file is interoperable. For the Emulator, the <code>TlsPublicKeyFile</code> properties of the <code>[User]</code> sections are ignored and the current user identity is passed by the <code>AccessControl.DefaultUser</code> property of the Emulator config file or overridden from command-line with the <code>--user</code> or <code>-u</code> argument.</li>
+  <li>The <i>mod_keydb</i> key-value storage now exclusively depends on <i>hiredis</i> library for Redis server support and dropped the <i>cpp_redis</i> as a dependency.</li>
+</ul>
+
+<h4>SecreC standard library</h4>
+
+<ul>
+  <li>The <code>ScanCursor</code> struct and <code>keydb_scan_next</code> function interfaces have changed in the <i>keydb</i> module.</li>
+</ul>
+
+<h3>Fixed issues</h3>
+
+<ul>
+  <li>Fixed two SecreC type checking bugs, where expressions like <code>float32 a = (float32)0.1</code> and <code>(bool) (1 + 0)</code> failed to compile.</li>
+  <li>The profile logfile is now truncated so that when a script does not have profiling sections, the old results from a previous profiling run are not left into the profile log.</li>
+ </ul>
+
+<h3>Known issues</h3>
+
+<ul>
+  <li>Sharemind Emulator exits with segmentation fault when running SecreC programs that contain <i>keydb</i> or <i>tabledb</i> syscalls as a user that is not defined in the <code>User</code> section of the access policy.</li>
+</ul>
