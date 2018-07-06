@@ -1,7 +1,7 @@
 var searchData=
 [
   ['keydb_5fclean',['keydb_clean',['../group__keydb__clean.html#ga883e5f9ba9db0bbcaa0c70df71eced29',1,'keydb.sc']]],
-  ['keydb_5fconnect',['keydb_connect',['../group__keydb__connect.html#ga8a6d2a8f18bbe847ce8526a004e868e8',1,'keydb.sc']]],
+  ['keydb_5fconnect',['keydb_connect',['../group__keydb__connect.html#ga54fb3e6de744a5d2e10a60a75a06318a',1,'keydb.sc']]],
   ['keydb_5fdel',['keydb_del',['../group__keydb__del.html#gaf5cbcd5ce1ac33a359c46309f3b833b2',1,'keydb.sc']]],
   ['keydb_5fdisconnect',['keydb_disconnect',['../group__keydb__disconnect.html#gad243157a3c949463647b827dfd973dcf',1,'keydb.sc']]],
   ['keydb_5fget',['keydb_get',['../group__keydb__get.html#ga8ed36d41755bf9d241989ae6996b46d5',1,'keydb_get(string key):&#160;keydb.sc'],['../keydb_8sc.html#ga8ed36d41755bf9d241989ae6996b46d5',1,'keydb_get(string key):&#160;keydb.sc'],['../group__shared3p__keydb__get.html#ga2e452211d276aa640dad216f8ca139a6',1,'keydb_get(string key):&#160;shared3p_keydb.sc'],['../shared3p__keydb_8sc.html#ga2e452211d276aa640dad216f8ca139a6',1,'keydb_get(string key):&#160;shared3p_keydb.sc']]],

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.1.2 (2018.03)</span>
+   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -83,6 +83,10 @@ Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>the inverse of the permutation of the input matrix, defined by the key </dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>the output matrixes columns are a permutation of the input </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>the declassified value of the key does not matter, internally only the shares are used. If two vectors are shuffled using the same key the permutation applied is the same as long as the vectors are of the same length, and the key does not get reshared. </dd></dl>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga3037251df3782b1647e9fcd42cb48104"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga3037251df3782b1647e9fcd42cb48104">&#9670;&nbsp;</a></span>inverseShuffleColumns()</h2>
@@ -123,7 +127,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 5 2018 11:55:31 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

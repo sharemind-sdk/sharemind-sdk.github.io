@@ -1,0 +1,45 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>Features</h3>
+
+<h4>Emulator</h4>
+
+<ul>
+  <li>Sharemind Emulator now provides a separate Python program called <code>argument-stream-decipher.py</code> that can be used to decipher the output stream of SecreC program results. Sharemind Emulator output should be passed as standard input for the <code>argument-stream-decipher.py</code>.</li>
+</ul>
+
+<h4>SecreC compiler and standard library</h4>
+
+<ul>
+  <li>SecreC now allows numeric literals to be annotated by type, e.g. instead of <code>0 :: uint64</code> it's now also possible to directly write <code>0u64</code>. Supported numeric literal suffixes are:</li>
+<pre>
+| Suffix | Type    |
++--------+---------+
+| u8     | uint8   |
+| u16    | uint16  |
+| u32    | uint32  |
+| u64    | uint64  |
+| i8     | int8    |
+| i16    | int16   |
+| i32    | int32   |
+| i64    | int64   |
+| f32    | float32 |
+| f64    | float64 |
+</pre>
+
+  <li>Improved leakage information in the documentation of several SecreC standard library functions.</li>
+  <li>Significantly improved the performance of SecreC assembler when compiling large programs. As a trade-off, memory usage is increased.</li>
+</ul>
+
+<h3>Fixed issues</h3>
+
+<ul>
+  <li>Fixed an issue where SecreC programs compiled in heterogeneous environments could not be invoked as they had differing hash values. As a result of this fix, SecreC bytecode runtime error messages now only contain basename of the relevant SecreC source file and not the full path. To go back to the old behaviour for more convenient debugging, use the <code>--runtime-error-path-style=fullpath</code> option in the SecreC compiler command-line.</li>
+  <li>Sharemind Emulator module <code>mod_shared3p_emu</code> now correctly fails with "invalid configuration" error instead of the "general error" when its configuration file is missing.</li>
+  <li>Fixed an issue where Sharemind Emulator exited with segmentation fault when running SecreC programs that contain <i>keydb</i> or <i>tabledb</i> syscalls as a user that is not defined in the <code>User</code> section of the access policy.</li>
+  <li>Fixed incorrect and crashing behavior of Sharemind Emulator on passing process arguments from command-line.</li>
+  <li>Fixed Sharemind Emulator incorrectly parsing empty long options (e.g. <code>--str=</code>).</li>
+  <li>If Sharemind Emulator fails to open a file for logging, it now also displays the file name in the error message.</li>
+</ul>

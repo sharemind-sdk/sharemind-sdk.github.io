@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.1.2 (2018.03)</span>
+   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -132,6 +132,10 @@ Functions</h2></td></tr>
 the size of <b>plainText</b> has to be dividable by AES128_Nb </dd>
 <dd>
 ( <b>plainText</b> / AES128_Nb ) == ( size of <b>expandedKey</b> ) / (AES128_Nb * (AES128_Nr + 1)) </dd></dl>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 
 </div>
 </div>
@@ -170,6 +174,10 @@ the size of <b>plainText</b> has to be dividable by AES128_Nb </dd>
 <dl class="section pre"><dt>Precondition</dt><dd>the size of <b>plainText</b> has to be dividable by AES128_Nb </dd>
 <dd>
 the size of <b>expandedKey</b> has to be (AES128_Nb * (AES128_Nr + 1)) </dd></dl>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 
 </div>
 </div>
@@ -210,6 +218,10 @@ the size of <b>expandedKey</b> has to be (AES128_Nb * (AES128_Nr + 1)) </dd></dl
 the size of <b>plainText</b> has to be dividable by AES192_Nb </dd>
 <dd>
 ( <b>plainText</b> / AES192_Nb ) == ( size of <b>expandedKey</b> ) / (AES192_Nb * (AES192_Nr + 1)) </dd></dl>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 
 </div>
 </div>
@@ -248,6 +260,10 @@ the size of <b>plainText</b> has to be dividable by AES192_Nb </dd>
 <dl class="section pre"><dt>Precondition</dt><dd>the size of <b>plainText</b> has to be dividable by AES192_Nb </dd>
 <dd>
 the size of <b>expandedKey</b> has to be (AES192_Nb * (AES192_Nr + 1)) </dd></dl>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 
 </div>
 </div>
@@ -288,6 +304,10 @@ the size of <b>expandedKey</b> has to be (AES192_Nb * (AES192_Nr + 1)) </dd></dl
 the size of <b>plainText</b> has to be dividable by AES256_Nb </dd>
 <dd>
 ( <b>plainText</b> / AES256_Nb ) == ( size of <b>expandedKey</b> ) / (AES256_Nb * (AES256_Nr + 1)) </dd></dl>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 
 </div>
 </div>
@@ -326,13 +346,17 @@ the size of <b>plainText</b> has to be dividable by AES256_Nb </dd>
 <dl class="section pre"><dt>Precondition</dt><dd>the size of <b>plainText</b> has to be dividable by AES256_Nb </dd>
 <dd>
 the size of <b>expandedKey</b> has to be (AES256_Nb * (AES256_Nr + 1)) </dd></dl>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 
 </div>
 </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 5 2018 11:55:31 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

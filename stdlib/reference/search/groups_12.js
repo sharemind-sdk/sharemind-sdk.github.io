@@ -31,6 +31,7 @@ var searchData=
   ['tdbreadcolumn_28string_2c_20value_20vector_29',['tdbReadColumn(string, value vector)',['../group__tdb__read__column__string__vec.html',1,'']]],
   ['tdbreadcolumn_28string_2c_20vector_20map_29',['tdbReadColumn(string, vector map)',['../group__tdb__read__column__string__vmap.html',1,'']]],
   ['tdbtablecreate',['tdbTableCreate',['../group__tdb__table__create.html',1,'']]],
+  ['tdbtablecreatewitherrorcode',['tdbTableCreateWithErrorCode',['../group__tdb__table__create2.html',1,'']]],
   ['tdbtabledelete',['tdbTableDelete',['../group__tdb__table__delete.html',1,'']]],
   ['tdbtableexists',['tdbTableExists',['../group__tdb__table__exists.html',1,'']]],
   ['tdbvmapaddbatch',['tdbVmapAddBatch',['../group__tdb__vmap__add__batch.html',1,'']]],

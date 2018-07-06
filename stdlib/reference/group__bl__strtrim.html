@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.1.2 (2018.03)</span>
+   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -80,9 +80,7 @@ Functions</h2></td></tr>
 <p>Function for trimming a string. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#xor_uint8">xor_uint8</a> </dd>
-<dd>
-this operation leaks the real length of the string, use with care! </dd></dl>
+Supported types - <a class="el" href="data_types.html#xor_uint8">xor_uint8</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">s</td><td>- a vector of supported type </td></tr>
@@ -92,7 +90,7 @@ this operation leaks the real length of the string, use with care! </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>returns a <a class="el" href="data_types.html#string">string</a> with excess bytes removed </dd></dl>
 <dl class="bug">
 <dt>Leakage</dt>
-<dd>Leaks the amount of zeros at the end of the string</dd>
+<dd>Leaks the length of the string</dd>
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga6bbf916a36b14dbc9d83239af7acdec5"></a>
@@ -116,7 +114,7 @@ this operation leaks the real length of the string, use with care! </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Apr 5 2018 11:55:31 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>
