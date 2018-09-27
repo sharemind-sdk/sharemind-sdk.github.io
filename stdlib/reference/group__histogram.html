@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -72,18 +72,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga7345e206ea8750097cff0e55ebb2c014"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
-<tr class="memitem:ga7345e206ea8750097cff0e55ebb2c014"><td class="memTemplItemLeft" align="right" valign="top">D int32 [[2]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__histogram.html#ga7345e206ea8750097cff0e55ebb2c014">histogram</a> (D int32[[1]] data, D bool[[1]] isAvailable)</td></tr>
-<tr class="separator:ga7345e206ea8750097cff0e55ebb2c014"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabb94304b581e2e6c04080fcad72b47fe"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
-<tr class="memitem:gabb94304b581e2e6c04080fcad72b47fe"><td class="memTemplItemLeft" align="right" valign="top">D int64 [[2]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__histogram.html#gabb94304b581e2e6c04080fcad72b47fe">histogram</a> (D int64[[1]] data, D bool[[1]] isAvailable)</td></tr>
-<tr class="separator:gabb94304b581e2e6c04080fcad72b47fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gade3cf310082194ade1060560da5e3df5"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:gade3cf310082194ade1060560da5e3df5"><td class="memTemplItemLeft" align="right" valign="top">D int32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__histogram.html#gade3cf310082194ade1060560da5e3df5">histogram</a> (D int32[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:gade3cf310082194ade1060560da5e3df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae25cf81336c037ef6b376f48df7cb0d"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:gaae25cf81336c037ef6b376f48df7cb0d"><td class="memTemplItemLeft" align="right" valign="top">D int64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__histogram.html#gaae25cf81336c037ef6b376f48df7cb0d">histogram</a> (D int64[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:gaae25cf81336c037ef6b376f48df7cb0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga273d56e14bdebbf37b4b8efc8d43f802"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga273d56e14bdebbf37b4b8efc8d43f802"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__histogram.html#ga273d56e14bdebbf37b4b8efc8d43f802">histogram</a> (D float32[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga273d56e14bdebbf37b4b8efc8d43f802"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2481b2866581884660467aeedbaefbb6"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga2481b2866581884660467aeedbaefbb6"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__histogram.html#ga2481b2866581884660467aeedbaefbb6">histogram</a> (D float64[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga2481b2866581884660467aeedbaefbb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Create a histogram. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - any protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>- input vector </td></tr>
@@ -98,14 +104,14 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
  Leaks the number of missing values in the input</dd>
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga7345e206ea8750097cff0e55ebb2c014"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga7345e206ea8750097cff0e55ebb2c014">&#9670;&nbsp;</a></span>histogram() <span class="overload">[1/2]</span></h2>
+<a id="gade3cf310082194ade1060560da5e3df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gade3cf310082194ade1060560da5e3df5">&#9670;&nbsp;</a></span>histogram() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D int32 [[2]] histogram </td>
+          <td class="memname">D int32 histogram </td>
           <td>(</td>
           <td class="paramtype">D int32[[1]]&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -126,16 +132,72 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
-<a id="gabb94304b581e2e6c04080fcad72b47fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gabb94304b581e2e6c04080fcad72b47fe">&#9670;&nbsp;</a></span>histogram() <span class="overload">[2/2]</span></h2>
+<a id="gaae25cf81336c037ef6b376f48df7cb0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae25cf81336c037ef6b376f48df7cb0d">&#9670;&nbsp;</a></span>histogram() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D int64 [[2]] histogram </td>
+          <td class="memname">D int64 histogram </td>
           <td>(</td>
           <td class="paramtype">D int64[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>isAvailable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga273d56e14bdebbf37b4b8efc8d43f802"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga273d56e14bdebbf37b4b8efc8d43f802">&#9670;&nbsp;</a></span>histogram() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 histogram </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>isAvailable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga2481b2866581884660467aeedbaefbb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2481b2866581884660467aeedbaefbb6">&#9670;&nbsp;</a></span>histogram() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 histogram </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -157,7 +219,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

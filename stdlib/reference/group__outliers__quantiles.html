@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -72,18 +72,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gade1a3972ecfdc74ba549d3cad4f5770d"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
-<tr class="memitem:gade1a3972ecfdc74ba549d3cad4f5770d"><td class="memTemplItemLeft" align="right" valign="top">D bool [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__outliers__quantiles.html#gade1a3972ecfdc74ba549d3cad4f5770d">outlierDetectionQuantiles</a> (float64 p, D int64[[1]] data, D bool[[1]] isAvailable)</td></tr>
-<tr class="separator:gade1a3972ecfdc74ba549d3cad4f5770d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf69f1052f00bf718705daf9f16878500"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
-<tr class="memitem:gaf69f1052f00bf718705daf9f16878500"><td class="memTemplItemLeft" align="right" valign="top">D bool [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__outliers__quantiles.html#gaf69f1052f00bf718705daf9f16878500">outlierDetectionQuantiles</a> (float32 p, D int32[[1]] data, D bool[[1]] isAvailable)</td></tr>
-<tr class="separator:gaf69f1052f00bf718705daf9f16878500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga43f103eb69f2400cff2fa38fb0cfb548"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga43f103eb69f2400cff2fa38fb0cfb548"><td class="memTemplItemLeft" align="right" valign="top">D bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__outliers__quantiles.html#ga43f103eb69f2400cff2fa38fb0cfb548">outlierDetectionQuantiles</a> (float64 p, D int64[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga43f103eb69f2400cff2fa38fb0cfb548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad07d5aff71b6a2c4126be723ceae2aa0"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gad07d5aff71b6a2c4126be723ceae2aa0"><td class="memTemplItemLeft" align="right" valign="top">D bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__outliers__quantiles.html#gad07d5aff71b6a2c4126be723ceae2aa0">outlierDetectionQuantiles</a> (float32 p, D int32[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:gad07d5aff71b6a2c4126be723ceae2aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaac8c37c8c67f321cfdd54ebc89522301"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gaac8c37c8c67f321cfdd54ebc89522301"><td class="memTemplItemLeft" align="right" valign="top">D bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__outliers__quantiles.html#gaac8c37c8c67f321cfdd54ebc89522301">outlierDetectionQuantiles</a> (float64 p, D float64[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:gaac8c37c8c67f321cfdd54ebc89522301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga77221a39ba180544013598a570f45c04"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga77221a39ba180544013598a570f45c04"><td class="memTemplItemLeft" align="right" valign="top">D bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__outliers__quantiles.html#ga77221a39ba180544013598a570f45c04">outlierDetectionQuantiles</a> (float32 p, D float32[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga77221a39ba180544013598a570f45c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Outlier detection (using quantiles) </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p</td><td>- quantile probability (between 0 and 1). Quantile Q<sub>p</sub> is a value such that a random variable with the same distribution as the sample points will be less than Q<sub>p</sub> with probability p. </td></tr>
@@ -98,14 +104,14 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 <dd>Leaks the number of missing values in the input</dd>
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gade1a3972ecfdc74ba549d3cad4f5770d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gade1a3972ecfdc74ba549d3cad4f5770d">&#9670;&nbsp;</a></span>outlierDetectionQuantiles() <span class="overload">[1/2]</span></h2>
+<a id="ga43f103eb69f2400cff2fa38fb0cfb548"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga43f103eb69f2400cff2fa38fb0cfb548">&#9670;&nbsp;</a></span>outlierDetectionQuantiles() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D bool [[1]] outlierDetectionQuantiles </td>
+          <td class="memname">D bool outlierDetectionQuantiles </td>
           <td>(</td>
           <td class="paramtype">float64&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -132,14 +138,14 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
-<a id="gaf69f1052f00bf718705daf9f16878500"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf69f1052f00bf718705daf9f16878500">&#9670;&nbsp;</a></span>outlierDetectionQuantiles() <span class="overload">[2/2]</span></h2>
+<a id="gad07d5aff71b6a2c4126be723ceae2aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad07d5aff71b6a2c4126be723ceae2aa0">&#9670;&nbsp;</a></span>outlierDetectionQuantiles() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D bool [[1]] outlierDetectionQuantiles </td>
+          <td class="memname">D bool outlierDetectionQuantiles </td>
           <td>(</td>
           <td class="paramtype">float32&#160;</td>
           <td class="paramname"><em>p</em>, </td>
@@ -166,10 +172,78 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
+<a id="gaac8c37c8c67f321cfdd54ebc89522301"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaac8c37c8c67f321cfdd54ebc89522301">&#9670;&nbsp;</a></span>outlierDetectionQuantiles() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D bool outlierDetectionQuantiles </td>
+          <td>(</td>
+          <td class="paramtype">float64&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>isAvailable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga77221a39ba180544013598a570f45c04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga77221a39ba180544013598a570f45c04">&#9670;&nbsp;</a></span>outlierDetectionQuantiles() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D bool outlierDetectionQuantiles </td>
+          <td>(</td>
+          <td class="paramtype">float32&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>isAvailable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

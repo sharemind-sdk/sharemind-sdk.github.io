@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -63,7 +63,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_97aefd0d527b934f1d99a682da8fe6a9.html">lib</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_febc5a79dcec76a0f2b158f2b9105943.html">secrec-stdlib</a></li><li class="navelem"><a class="el" href="dir_2108595dc916357a4512c7d47e46e917.html">lib</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -123,11 +123,14 @@ Functions</h2></td></tr>
 <tr class="separator:ga3e4e27f53bea31b8bdddce002bad4b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2f7760b0607e2374d78090a568421fa9"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tdb__read__column__string__vmap.html#ga2f7760b0607e2374d78090a568421fa9">tdbReadColumn</a> (string datasource, string table, string column)</td></tr>
 <tr class="separator:ga2f7760b0607e2374d78090a568421fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1833524b9acb7d5923c1a6d4b8d16965"><td class="memTemplParams" colspan="2">template&lt;type T&gt; </td></tr>
-<tr class="memitem:ga1833524b9acb7d5923c1a6d4b8d16965"><td class="memTemplItemLeft" align="right" valign="top">T [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tdb__read__column__index__vec.html#ga1833524b9acb7d5923c1a6d4b8d16965">tdbReadColumn</a> (string datasource, string table, uint index)</td></tr>
-<tr class="separator:ga1833524b9acb7d5923c1a6d4b8d16965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6e9db85762b35a779e2839154e868b5a"><td class="memTemplParams" colspan="2">template&lt;type T&gt; </td></tr>
+<tr class="memitem:ga6e9db85762b35a779e2839154e868b5a"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tdb__read__column__index__vec.html#ga6e9db85762b35a779e2839154e868b5a">tdbReadColumn</a> (string datasource, string table, uint index)</td></tr>
+<tr class="separator:ga6e9db85762b35a779e2839154e868b5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga78ee8277c803e3f36a03cb518b7c2cc2"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tdb__get__value__string.html#ga78ee8277c803e3f36a03cb518b7c2cc2">tdbVmapGetValue</a> (uint64 id, string paramname, uint64 index)</td></tr>
 <tr class="separator:ga78ee8277c803e3f36a03cb518b7c2cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaab9d03a7fd983258a1b74de40c36afcc"><td class="memTemplParams" colspan="2">template&lt;type T&gt; </td></tr>
+<tr class="memitem:gaab9d03a7fd983258a1b74de40c36afcc"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__get__vlen__value.html#gaab9d03a7fd983258a1b74de40c36afcc">tdbVmapGetVlenValue</a> (uint64 id, string paramname, uint64 index)</td></tr>
+<tr class="separator:gaab9d03a7fd983258a1b74de40c36afcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga968a3f49d1a30992e55d568cf9425969"><td class="memItemLeft" align="right" valign="top">uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tdb__get__column__count.html#ga968a3f49d1a30992e55d568cf9425969">tdbGetColumnCount</a> (string datasource, string table)</td></tr>
 <tr class="separator:ga968a3f49d1a30992e55d568cf9425969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6f70e935c46ffb10f4b08d400ddd62ec"><td class="memItemLeft" align="right" valign="top">uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tdb__get__column__names.html#ga6f70e935c46ffb10f4b08d400ddd62ec">tdbGetColumnNames</a> (string datasource, string table)</td></tr>
@@ -147,14 +150,15 @@ Functions</h2></td></tr>
 <tr class="memitem:gac5c89f3d1a11f414a8ce82701e4d2dc1"><td class="memTemplParams" colspan="2">template&lt;type T&gt; </td></tr>
 <tr class="memitem:gac5c89f3d1a11f414a8ce82701e4d2dc1"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__add__value__scalar.html#gac5c89f3d1a11f414a8ce82701e4d2dc1">tdbVmapAddValue</a> (uint64 id, string paramname, T value)</td></tr>
 <tr class="separator:gac5c89f3d1a11f414a8ce82701e4d2dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab72035c171e7801d31576aea7fce9e55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__add__vlen__value.html#gab72035c171e7801d31576aea7fce9e55">tdbVmapAddVlenValue</a> (uint64 id, string paramname, string value)</td></tr>
-<tr class="separator:gab72035c171e7801d31576aea7fce9e55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3bc1b92c28b20424e77852ce5c838b37"><td class="memTemplParams" colspan="2">template&lt;type T&gt; </td></tr>
+<tr class="memitem:ga3bc1b92c28b20424e77852ce5c838b37"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__add__vlen__value.html#ga3bc1b92c28b20424e77852ce5c838b37">tdbVmapAddVlenValue</a> (uint64 id, string paramname, T [[1]] values)</td></tr>
+<tr class="separator:ga3bc1b92c28b20424e77852ce5c838b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa1de1c377a3bb6b5d4f8fc506525d03a"><td class="memTemplParams" colspan="2">template&lt;type T&gt; </td></tr>
 <tr class="memitem:gaa1de1c377a3bb6b5d4f8fc506525d03a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__add__value__vector.html#gaa1de1c377a3bb6b5d4f8fc506525d03a">tdbVmapAddValue</a> (uint64 id, string paramname, T[[1]] values)</td></tr>
 <tr class="separator:gaa1de1c377a3bb6b5d4f8fc506525d03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga49b8993fc61f3b809c8ae505946b4a6a"><td class="memTemplParams" colspan="2">template&lt;type T&gt; </td></tr>
-<tr class="memitem:ga49b8993fc61f3b809c8ae505946b4a6a"><td class="memTemplItemLeft" align="right" valign="top">T [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__get__value.html#ga49b8993fc61f3b809c8ae505946b4a6a">tdbVmapGetValue</a> (uint id, string paramname, uint index)</td></tr>
-<tr class="separator:ga49b8993fc61f3b809c8ae505946b4a6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaea750a46a0163cb6387d3f8c5c9d0152"><td class="memTemplParams" colspan="2">template&lt;type T&gt; </td></tr>
+<tr class="memitem:gaea750a46a0163cb6387d3f8c5c9d0152"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__get__value.html#gaea750a46a0163cb6387d3f8c5c9d0152">tdbVmapGetValue</a> (uint id, string paramname, uint index)</td></tr>
+<tr class="separator:gaea750a46a0163cb6387d3f8c5c9d0152"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab8ba0b4d81fbf36c33b543e3e81a8b44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__add__index.html#gab8ba0b4d81fbf36c33b543e3e81a8b44">tdbVmapAddIndex</a> (uint64 id, string paramname, uint64 value)</td></tr>
 <tr class="separator:gab8ba0b4d81fbf36c33b543e3e81a8b44"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7eef8039d601c4bacbacf7b7a391f8cf"><td class="memItemLeft" align="right" valign="top">uint64&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__tdb__vmap__get__index.html#ga7eef8039d601c4bacbacf7b7a391f8cf">tdbVmapGetIndex</a> (uint64 id, string paramname, uint index)</td></tr>
@@ -184,7 +188,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:50 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -51,6 +51,7 @@ var searchData=
   ['tdbvmapgetstring',['tdbVmapGetString',['../group__tdb__vmap__get__string.html',1,'']]],
   ['tdbvmapgettypename',['tdbVmapGetTypeName',['../group__tdb__vmap__get__type__name.html',1,'']]],
   ['tdbvmapgetvalue',['tdbVmapGetValue',['../group__tdb__vmap__get__value.html',1,'']]],
+  ['tdbvmapgetvlenvalue',['tdbVmapGetVlenValue',['../group__tdb__vmap__get__vlen__value.html',1,'']]],
   ['tdbvmapnew',['tdbVmapNew',['../group__tdb__vmap__new.html',1,'']]],
   ['tdbvmapreset',['tdbVmapReset',['../group__tdb__vmap__reset.html',1,'']]],
   ['tdbvmapsetbatch',['tdbVmapSetBatch',['../group__tdb__vmap__set__batch.html',1,'']]],

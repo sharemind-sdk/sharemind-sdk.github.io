@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.14"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>SecreC 2 language: quickquicksort</title>
+<title>SecreC 2 language: cw128GenKey</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -64,34 +64,54 @@ $(function() {
 
 <div class="header">
   <div class="summary">
-<a href="#groups">Modules</a>  </div>
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
-<div class="title">quickquicksort<div class="ingroups"><a class="el" href="group__shared3p__sort.html">shared3p_sort.sc</a></div></div>  </div>
+<div class="title">cw128GenKey<div class="ingroups"><a class="el" href="group__shared3p__string.html">shared3p_string.sc</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
-Modules</h2></td></tr>
-<tr class="memitem:group__quick__quick__sort__matrix"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__quick__quick__sort__matrix.html">quickquicksort(matrix)</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:group__quick__quick__sort__vector"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__quick__quick__sort__vector.html">quickquicksort(vector)</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:gac567deafa5dd72a5b8e49e1be360fefd"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gac567deafa5dd72a5b8e49e1be360fefd"><td class="memTemplItemLeft" align="right" valign="top">D xor_uint8&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__cw128genkey.html#gac567deafa5dd72a5b8e49e1be360fefd">cw128GenKey</a> (uint rowLen)</td></tr>
+<tr class="separator:gac567deafa5dd72a5b8e49e1be360fefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>Functions for sorting values using the quicksort algorithm. </p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000001">Deprecated:</a></b></dt><dd>Use quicksort </dd></dl>
-<dl class="section note"><dt>Note</dt><dd><b>D</b> - all protection domains </dd>
-<dd>
-Supported types - <a class="el" href="data_types.html#xor_uint64">xor_uint64</a> </dd></dl>
+<p>Generates key for 128-bit Carter-Wegman hash. </p>
+<dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rowLen</td><td>- length of hash function input in bytes </td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="bug">
 <dt>Leakage</dt>
-<dd>Shuffled reordering decisions are declassified <br />
- Leaks the number of equal elements</dd>
+<dd>None</dd>
 </dl>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="gac567deafa5dd72a5b8e49e1be360fefd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac567deafa5dd72a5b8e49e1be360fefd">&#9670;&nbsp;</a></span>cw128GenKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D xor_uint8 cw128GenKey </td>
+          <td>(</td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>rowLen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -67,207 +67,87 @@ $(function() {
 <div class="title">Data types </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>Different data types of the SecreC language</p>
-<h1><a class="anchor" id="string"></a>
-string</h1>
-<p>A regular string exactly like in c++, c ,java etc.</p>
-<h1><a class="anchor" id="bool"></a>
-boolean</h1>
+<div class="textblock"><p>Different primitive data types of the SecreC language.</p>
+<p><a class="anchor" id="bool"></a><a class="anchor" id="uint8"></a><a class="anchor" id="uint16"></a><a class="anchor" id="uint32"></a><a class="anchor" id="uint64"></a><a class="anchor" id="int8"></a><a class="anchor" id="int16"></a><a class="anchor" id="int32"></a><a class="anchor" id="int64"></a><a class="anchor" id="float32"></a><a class="anchor" id="float64"></a><a class="anchor" id="string"></a><a class="anchor" id="uint"></a><a class="anchor" id="int"></a><a class="anchor" id="float"></a> </p>
+<h1><a class="anchor" id="public-pdk"></a>
+Public protection domain</h1>
 <table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadCenter">Bool  </th><th class="markdownTableHeadCenter">Numerical   </th></tr>
+<th class="markdownTableHeadCenter">Type  </th><th class="markdownTableHeadCenter">Minimum value  </th><th class="markdownTableHeadCenter">Maximum value  </th><th class="markdownTableHeadCenter">Maximum negative value  </th><th class="markdownTableHeadCenter">Minimum positive value   </th></tr>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">true  </td><td class="markdownTableBodyCenter">1   </td></tr>
+<td class="markdownTableBodyCenter">string  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
 <tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">false  </td><td class="markdownTableBodyCenter">0   </td></tr>
+<td class="markdownTableBodyCenter">bool  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">uint8  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">255  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">uint16  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">65535  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">uint32  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">4294967295  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">uint64  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">18446744073709551615  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">int8  </td><td class="markdownTableBodyCenter">-128  </td><td class="markdownTableBodyCenter">127  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">int16  </td><td class="markdownTableBodyCenter">-32768  </td><td class="markdownTableBodyCenter">32767  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">int32  </td><td class="markdownTableBodyCenter">-2147483648  </td><td class="markdownTableBodyCenter">2147483647  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">int64  </td><td class="markdownTableBodyCenter">-9223372036854775808  </td><td class="markdownTableBodyCenter">9223372036854775807  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">float32  </td><td class="markdownTableBodyCenter">-3.402823 &times; 10<sup>38</sup>  </td><td class="markdownTableBodyCenter">3.402823 &times; 10<sup>38</sup>  </td><td class="markdownTableBodyCenter">-2.802597 &times; 10<sup>-45</sup>  </td><td class="markdownTableBodyCenter">2.802597 &times; 10<sup>-45</sup>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">float64  </td><td class="markdownTableBodyCenter">-1.797693 &times; 10<sup>308</sup>  </td><td class="markdownTableBodyCenter">1.797693 &times; 10<sup>308</sup>  </td><td class="markdownTableBodyCenter">-4.940656 &times; 10<sup>-324</sup>  </td><td class="markdownTableBodyCenter">4.940656 &times; 10<sup>-324</sup>   </td></tr>
 </table>
-<h1><a class="anchor" id="uint"></a>
-Unsigned integer</h1>
-<h2><a class="anchor" id="uint8"></a>
-uint8</h2>
-<table class="markdownTable">
+<dl class="section note"><dt>Note</dt><dd><b>uint</b> is an alias for <b>uint64</b> </dd>
+<dd>
+<b>int</b> is an alias for <b>int64</b> </dd>
+<dd>
+<b>float</b> is an alias for <b>float32</b></dd></dl>
+<h1><a class="anchor" id="shared3p-pdk"></a>
+shared3p data types</h1>
+<p><a class="anchor" id="xor_uint8"></a><a class="anchor" id="xor_uint16"></a><a class="anchor" id="xor_uint32"></a><a class="anchor" id="xor_uint64"></a><a class="anchor" id="fix32"></a><a class="anchor" id="fix64"></a> </p><table class="markdownTable">
 <tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
+<th class="markdownTableHeadCenter">Type  </th><th class="markdownTableHeadCenter">Respective public type  </th><th class="markdownTableHeadCenter">Minimum value  </th><th class="markdownTableHeadCenter">Maximum value  </th><th class="markdownTableHeadCenter">Maximum negative value  </th><th class="markdownTableHeadCenter">Minimum positive value   </th></tr>
 <tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">255   </td></tr>
+<td class="markdownTableBodyCenter">bool  </td><td class="markdownTableBodyCenter">bool  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
 <tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">0   </td></tr>
+<td class="markdownTableBodyCenter">uint8  </td><td class="markdownTableBodyCenter">uint8  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">255  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">uint16  </td><td class="markdownTableBodyCenter">uint16  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">65535  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">uint32  </td><td class="markdownTableBodyCenter">uint32  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">4294967295  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">uint64  </td><td class="markdownTableBodyCenter">uint64  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">18446744073709551615  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">int8  </td><td class="markdownTableBodyCenter">int8  </td><td class="markdownTableBodyCenter">-128  </td><td class="markdownTableBodyCenter">127  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">int16  </td><td class="markdownTableBodyCenter">int16  </td><td class="markdownTableBodyCenter">-32768  </td><td class="markdownTableBodyCenter">32767  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">int32  </td><td class="markdownTableBodyCenter">int32  </td><td class="markdownTableBodyCenter">-2147483648  </td><td class="markdownTableBodyCenter">2147483647  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">int64  </td><td class="markdownTableBodyCenter">int64  </td><td class="markdownTableBodyCenter">-9223372036854775808  </td><td class="markdownTableBodyCenter">9223372036854775807  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">xor_uint8  </td><td class="markdownTableBodyCenter">uint8  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">255  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">xor_uint16  </td><td class="markdownTableBodyCenter">uint16  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">65535  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">xor_uint32  </td><td class="markdownTableBodyCenter">uint32  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">4294967295  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">xor_uint64  </td><td class="markdownTableBodyCenter">uint64  </td><td class="markdownTableBodyCenter">0  </td><td class="markdownTableBodyCenter">18446744073709551615  </td><td class="markdownTableBodyCenter">NA  </td><td class="markdownTableBodyCenter">NA   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">float32  </td><td class="markdownTableBodyCenter">float32  </td><td class="markdownTableBodyCenter">≈ -2.4 &times; 10<sup>4932</sup>  </td><td class="markdownTableBodyCenter">≈ 2.4 &times; 10<sup>4932</sup>  </td><td class="markdownTableBodyCenter">≈ -1.7 &times; 10<sup>-4932</sup>  </td><td class="markdownTableBodyCenter">≈ 1.7 &times; 10<sup>-4932</sup>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">float64  </td><td class="markdownTableBodyCenter">float64  </td><td class="markdownTableBodyCenter">≈ -2.4 &times; 10<sup>4932</sup>  </td><td class="markdownTableBodyCenter">≈ 2.4 &times; 10<sup>4932</sup>  </td><td class="markdownTableBodyCenter">≈ -1.7 &times; 10<sup>-4932</sup>  </td><td class="markdownTableBodyCenter">≈ 1.7 &times; 10<sup>-4932</sup>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowEven">
+<td class="markdownTableBodyCenter">fix32  </td><td class="markdownTableBodyCenter">float32  </td><td class="markdownTableBodyCenter">-32768.0  </td><td class="markdownTableBodyCenter">32767.99998474121  </td><td class="markdownTableBodyCenter">-1.52587890625 &times; 10<sup>-5</sup>  </td><td class="markdownTableBodyCenter">1.52587890625 &times; 10<sup>-5</sup>   </td></tr>
+<tr class="markdownTableBody" class="markdownTableRowOdd">
+<td class="markdownTableBodyCenter">fix64  </td><td class="markdownTableBodyCenter">float64  </td><td class="markdownTableBodyCenter">-2.147483648 &times; 10<sup>9</sup>  </td><td class="markdownTableBodyCenter">2.14748364799999999976716935634613037109375 &times; 10<sup>9</sup>  </td><td class="markdownTableBodyCenter">-2.3283064365386962890625 &times; 10<sup>-10</sup>  </td><td class="markdownTableBodyCenter">2.3283064365386962890625 &times; 10<sup>-10</sup>   </td></tr>
 </table>
-<h2><a class="anchor" id="uint16"></a>
-uint16</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">65535   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">0   </td></tr>
-</table>
-<h2><a class="anchor" id="uint32"></a>
-uint32</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">4294967295   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">0   </td></tr>
-</table>
-<h2><a class="anchor" id="uint64"></a>
-uint64/uint</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">18446744073709551615   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">0   </td></tr>
-</table>
-<dl class="section note"><dt>Note</dt><dd>in the language reference <b>uint64</b> and <b>uint</b> are considered the same and can be declared in either way</dd></dl>
-<h1><a class="anchor" id="int"></a>
-Signed integer</h1>
-<h2><a class="anchor" id="int8"></a>
-int8</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">127   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">-128   </td></tr>
-</table>
-<h2><a class="anchor" id="int16"></a>
-int16</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">32767   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">-32768   </td></tr>
-</table>
-<h2><a class="anchor" id="int32"></a>
-int32</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">2147483647   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">-2147483648   </td></tr>
-</table>
-<h2><a class="anchor" id="int64"></a>
-int64/int</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">9223372036854775807   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">-9223372036854775808   </td></tr>
-</table>
-<dl class="section note"><dt>Note</dt><dd>in the language reference <b>int64</b> and <b>int</b> are considered the same and can be declared in either way</dd></dl>
-<h1><a class="anchor" id="xor_uint"></a>
-XOR Unsigned integer</h1>
-<h2><a class="anchor" id="xor_uint8"></a>
-xor_uint8</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">255   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">0   </td></tr>
-</table>
-<h2><a class="anchor" id="xor_uint16"></a>
-xor_uint16</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">65535   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">0   </td></tr>
-</table>
-<h2><a class="anchor" id="xor_uint32"></a>
-xor_uint32</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">4294967295   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">0   </td></tr>
-</table>
-<h2><a class="anchor" id="xor_uint64"></a>
-xor_uint64</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum value  </td><td class="markdownTableBodyCenter">18446744073709551615   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum value  </td><td class="markdownTableBodyCenter">0   </td></tr>
-</table>
-<h1><a class="anchor" id="float"></a>
-Floating point number</h1>
-<h2><a class="anchor" id="float32"></a>
-float32/float</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum positive value  </td><td class="markdownTableBodyCenter"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[3.402823 \times 10^{38}\]" src="form_0.png"/>
-</p>
-   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum positive value  </td><td class="markdownTableBodyCenter"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[2.802597 \times 10^{-45}\]" src="form_1.png"/>
-</p>
-   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum negative value  </td><td class="markdownTableBodyCenter"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[-3.402823 \times 10^{38}\]" src="form_2.png"/>
-</p>
-   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum negative value  </td><td class="markdownTableBodyCenter"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[-2.802597 \times 10^{-45}\]" src="form_3.png"/>
-</p>
-   </td></tr>
-</table>
-<h2><a class="anchor" id="float64"></a>
-float64</h2>
-<table class="markdownTable">
-<tr class="markdownTableHead">
-<th class="markdownTableHeadCenter"></th><th class="markdownTableHeadCenter"></th></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum positive value  </td><td class="markdownTableBodyCenter"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[1.797693 \times 10^{308}\]" src="form_4.png"/>
-</p>
-   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum positive value  </td><td class="markdownTableBodyCenter"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[4.940656 \times 10^{-324}\]" src="form_5.png"/>
-</p>
-   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowOdd">
-<td class="markdownTableBodyCenter">Maximum negative value  </td><td class="markdownTableBodyCenter"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[-1.797693 \times 10^{308}\]" src="form_6.png"/>
-</p>
-   </td></tr>
-<tr class="markdownTableBody" class="markdownTableRowEven">
-<td class="markdownTableBodyCenter">Minimum negative value  </td><td class="markdownTableBodyCenter"><p class="formulaDsp">
-<img class="formulaDsp" alt="\[-4.940656 \times 10^{-324}\]" src="form_7.png"/>
-</p>
-   </td></tr>
-</table>
-<dl class="section note"><dt>Note</dt><dd>in the language reference <b>float32</b> and <b>float</b> are considered the same and can be declared in either way </dd></dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:50 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

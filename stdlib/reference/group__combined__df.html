@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -78,6 +78,12 @@ Functions</h2></td></tr>
 <tr class="memitem:gae0bfb2c43a4cc67e4cd2d6d6e0262ce0"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
 <tr class="memitem:gae0bfb2c43a4cc67e4cd2d6d6e0262ce0"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__combined__df.html#gae0bfb2c43a4cc67e4cd2d6d6e0262ce0">combinedDegreesOfFreedom</a> (D int64[[1]] data1, D bool[[1]] ia1, D int64[[1]] data2, D bool[[1]] ia2)</td></tr>
 <tr class="separator:gae0bfb2c43a4cc67e4cd2d6d6e0262ce0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga50ae0afd35a1ada47737d422d3a26bad"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga50ae0afd35a1ada47737d422d3a26bad"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__combined__df.html#ga50ae0afd35a1ada47737d422d3a26bad">combinedDegreesOfFreedom</a> (D float32[[1]] data1, D bool[[1]] ia1, D float32[[1]] data2, D bool[[1]] ia2)</td></tr>
+<tr class="separator:ga50ae0afd35a1ada47737d422d3a26bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31a43e9015c76e020a9da8169da658d0"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga31a43e9015c76e020a9da8169da658d0"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__combined__df.html#ga31a43e9015c76e020a9da8169da658d0">combinedDegreesOfFreedom</a> (D float64[[1]] data1, D bool[[1]] ia1, D float64[[1]] data2, D bool[[1]] ia2)</td></tr>
+<tr class="separator:ga31a43e9015c76e020a9da8169da658d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Approximate the degrees of freedom of a linear combination of independent sample variances. </p>
@@ -85,7 +91,7 @@ Functions</h2></td></tr>
 <dd>
 <b>D</b> - any protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data1</td><td>- first sample </td></tr>
@@ -102,7 +108,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga8b8ed2f735d2827e28a05acaa86db458"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga8b8ed2f735d2827e28a05acaa86db458">&#9670;&nbsp;</a></span>combinedDegreesOfFreedom() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga8b8ed2f735d2827e28a05acaa86db458">&#9670;&nbsp;</a></span>combinedDegreesOfFreedom() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -142,7 +148,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </div>
 </div>
 <a id="gae0bfb2c43a4cc67e4cd2d6d6e0262ce0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae0bfb2c43a4cc67e4cd2d6d6e0262ce0">&#9670;&nbsp;</a></span>combinedDegreesOfFreedom() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0bfb2c43a4cc67e4cd2d6d6e0262ce0">&#9670;&nbsp;</a></span>combinedDegreesOfFreedom() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,10 +187,90 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
+<a id="ga50ae0afd35a1ada47737d422d3a26bad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga50ae0afd35a1ada47737d422d3a26bad">&#9670;&nbsp;</a></span>combinedDegreesOfFreedom() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 combinedDegreesOfFreedom </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>ia1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>ia2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga31a43e9015c76e020a9da8169da658d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga31a43e9015c76e020a9da8169da658d0">&#9670;&nbsp;</a></span>combinedDegreesOfFreedom() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 combinedDegreesOfFreedom </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>ia1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>ia2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

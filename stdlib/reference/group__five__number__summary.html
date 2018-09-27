@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -72,18 +72,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gad8ac72eb7598c1cc0fb209469636a27c"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
-<tr class="memitem:gad8ac72eb7598c1cc0fb209469636a27c"><td class="memTemplItemLeft" align="right" valign="top">D float32 [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__five__number__summary.html#gad8ac72eb7598c1cc0fb209469636a27c">fiveNumberSummary</a> (D int32[[1]] data, D bool[[1]] isAvailable)</td></tr>
-<tr class="separator:gad8ac72eb7598c1cc0fb209469636a27c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gab108ad07dde7cc2adba48c890c3f81e7"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
-<tr class="memitem:gab108ad07dde7cc2adba48c890c3f81e7"><td class="memTemplItemLeft" align="right" valign="top">D float64 [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__five__number__summary.html#gab108ad07dde7cc2adba48c890c3f81e7">fiveNumberSummary</a> (D int64[[1]] data, D bool[[1]] isAvailable)</td></tr>
-<tr class="separator:gab108ad07dde7cc2adba48c890c3f81e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga202ea9717393b0b33273ea983f994e40"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga202ea9717393b0b33273ea983f994e40"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__five__number__summary.html#ga202ea9717393b0b33273ea983f994e40">fiveNumberSummary</a> (D int32[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga202ea9717393b0b33273ea983f994e40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga920a2cec0a07be1c0ddeb14ccac99323"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga920a2cec0a07be1c0ddeb14ccac99323"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__five__number__summary.html#ga920a2cec0a07be1c0ddeb14ccac99323">fiveNumberSummary</a> (D int64[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga920a2cec0a07be1c0ddeb14ccac99323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1eec449dea01ab7b19476dd47c0c1894"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga1eec449dea01ab7b19476dd47c0c1894"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__five__number__summary.html#ga1eec449dea01ab7b19476dd47c0c1894">fiveNumberSummary</a> (D float32[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga1eec449dea01ab7b19476dd47c0c1894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga582f47ac4df1c0b6560992064412ae8a"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga582f47ac4df1c0b6560992064412ae8a"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__five__number__summary.html#ga582f47ac4df1c0b6560992064412ae8a">fiveNumberSummary</a> (D float64[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga582f47ac4df1c0b6560992064412ae8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Find the minimum, lower quartile, median, upper quartile and maximum of a sample. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - any protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd>
 <dd>
 A version of this function which hides the sample size was implemented for the paper "Going Beyond Millionaires:
 Privacy-Preserving Statistical Analysis" but is not included due to private integer division not working. </dd></dl>
@@ -100,14 +106,14 @@ Privacy-Preserving Statistical Analysis" but is not included due to private inte
 <dd>Leaks the number of true values in isAvailable</dd>
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gad8ac72eb7598c1cc0fb209469636a27c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gad8ac72eb7598c1cc0fb209469636a27c">&#9670;&nbsp;</a></span>fiveNumberSummary() <span class="overload">[1/2]</span></h2>
+<a id="ga202ea9717393b0b33273ea983f994e40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga202ea9717393b0b33273ea983f994e40">&#9670;&nbsp;</a></span>fiveNumberSummary() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D float32 [[1]] fiveNumberSummary </td>
+          <td class="memname">D float32 fiveNumberSummary </td>
           <td>(</td>
           <td class="paramtype">D int32[[1]]&#160;</td>
           <td class="paramname"><em>data</em>, </td>
@@ -128,16 +134,72 @@ Privacy-Preserving Statistical Analysis" but is not included due to private inte
 
 </div>
 </div>
-<a id="gab108ad07dde7cc2adba48c890c3f81e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gab108ad07dde7cc2adba48c890c3f81e7">&#9670;&nbsp;</a></span>fiveNumberSummary() <span class="overload">[2/2]</span></h2>
+<a id="ga920a2cec0a07be1c0ddeb14ccac99323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga920a2cec0a07be1c0ddeb14ccac99323">&#9670;&nbsp;</a></span>fiveNumberSummary() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D float64 [[1]] fiveNumberSummary </td>
+          <td class="memname">D float64 fiveNumberSummary </td>
           <td>(</td>
           <td class="paramtype">D int64[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>isAvailable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga1eec449dea01ab7b19476dd47c0c1894"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1eec449dea01ab7b19476dd47c0c1894">&#9670;&nbsp;</a></span>fiveNumberSummary() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 fiveNumberSummary </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>isAvailable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga582f47ac4df1c0b6560992064412ae8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga582f47ac4df1c0b6560992064412ae8a">&#9670;&nbsp;</a></span>fiveNumberSummary() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 fiveNumberSummary </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -159,7 +221,7 @@ Privacy-Preserving Statistical Analysis" but is not included due to private inte
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -78,12 +78,18 @@ Functions</h2></td></tr>
 <tr class="memitem:gaf6a854005313a2e538f884cc5030150d"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
 <tr class="memitem:gaf6a854005313a2e538f884cc5030150d"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__t__test__samples.html#gaf6a854005313a2e538f884cc5030150d">tTest</a> (D int64[[1]] data1, D bool[[1]] ia1, D int64[[1]] data2, D bool[[1]] ia2, bool variancesEqual)</td></tr>
 <tr class="separator:gaf6a854005313a2e538f884cc5030150d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6d309084aac7b716eb5d1c3f228928ca"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga6d309084aac7b716eb5d1c3f228928ca"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__t__test__samples.html#ga6d309084aac7b716eb5d1c3f228928ca">tTest</a> (D float32[[1]] data1, D bool[[1]] ia1, D float32[[1]] data2, D bool[[1]] ia2, bool variancesEqual)</td></tr>
+<tr class="separator:ga6d309084aac7b716eb5d1c3f228928ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7861393e3aaf985b2228f11dab4a8221"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga7861393e3aaf985b2228f11dab4a8221"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__t__test__samples.html#ga7861393e3aaf985b2228f11dab4a8221">tTest</a> (D float64[[1]] data1, D bool[[1]] ia1, D float64[[1]] data2, D bool[[1]] ia2, bool variancesEqual)</td></tr>
+<tr class="separator:ga7861393e3aaf985b2228f11dab4a8221"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Perform t-tests. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data1</td><td>- first sample </td></tr>
@@ -101,7 +107,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga59cea57deb73f2de6133e80634076994"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga59cea57deb73f2de6133e80634076994">&#9670;&nbsp;</a></span>tTest() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga59cea57deb73f2de6133e80634076994">&#9670;&nbsp;</a></span>tTest() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -147,7 +153,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </div>
 </div>
 <a id="gaf6a854005313a2e538f884cc5030150d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf6a854005313a2e538f884cc5030150d">&#9670;&nbsp;</a></span>tTest() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf6a854005313a2e538f884cc5030150d">&#9670;&nbsp;</a></span>tTest() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,10 +198,102 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
+<a id="ga6d309084aac7b716eb5d1c3f228928ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6d309084aac7b716eb5d1c3f228928ca">&#9670;&nbsp;</a></span>tTest() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 tTest </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>ia1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>ia2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>variancesEqual</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga7861393e3aaf985b2228f11dab4a8221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga7861393e3aaf985b2228f11dab4a8221">&#9670;&nbsp;</a></span>tTest() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 tTest </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>ia1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>ia2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>variancesEqual</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -72,18 +72,26 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga0185a068a959987406f44ecf0697c08b"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
-<tr class="memitem:ga0185a068a959987406f44ecf0697c08b"><td class="memTemplItemLeft" align="right" valign="top">D float32 [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__linear__regression.html#ga0185a068a959987406f44ecf0697c08b">linearRegression</a> (D int32[[2]] variables, D int32[[1]] dependent, int64 method)</td></tr>
-<tr class="separator:ga0185a068a959987406f44ecf0697c08b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0037b537600de9078271d2461fa90617"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
-<tr class="memitem:ga0037b537600de9078271d2461fa90617"><td class="memTemplItemLeft" align="right" valign="top">D float64 [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__linear__regression.html#ga0037b537600de9078271d2461fa90617">linearRegression</a> (D int64[[2]] variables, D int64[[1]] dependent, int64 method)</td></tr>
-<tr class="separator:ga0037b537600de9078271d2461fa90617"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2290ac0a5ddd7e20e7f660ae044f0b49"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga2290ac0a5ddd7e20e7f660ae044f0b49"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__linear__regression.html#ga2290ac0a5ddd7e20e7f660ae044f0b49">linearRegression</a> (D int32[[2]] variables, D int32[[1]] dependent, int64 method)</td></tr>
+<tr class="separator:ga2290ac0a5ddd7e20e7f660ae044f0b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf58d5a6dbce1d11811090efa90120dcc"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gaf58d5a6dbce1d11811090efa90120dcc"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__linear__regression.html#gaf58d5a6dbce1d11811090efa90120dcc">linearRegression</a> (D int64[[2]] variables, D int64[[1]] dependent, int64 method)</td></tr>
+<tr class="separator:gaf58d5a6dbce1d11811090efa90120dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac6dfeb1355fe36f5a8792b8e1adf8d17"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gac6dfeb1355fe36f5a8792b8e1adf8d17"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__linear__regression.html#gac6dfeb1355fe36f5a8792b8e1adf8d17">linearRegression</a> (D float32[[2]] variables, D float32[[1]] dependent, int64 method)</td></tr>
+<tr class="separator:gac6dfeb1355fe36f5a8792b8e1adf8d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa892b2586de9c5dc781a31402cf92dcc"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gaa892b2586de9c5dc781a31402cf92dcc"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__linear__regression.html#gaa892b2586de9c5dc781a31402cf92dcc">linearRegression</a> (D float64[[2]] variables, D float64[[1]] dependent, int64 method)</td></tr>
+<tr class="separator:gaa892b2586de9c5dc781a31402cf92dcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Fitting of linear models with multiple explanatory variables. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd>
+<dd>
+You can pass an empty matrix as the variables argument to specify a null model with just intercept. </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">variables</td><td>- a matrix where each column is a sample of an explanatory variable </td></tr>
@@ -98,14 +106,14 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 <dd>None</dd>
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ga0185a068a959987406f44ecf0697c08b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0185a068a959987406f44ecf0697c08b">&#9670;&nbsp;</a></span>linearRegression() <span class="overload">[1/2]</span></h2>
+<a id="ga2290ac0a5ddd7e20e7f660ae044f0b49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2290ac0a5ddd7e20e7f660ae044f0b49">&#9670;&nbsp;</a></span>linearRegression() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D float32 [[1]] linearRegression </td>
+          <td class="memname">D float32 linearRegression </td>
           <td>(</td>
           <td class="paramtype">D int32[[2]]&#160;</td>
           <td class="paramname"><em>variables</em>, </td>
@@ -132,14 +140,14 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
-<a id="ga0037b537600de9078271d2461fa90617"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0037b537600de9078271d2461fa90617">&#9670;&nbsp;</a></span>linearRegression() <span class="overload">[2/2]</span></h2>
+<a id="gaf58d5a6dbce1d11811090efa90120dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf58d5a6dbce1d11811090efa90120dcc">&#9670;&nbsp;</a></span>linearRegression() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D float64 [[1]] linearRegression </td>
+          <td class="memname">D float64 linearRegression </td>
           <td>(</td>
           <td class="paramtype">D int64[[2]]&#160;</td>
           <td class="paramname"><em>variables</em>, </td>
@@ -166,10 +174,78 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
+<a id="gac6dfeb1355fe36f5a8792b8e1adf8d17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gac6dfeb1355fe36f5a8792b8e1adf8d17">&#9670;&nbsp;</a></span>linearRegression() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 linearRegression </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[2]]&#160;</td>
+          <td class="paramname"><em>variables</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>dependent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64&#160;</td>
+          <td class="paramname"><em>method</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gaa892b2586de9c5dc781a31402cf92dcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa892b2586de9c5dc781a31402cf92dcc">&#9670;&nbsp;</a></span>linearRegression() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 linearRegression </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[2]]&#160;</td>
+          <td class="paramname"><em>variables</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>dependent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64&#160;</td>
+          <td class="paramname"><em>method</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

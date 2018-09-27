@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -78,12 +78,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga184e7c96a7dd0053b4cef57d48560b7b"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
 <tr class="memitem:ga184e7c96a7dd0053b4cef57d48560b7b"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mad__filter__constant.html#ga184e7c96a7dd0053b4cef57d48560b7b">MAD</a> (D int64[[1]] data, D bool[[1]] mask, float64 constant)</td></tr>
 <tr class="separator:ga184e7c96a7dd0053b4cef57d48560b7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaa86591faaae2e20934aac18392b52ff1"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gaa86591faaae2e20934aac18392b52ff1"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mad__filter__constant.html#gaa86591faaae2e20934aac18392b52ff1">MAD</a> (D float32[[1]] data, D bool[[1]] mask, float32 constant)</td></tr>
+<tr class="separator:gaa86591faaae2e20934aac18392b52ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4799383dab4015bd77710beff10d13dc"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga4799383dab4015bd77710beff10d13dc"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__mad__filter__constant.html#ga4799383dab4015bd77710beff10d13dc">MAD</a> (D float64[[1]] data, D bool[[1]] mask, float64 constant)</td></tr>
+<tr class="separator:ga4799383dab4015bd77710beff10d13dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Find the median absolute deviation of a filtered sample. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>- input sample </td></tr>
@@ -99,7 +105,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga3503155a4751748fcc1702182852d3c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3503155a4751748fcc1702182852d3c3">&#9670;&nbsp;</a></span>MAD() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3503155a4751748fcc1702182852d3c3">&#9670;&nbsp;</a></span>MAD() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,7 +139,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </div>
 </div>
 <a id="ga184e7c96a7dd0053b4cef57d48560b7b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga184e7c96a7dd0053b4cef57d48560b7b">&#9670;&nbsp;</a></span>MAD() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga184e7c96a7dd0053b4cef57d48560b7b">&#9670;&nbsp;</a></span>MAD() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,10 +172,78 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
+<a id="gaa86591faaae2e20934aac18392b52ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa86591faaae2e20934aac18392b52ff1">&#9670;&nbsp;</a></span>MAD() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 MAD </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float32&#160;</td>
+          <td class="paramname"><em>constant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4799383dab4015bd77710beff10d13dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4799383dab4015bd77710beff10d13dc">&#9670;&nbsp;</a></span>MAD() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 MAD </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>mask</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float64&#160;</td>
+          <td class="paramname"><em>constant</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -78,12 +78,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga14e87ce1d213984a72d7599ee96a8fa6"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
 <tr class="memitem:ga14e87ce1d213984a72d7599ee96a8fa6"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__standard__dev__filter.html#ga14e87ce1d213984a72d7599ee96a8fa6">standardDev</a> (D int64[[1]] data, D bool[[1]] mask)</td></tr>
 <tr class="separator:ga14e87ce1d213984a72d7599ee96a8fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf2e1f2267eda01d89a62266bbb38766b"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:gaf2e1f2267eda01d89a62266bbb38766b"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__standard__dev__filter.html#gaf2e1f2267eda01d89a62266bbb38766b">standardDev</a> (D float32[[1]] data, D bool[[1]] mask)</td></tr>
+<tr class="separator:gaf2e1f2267eda01d89a62266bbb38766b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab4277b7b229e2c8c9fee93da6214c35f"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:gab4277b7b229e2c8c9fee93da6214c35f"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__standard__dev__filter.html#gab4277b7b229e2c8c9fee93da6214c35f">standardDev</a> (D float64[[1]] data, D bool[[1]] mask)</td></tr>
+<tr class="separator:gab4277b7b229e2c8c9fee93da6214c35f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Find the standard deviation of a filtered sample. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - any protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>- input sample (the function may overflow if the input is too big) </td></tr>
@@ -98,7 +104,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga868d108f62bf4db6325f2278c9ac27e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga868d108f62bf4db6325f2278c9ac27e5">&#9670;&nbsp;</a></span>standardDev() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga868d108f62bf4db6325f2278c9ac27e5">&#9670;&nbsp;</a></span>standardDev() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +132,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </div>
 </div>
 <a id="ga14e87ce1d213984a72d7599ee96a8fa6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14e87ce1d213984a72d7599ee96a8fa6">&#9670;&nbsp;</a></span>standardDev() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga14e87ce1d213984a72d7599ee96a8fa6">&#9670;&nbsp;</a></span>standardDev() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,10 +159,66 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
+<a id="gaf2e1f2267eda01d89a62266bbb38766b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaf2e1f2267eda01d89a62266bbb38766b">&#9670;&nbsp;</a></span>standardDev() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 standardDev </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gab4277b7b229e2c8c9fee93da6214c35f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gab4277b7b229e2c8c9fee93da6214c35f">&#9670;&nbsp;</a></span>standardDev() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 standardDev </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

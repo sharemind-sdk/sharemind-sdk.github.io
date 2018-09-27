@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -78,12 +78,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga6ca37c92571e0a72995280d43f473453"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
 <tr class="memitem:ga6ca37c92571e0a72995280d43f473453"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__variance__filter.html#ga6ca37c92571e0a72995280d43f473453">variance</a> (D int64[[1]] data, D bool[[1]] mask)</td></tr>
 <tr class="separator:ga6ca37c92571e0a72995280d43f473453"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacdffe51f93d5a2d9852a0a1aeb8ce4b5"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:gacdffe51f93d5a2d9852a0a1aeb8ce4b5"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__variance__filter.html#gacdffe51f93d5a2d9852a0a1aeb8ce4b5">variance</a> (D float32[[1]] data, D bool[[1]] mask)</td></tr>
+<tr class="separator:gacdffe51f93d5a2d9852a0a1aeb8ce4b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga258b25949161803575861ca1953fab18"><td class="memTemplParams" colspan="2">template&lt;domain D&gt; </td></tr>
+<tr class="memitem:ga258b25949161803575861ca1953fab18"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__variance__filter.html#ga258b25949161803575861ca1953fab18">variance</a> (D float64[[1]] data, D bool[[1]] mask)</td></tr>
+<tr class="separator:ga258b25949161803575861ca1953fab18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Find the variance of a filtered vector. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - any protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>- input vector (the function may overflow if the input is too big) </td></tr>
@@ -98,7 +104,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="gaba214aca9a29426bb63c07f9a8bfacba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaba214aca9a29426bb63c07f9a8bfacba">&#9670;&nbsp;</a></span>variance() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaba214aca9a29426bb63c07f9a8bfacba">&#9670;&nbsp;</a></span>variance() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +132,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </div>
 </div>
 <a id="ga6ca37c92571e0a72995280d43f473453"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga6ca37c92571e0a72995280d43f473453">&#9670;&nbsp;</a></span>variance() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga6ca37c92571e0a72995280d43f473453">&#9670;&nbsp;</a></span>variance() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,10 +159,66 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
+<a id="gacdffe51f93d5a2d9852a0a1aeb8ce4b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacdffe51f93d5a2d9852a0a1aeb8ce4b5">&#9670;&nbsp;</a></span>variance() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 variance </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga258b25949161803575861ca1953fab18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga258b25949161803575861ca1953fab18">&#9670;&nbsp;</a></span>variance() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 variance </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>mask</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

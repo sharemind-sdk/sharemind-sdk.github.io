@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -78,12 +78,18 @@ Functions</h2></td></tr>
 <tr class="memitem:ga0f92f84d0e14dd0285f4d4fb671fd910"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
 <tr class="memitem:ga0f92f84d0e14dd0285f4d4fb671fd910"><td class="memTemplItemLeft" align="right" valign="top">D int64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__minimum.html#ga0f92f84d0e14dd0285f4d4fb671fd910">minimum</a> (D int64[[1]] data, D bool[[1]] isAvailable)</td></tr>
 <tr class="separator:ga0f92f84d0e14dd0285f4d4fb671fd910"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75ebbef98e1727afec129af6cd4e2a97"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga75ebbef98e1727afec129af6cd4e2a97"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__minimum.html#ga75ebbef98e1727afec129af6cd4e2a97">minimum</a> (D float32[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga75ebbef98e1727afec129af6cd4e2a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga44cf3792ae50d85e70e4257b37be4b8e"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga44cf3792ae50d85e70e4257b37be4b8e"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__minimum.html#ga44cf3792ae50d85e70e4257b37be4b8e">minimum</a> (D float64[[1]] data, D bool[[1]] isAvailable)</td></tr>
+<tr class="separator:ga44cf3792ae50d85e70e4257b37be4b8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Find the smallest element of a vector. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>- input vector </td></tr>
@@ -98,7 +104,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga3ddb8714cfea986b50fc9d6ef7e466f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga3ddb8714cfea986b50fc9d6ef7e466f8">&#9670;&nbsp;</a></span>minimum() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3ddb8714cfea986b50fc9d6ef7e466f8">&#9670;&nbsp;</a></span>minimum() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +132,7 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 </div>
 </div>
 <a id="ga0f92f84d0e14dd0285f4d4fb671fd910"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga0f92f84d0e14dd0285f4d4fb671fd910">&#9670;&nbsp;</a></span>minimum() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga0f92f84d0e14dd0285f4d4fb671fd910">&#9670;&nbsp;</a></span>minimum() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,10 +159,66 @@ Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a clas
 
 </div>
 </div>
+<a id="ga75ebbef98e1727afec129af6cd4e2a97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga75ebbef98e1727afec129af6cd4e2a97">&#9670;&nbsp;</a></span>minimum() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 minimum </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>isAvailable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga44cf3792ae50d85e70e4257b37be4b8e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga44cf3792ae50d85e70e4257b37be4b8e">&#9670;&nbsp;</a></span>minimum() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 minimum </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>isAvailable</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

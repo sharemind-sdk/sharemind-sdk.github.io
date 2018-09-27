@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.2.1 (2018.06)</span>
+   &#160;<span id="projectnumber">2.3.1 (2018.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -72,12 +72,18 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gaca8f218d53257c19da8e6da2d018b2c2"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
-<tr class="memitem:gaca8f218d53257c19da8e6da2d018b2c2"><td class="memTemplItemLeft" align="right" valign="top">D float32 [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__wilcoxon__signed__rank.html#gaca8f218d53257c19da8e6da2d018b2c2">wilcoxonSignedRank</a> (D int32[[1]] sample1, D int32[[1]] sample2, D bool[[1]] filter, bool correctRanks, int64 alternative)</td></tr>
-<tr class="separator:gaca8f218d53257c19da8e6da2d018b2c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae29de4aa68fe99515bd90e13c4824509"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
-<tr class="memitem:gae29de4aa68fe99515bd90e13c4824509"><td class="memTemplItemLeft" align="right" valign="top">D float64 [[1]]&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__wilcoxon__signed__rank.html#gae29de4aa68fe99515bd90e13c4824509">wilcoxonSignedRank</a> (D int64[[1]] sample1, D int64[[1]] sample2, D bool[[1]] filter, bool correctRanks, int64 alternative)</td></tr>
-<tr class="separator:gae29de4aa68fe99515bd90e13c4824509"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae0efd2e6f3a9443f88b63cb43a4829d3"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gae0efd2e6f3a9443f88b63cb43a4829d3"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__wilcoxon__signed__rank.html#gae0efd2e6f3a9443f88b63cb43a4829d3">wilcoxonSignedRank</a> (D int32[[1]] sample1, D int32[[1]] sample2, D bool[[1]] filter, bool correctRanks, int64 alternative)</td></tr>
+<tr class="separator:gae0efd2e6f3a9443f88b63cb43a4829d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaabb85f3035c81aac9990cceb854290f7"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gaabb85f3035c81aac9990cceb854290f7"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__wilcoxon__signed__rank.html#gaabb85f3035c81aac9990cceb854290f7">wilcoxonSignedRank</a> (D int64[[1]] sample1, D int64[[1]] sample2, D bool[[1]] filter, bool correctRanks, int64 alternative)</td></tr>
+<tr class="separator:gaabb85f3035c81aac9990cceb854290f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4dba9631d16fed641400ed64ba0f7b11"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga4dba9631d16fed641400ed64ba0f7b11"><td class="memTemplItemLeft" align="right" valign="top">D float32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__wilcoxon__signed__rank.html#ga4dba9631d16fed641400ed64ba0f7b11">wilcoxonSignedRank</a> (D float32[[1]] sample1, D float32[[1]] sample2, D bool[[1]] filter, bool correctRanks, int64 alternative)</td></tr>
+<tr class="separator:ga4dba9631d16fed641400ed64ba0f7b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc047309fda97b333f071217640098f5"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:gadc047309fda97b333f071217640098f5"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__wilcoxon__signed__rank.html#gadc047309fda97b333f071217640098f5">wilcoxonSignedRank</a> (D float64[[1]] sample1, D float64[[1]] sample2, D bool[[1]] filter, bool correctRanks, int64 alternative)</td></tr>
+<tr class="separator:gadc047309fda97b333f071217640098f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Perform Wilcoxon signed rank tests. </p>
@@ -85,9 +91,7 @@ Functions</h2></td></tr>
 <dd>
 <b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> </dd>
-<dd>
-This function does not match the one in R. </dd></dl>
+Supported types - <a class="el" href="data_types.html#int32">int32</a> / <a class="el" href="data_types.html#int64">int64</a> / <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">sample1</td><td>- first sample </td></tr>
@@ -104,14 +108,14 @@ This function does not match the one in R. </dd></dl>
 <dd>Leaks the number of true values in filter minus the number of pairs where the difference is zero</dd>
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="gaca8f218d53257c19da8e6da2d018b2c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaca8f218d53257c19da8e6da2d018b2c2">&#9670;&nbsp;</a></span>wilcoxonSignedRank() <span class="overload">[1/2]</span></h2>
+<a id="gae0efd2e6f3a9443f88b63cb43a4829d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gae0efd2e6f3a9443f88b63cb43a4829d3">&#9670;&nbsp;</a></span>wilcoxonSignedRank() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D float32 [[1]] wilcoxonSignedRank </td>
+          <td class="memname">D float32 wilcoxonSignedRank </td>
           <td>(</td>
           <td class="paramtype">D int32[[1]]&#160;</td>
           <td class="paramname"><em>sample1</em>, </td>
@@ -150,14 +154,14 @@ This function does not match the one in R. </dd></dl>
 
 </div>
 </div>
-<a id="gae29de4aa68fe99515bd90e13c4824509"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae29de4aa68fe99515bd90e13c4824509">&#9670;&nbsp;</a></span>wilcoxonSignedRank() <span class="overload">[2/2]</span></h2>
+<a id="gaabb85f3035c81aac9990cceb854290f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaabb85f3035c81aac9990cceb854290f7">&#9670;&nbsp;</a></span>wilcoxonSignedRank() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">D float64 [[1]] wilcoxonSignedRank </td>
+          <td class="memname">D float64 wilcoxonSignedRank </td>
           <td>(</td>
           <td class="paramtype">D int64[[1]]&#160;</td>
           <td class="paramname"><em>sample1</em>, </td>
@@ -166,6 +170,98 @@ This function does not match the one in R. </dd></dl>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">D int64[[1]]&#160;</td>
+          <td class="paramname"><em>sample2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>correctRanks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64&#160;</td>
+          <td class="paramname"><em>alternative</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga4dba9631d16fed641400ed64ba0f7b11"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga4dba9631d16fed641400ed64ba0f7b11">&#9670;&nbsp;</a></span>wilcoxonSignedRank() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float32 wilcoxonSignedRank </td>
+          <td>(</td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>sample1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float32[[1]]&#160;</td>
+          <td class="paramname"><em>sample2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D bool[[1]]&#160;</td>
+          <td class="paramname"><em>filter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>correctRanks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64&#160;</td>
+          <td class="paramname"><em>alternative</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gadc047309fda97b333f071217640098f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gadc047309fda97b333f071217640098f5">&#9670;&nbsp;</a></span>wilcoxonSignedRank() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D float64 wilcoxonSignedRank </td>
+          <td>(</td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
+          <td class="paramname"><em>sample1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D float64[[1]]&#160;</td>
           <td class="paramname"><em>sample2</em>, </td>
         </tr>
         <tr>
@@ -199,7 +295,7 @@ This function does not match the one in R. </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Jul 5 2018 17:28:51 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 27 2018 16:07:16 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

@@ -1,0 +1,17 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>Features</h3>
+
+<h4>SecreC compiler and standard library</h4>
+<ul>
+  <li>SecreC bytecode compiled with <code>scc</code> v2.2.1+ takes advantage of the new <code>common.user_except</code> syscall for improved reporting of error conditions, including user assertions.</li>
+  <li>The <code>quicksort</code> function now works on Booleans. Boolean values are internally converted to <code>xor_uint8</code> and the result back to <code>bool</code>.</li>
+  <li>Added floating point data type support to <code>cut</code>, <code>min</code>, <code>max</code>, <code>variance</code>, <code>standardDev</code>, <code>MAD</code>, <code>fiveNumberSummary</code>, <code>covariance</code>, t-tests, linear regression, <code>quicksort</code>, outlier detection, <code>histogram</code>, <code>heatmap</code>, Wilcoxon signed rank, Wilcoxon rank sum and Mann-Whitney U.</li>
+  <li>The deprecated <code>quickquicksort</code> function was removed from the SecreC standard library.</li>
+  <li>Added Carter-Wegman hash functionality in Standard Library <code>shared3p_string</code> module.</li>
+  <li>Added fixed point data type support (<code>fix32</code>, <code>fix64</code>) to the <i>shared3p</i> module.</li>
+  <li>Added <code>tdbVmapGetVlenValue</code> function to <code>table_database</code> module to get a variable length value from a vector in a vector map.</li>
+  <li>GLM and linear regression functionality now allows to pass an empty matrix as the variables argument to specify a model with just the intercept.</li>
+</ul>
