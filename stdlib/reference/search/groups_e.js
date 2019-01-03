@@ -7,6 +7,7 @@ var searchData=
   ['printvector',['printVector',['../group__printvector.html',1,'']]],
   ['product',['product',['../group__product1.html',1,'']]],
   ['product_28parts_29',['product(parts)',['../group__product2.html',1,'']]],
+  ['profiling_2esc',['profiling.sc',['../group__profiling.html',1,'']]],
   ['product',['product',['../group__shared2p__product.html',1,'']]],
   ['product_28parts_29',['product(parts)',['../group__shared2p__product__k.html',1,'']]],
   ['product',['product',['../group__shared2p__product__vec.html',1,'']]],

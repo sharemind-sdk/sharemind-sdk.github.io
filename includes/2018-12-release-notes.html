@@ -1,0 +1,27 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+<p>Building this version of Sharemind SDK requires GCC >= 6 or Clang >= 6.</p>
+
+<h3>Features</h3>
+
+<h4>Emulator</h4>
+<ul>
+  <li>Improved user exception reporting by introducing a new VM opcode (<code>common.user_except</code>). This statement was included in the 2018.09 changelog by mistake.</li>
+  <li>Ported <i>libsortnetwork</i> to C++.</li>
+  <li>Replaced OpenSSL with Crypto++ in Sharemind randomness library <i>librandom</i>.</li>
+</ul>
+
+<h4>SecreC compiler and standard library</h4>
+<ul>
+  <li>SecreC compiler now warns about usage of deprecated SecreC functions.</li>
+  <li>Added fixed point versions of <code>abs</code>, <code>choose</code> and <code>shuffle</code> to the Standard Library.</li>
+  <li>Optimised solving systems of linear equations using the Gauss method. An inner loop was transformed into a data parallel computation.</li>
+  <li>SecreC Standard Library includes a new <i>trace</i> module that enables SecreC programs to log well-structured information about the process itself and data the process loads or saves.</li>
+</ul>
+
+<h3>Fixed issues</h3>
+<ul>
+  <li>Mitigated a SecreC buffer overflow by introducing a workaround when Boost 1.67 is in use.</li>
+  <li>Fixed an Application Server crash on SecreC bytecode validation error.</li>
+</ul>

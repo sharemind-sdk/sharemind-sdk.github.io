@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['startsection',['startSection',['../group__profiling__start__section.html',1,'']]],
   ['scancursor',['ScanCursor',['../group___scan_cursor.html',1,'']]],
   ['selectk',['selectK',['../group__selectk.html',1,'']]],
   ['selectk_5b_5b2_5d_5d',['selectK[[2]]',['../group__selectk__mat.html',1,'']]],

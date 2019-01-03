@@ -58,5 +58,10 @@ var searchData=
   ['tdbvmapsetvalueascolumn',['tdbVmapSetValueAsColumn',['../group__tdb__vmap__set__value__as__column.html',1,'']]],
   ['tdbvmapstringvectorsize',['tdbVmapStringVectorSize',['../group__tdb__vmap__string__vector__size.html',1,'']]],
   ['tdbvmapvaluevectorsize',['tdbVmapValueVectorSize',['../group__tdb__vmap__value__vector__size.html',1,'']]],
+  ['trace_2esc',['trace.sc',['../group__trace.html',1,'']]],
+  ['traceload',['traceLoad',['../group__trace__load.html',1,'']]],
+  ['traceload_28column_29',['traceLoad(column)',['../group__trace__load__column.html',1,'']]],
+  ['traceoperation',['traceOperation',['../group__trace__operation.html',1,'']]],
+  ['tracesave',['traceSave',['../group__trace__save.html',1,'']]],
   ['transpose',['transpose',['../group__transpose.html',1,'']]]
 ];
