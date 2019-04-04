@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['glmresult',['GLMResult',['../struct_g_l_m_result.html',1,'']]]
+  ['blstringvector',['BlStringVector',['../struct_bl_string_vector.html',1,'']]]
 ];

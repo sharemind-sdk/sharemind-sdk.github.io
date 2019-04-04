@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.4.1 (2018.12.1)</span>
+   &#160;<span id="projectnumber">2.5.0 (2019.03)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -94,8 +94,12 @@ $(function() {
 <li>tdbOpenConnection()
 : <a class="el" href="group__tdb__open__connection.html#ga0bcfd77f0788fc899c71f1fa71cc5f9c">table_database.sc</a>
 </li>
+<li>tdbReadBlStringColumn()
+: <a class="el" href="group__tdb__read__bl__string__column.html#gafa0434b87bed4d858ceabb33003a2d75">shared3p_string.sc</a>
+</li>
 <li>tdbReadColumn()
-: <a class="el" href="group__shared3p__tdb__read__column__index.html#gaddb8d4cde68e020677e1aba53465012e">shared3p_table_database.sc</a>
+: <a class="el" href="group__tdb__read__column__string__vmap.html#ga2f7760b0607e2374d78090a568421fa9">table_database.sc</a>
+, <a class="el" href="group__shared3p__tdb__read__column__index.html#gaddb8d4cde68e020677e1aba53465012e">shared3p_table_database.sc</a>
 , <a class="el" href="group__tdb__read__column__index__vmap.html#ga3e4e27f53bea31b8bdddce002bad4b04">table_database.sc</a>
 </li>
 <li>tdbTableCreate()
@@ -111,8 +115,20 @@ $(function() {
 <li>tdbTableExists()
 : <a class="el" href="group__tdb__table__exists.html#ga765a92d71229f262d7f466431eda9be7">table_database.sc</a>
 </li>
+<li>tdbTableGetAttributes()
+: <a class="el" href="group__tdb__table__get__attributes.html#ga511efa59496998e9fb450121cd320feb">table_database.sc</a>
+</li>
+<li>tdbTableSetAttributes()
+: <a class="el" href="group__tdb__table__set__attributes.html#gaf244fc55d6b43de1768d978b802f19d0">table_database.sc</a>
+</li>
 <li>tdbVmapAddBatch()
 : <a class="el" href="group__tdb__vmap__add__batch.html#gace4b1d8120abf594f2992fa1e76991b3">table_database.sc</a>
+</li>
+<li>tdbVmapAddBlStringType()
+: <a class="el" href="group__tdb__vmap__add__bl__string__type.html#ga4f8fc9ec9566c1778f37073259b4e387">shared3p_string.sc</a>
+</li>
+<li>tdbVmapAddBlStringValue()
+: <a class="el" href="group__tdb__vmap__add__bl__string__value.html#ga0cf0f413cb60c9ae7b8fbb7175da4e25">shared3p_string.sc</a>
 </li>
 <li>tdbVmapAddIndex()
 : <a class="el" href="group__tdb__vmap__add__index.html#gab8ba0b4d81fbf36c33b543e3e81a8b44">table_database.sc</a>
@@ -151,6 +167,9 @@ $(function() {
 <li>tdbVmapGetBatchCount()
 : <a class="el" href="group__tdb__vmap__get__batch__count.html#ga8d0058117f36088533a9e37026a36efe">table_database.sc</a>
 </li>
+<li>tdbVmapGetBlString()
+: <a class="el" href="group__tdb__vmap__get__bl__string.html#ga6d575181169a72ff080099f423bc71d7">shared3p_string.sc</a>
+</li>
 <li>tdbVmapGetIndex()
 : <a class="el" href="group__tdb__vmap__get__index.html#ga7eef8039d601c4bacbacf7b7a391f8cf">table_database.sc</a>
 </li>
@@ -161,12 +180,13 @@ $(function() {
 : <a class="el" href="group__tdb__vmap__get__type__name.html#gabe1a4275e328cd930e74a36ebae9254f">table_database.sc</a>
 </li>
 <li>tdbVmapGetValue()
-: <a class="el" href="group__shared3p__tdb__vmap__get__value.html#ga181622084dd0319b011520a9c0a64fe3">shared3p_table_database.sc</a>
-, <a class="el" href="group__tdb__vmap__get__value.html#gaea750a46a0163cb6387d3f8c5c9d0152">table_database.sc</a>
+: <a class="el" href="group__tdb__vmap__get__value.html#gaea750a46a0163cb6387d3f8c5c9d0152">table_database.sc</a>
+, <a class="el" href="group__shared3p__tdb__vmap__get__value.html#ga181622084dd0319b011520a9c0a64fe3">shared3p_table_database.sc</a>
+, <a class="el" href="group__tdb__get__value__string.html#ga78ee8277c803e3f36a03cb518b7c2cc2">table_database.sc</a>
 </li>
 <li>tdbVmapGetVlenValue()
-: <a class="el" href="group__shared3p__tdb__vmap__get__vlen__value.html#gadee51f310a76b5dc84a9a96544d550c8">shared3p_table_database.sc</a>
-, <a class="el" href="group__tdb__vmap__get__vlen__value.html#gaab9d03a7fd983258a1b74de40c36afcc">table_database.sc</a>
+: <a class="el" href="group__tdb__vmap__get__vlen__value.html#gaab9d03a7fd983258a1b74de40c36afcc">table_database.sc</a>
+, <a class="el" href="group__shared3p__tdb__vmap__get__vlen__value.html#gadee51f310a76b5dc84a9a96544d550c8">shared3p_table_database.sc</a>
 </li>
 <li>tdbVmapNew()
 : <a class="el" href="group__tdb__vmap__new.html#gabfaeca8b060d67cda1f4162e801945fa">table_database.sc</a>
@@ -187,7 +207,7 @@ $(function() {
 : <a class="el" href="group__tdb__vmap__value__vector__size.html#ga34a6ed828f6347267fcf44a7a16b780d">table_database.sc</a>
 </li>
 <li>traceLoad()
-: <a class="el" href="group__trace__load__column.html#ga5236bb480e6835fbb20ff35416baa7a7">trace.sc</a>
+: <a class="el" href="group__trace__load.html#ga69e6906168f6a87e3fdc1c0da7889346">trace.sc</a>
 </li>
 <li>traceOperation()
 : <a class="el" href="group__trace__operation.html#gaf0370c39e8bf675530ed6aeba2a409ca">trace.sc</a>
@@ -196,20 +216,20 @@ $(function() {
 : <a class="el" href="group__trace__save.html#ga44f2ce5ce00ca0a0b337b17159978dc2">trace.sc</a>
 </li>
 <li>transpose()
-: <a class="el" href="group__transpose.html#ga0d850cbdc71e28be401a82f68232eb99">matrix.sc</a>
+: <a class="el" href="group__transpose.html#ga1126fb12022c3cff106183c27b788a57">matrix.sc</a>
 </li>
 <li>truePrefixLength()
 : <a class="el" href="group__shared2p__trueprefixlength.html#ga5ba5d9639499c1bc27d90eaabc3aeb97">shared2p.sc</a>
 , <a class="el" href="group__shared3p__trueprefixlength.html#ga5ba5d9639499c1bc27d90eaabc3aeb97">shared3p.sc</a>
 </li>
 <li>tTest()
-: <a class="el" href="group__t__test.html#ga3484cb4bbd77d2c1afa44694d82cdb79">shared3p_statistics_testing.sc</a>
+: <a class="el" href="group__t__test.html#ga0767e976cb8d68b3337a88bff53d4fff">shared3p_statistics_testing.sc</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 15:44:31 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 4 2019 13:55:20 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

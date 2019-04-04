@@ -12,9 +12,11 @@ var searchData=
   ['loads',['loads',['../struct_p_c_a_result.html#aad717507a9f7eeba19334f50d38129fb',1,'PCAResult']]],
   ['log',['log',['../group__shared3p__log.html#ga024eef5072f6e7d34d3614278468474c',1,'log(D float32[[N]] x, D float32[[N]] b):&#160;shared3p.sc'],['../group__shared3p__log.html#ga422f3d78bf569d85a2233d9f7fa0060b',1,'log(D float64[[N]] x, D float64[[N]] b):&#160;shared3p.sc']]],
   ['log10',['log10',['../group__shared3p__log10.html#ga9f03703ad24ac927eb05c0e705602b18',1,'log10(D float32[[N]] x):&#160;shared3p.sc'],['../group__shared3p__log10.html#ga9d46bdfe73b8f16524c568e8eac6fe38',1,'log10(D float64[[N]] x):&#160;shared3p.sc']]],
+  ['loggamma',['logGamma',['../group__shared3p__log__gamma.html#ga06681f012d2f17a360f1813341c748da',1,'shared3p.sc']]],
   ['linearregression',['linearRegression',['../group__shared3p__linear__regression.html',1,'']]],
   ['linearregressioncg',['linearRegressionCG',['../group__shared3p__linear__regression__cg.html',1,'']]],
   ['ln',['ln',['../group__shared3p__ln.html',1,'(Global Namespace)'],['../group__ln.html',1,'(Global Namespace)']]],
   ['log',['log',['../group__shared3p__log.html',1,'']]],
-  ['log10',['log10',['../group__shared3p__log10.html',1,'']]]
+  ['log10',['log10',['../group__shared3p__log10.html',1,'']]],
+  ['loggamma',['logGamma',['../group__shared3p__log__gamma.html',1,'']]]
 ];

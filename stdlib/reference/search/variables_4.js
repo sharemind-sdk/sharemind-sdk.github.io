@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['int16_5fmax',['INT16_MAX',['../stdlib_8sc.html#a0a53372799930cc2a969f765e498e065',1,'stdlib.sc']]],
-  ['int16_5fmin',['INT16_MIN',['../stdlib_8sc.html#a5bcbd7465b63244cad27ead813755e01',1,'stdlib.sc']]],
-  ['int32_5fmax',['INT32_MAX',['../stdlib_8sc.html#a1c4aee468b9cdd74dac501f81f3f9917',1,'stdlib.sc']]],
-  ['int32_5fmin',['INT32_MIN',['../stdlib_8sc.html#a48abb9ef8663fff6c1c8fdb95797424f',1,'stdlib.sc']]],
-  ['int64_5fmax',['INT64_MAX',['../stdlib_8sc.html#a268977cd493ab05d6ad470e6407bf7f1',1,'stdlib.sc']]],
-  ['int64_5fmin',['INT64_MIN',['../stdlib_8sc.html#a8bd2390aa3fb86e5f5dcae114e2042cb',1,'stdlib.sc']]],
-  ['int8_5fmax',['INT8_MAX',['../stdlib_8sc.html#a115a0217771913914fcdbd1cef82f313',1,'stdlib.sc']]],
-  ['int8_5fmin',['INT8_MIN',['../stdlib_8sc.html#a70101ffb9a395be862f862709cb48de8',1,'stdlib.sc']]]
+  ['glm_5ffamily_5fbinomial_5flogit',['GLM_FAMILY_BINOMIAL_LOGIT',['../group__shared3p__glm__constants.html#ga2ce1d92dd199f7b5014db28632232daa',1,'shared3p_statistics_glm.sc']]],
+  ['glm_5ffamily_5fgamma',['GLM_FAMILY_GAMMA',['../group__shared3p__glm__constants.html#ga468f2a6527d210f51feb92f6fe619e65',1,'shared3p_statistics_glm.sc']]],
+  ['glm_5ffamily_5fgaussian',['GLM_FAMILY_GAUSSIAN',['../group__shared3p__glm__constants.html#gacdbb6d869ec4ece56dd34d0934a7e681',1,'shared3p_statistics_glm.sc']]],
+  ['glm_5ffamily_5fpoisson',['GLM_FAMILY_POISSON',['../group__shared3p__glm__constants.html#gabdfc2175da0a07c94208427c6ae1efa0',1,'shared3p_statistics_glm.sc']]],
+  ['glm_5fsole_5fmethod_5fconjugate_5fgradient',['GLM_SOLE_METHOD_CONJUGATE_GRADIENT',['../group__shared3p__glm__constants.html#ga85316efd6c61994ff8b95a96674f18c2',1,'shared3p_statistics_glm.sc']]],
+  ['glm_5fsole_5fmethod_5fgauss',['GLM_SOLE_METHOD_GAUSS',['../group__shared3p__glm__constants.html#ga50916a3fbfd4a0e54be74342785f6134',1,'shared3p_statistics_glm.sc']]],
+  ['glm_5fsole_5fmethod_5finvert',['GLM_SOLE_METHOD_INVERT',['../group__shared3p__glm__constants.html#ga92e9dc9c9e99e35ee9fed44600d19ac1',1,'shared3p_statistics_glm.sc']]],
+  ['glm_5fsole_5fmethod_5flu_5fdecomposition',['GLM_SOLE_METHOD_LU_DECOMPOSITION',['../group__shared3p__glm__constants.html#ga2d20bfb75b394b95f349d147b056d5e3',1,'shared3p_statistics_glm.sc']]]
 ];

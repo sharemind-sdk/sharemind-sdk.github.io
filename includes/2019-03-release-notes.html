@@ -1,0 +1,23 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>Features</h3>
+
+<h4>Emulator</h4>
+<ul>
+  <li>Sharemind configuration files can now be combined from multiple files using the <code>@include</code> directive, which takes a globbing pathname argument. For example, <code>@include %{CurrentFileDirectory}/conf.d/*.conf</code> takes all the files ending with <code>.conf</code> from the <code>conf.d</code> subdirectory and loads them as they were part of the current file.</li>
+</ul>
+
+<h4>SecreC compiler and standard library</h4>
+<ul>
+  <li>Added support for the <code>__get_fpu_state</code> and <code>__set_fpu_state(v)</code> expressions to the SecreC language for changing the floating point unit state.</li>
+  <li>SecreC language now supports deprecation messages for deprecated functions via the <code>@deprecated("message")</code> annotation.</li>
+  <li>SecreC language gained support for the comma operator, for example to be used in cycles: <code>for (uint i = acount - 1, j = acount; j != 0; --i, --j)</code>.</li>
+  <li>Functions for working with bounded length strings (<code>bl_string</code>) were moved from Sharemind Analytics Engine (Rmind back-end) to SecreC Standard Library. See the <i>shared3p_string</i> and <i>shared3p_table_database</i> modules.</li>
+</ul>
+
+<h3>Fixed issues</h3>
+<ul>
+  <li>Fixed a file handle leak in the HDF5 storage back-end module.</li>
+</ul>

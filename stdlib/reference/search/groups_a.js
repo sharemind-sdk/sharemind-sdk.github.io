@@ -5,5 +5,6 @@ var searchData=
   ['linearregressioncg',['linearRegressionCG',['../group__shared3p__linear__regression__cg.html',1,'']]],
   ['ln',['ln',['../group__shared3p__ln.html',1,'(Global Namespace)'],['../group__ln.html',1,'(Global Namespace)']]],
   ['log',['log',['../group__shared3p__log.html',1,'']]],
-  ['log10',['log10',['../group__shared3p__log10.html',1,'']]]
+  ['log10',['log10',['../group__shared3p__log10.html',1,'']]],
+  ['loggamma',['logGamma',['../group__shared3p__log__gamma.html',1,'']]]
 ];

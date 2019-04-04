@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.4.1 (2018.12.1)</span>
+   &#160;<span id="projectnumber">2.5.0 (2019.03)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -153,10 +153,14 @@ Increment/decrement operators</h2>
 <p>Listing 5: Increment and decrement operators </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> i = 5;</div><div class="line"><span class="keywordtype">int</span> j;</div><div class="line">j = i ++; <span class="comment">// j == 5, i == 6</span></div><div class="line">j = 42; <span class="comment">// j == 42, i == 6</span></div><div class="line">j = -- i; <span class="comment">// j == 5, i == 5</span></div></div><!-- fragment --><h2><a class="anchor" id="declassify_operator"></a>
 Declassify operator</h2>
 <p>The only way to move private data into a public memory space is via the <b>declassify</b> operator. The declassify construct takes a private argument with any kind of data type and returns the value with the same data type in public security domain. In order to forbid expressions such as <b>declassify</b>(<b>declassify</b>(x)), the arguments of declassify are not implicitly classified.</p>
-<p>Listing 6: Declassify example </p><div class="fragment"><div class="line"><span class="keyword">private</span> <span class="keywordtype">int</span> val;</div><div class="line"><span class="comment">// read the val from database</span></div><div class="line"><span class="comment">// do some computation on data</span></div><div class="line"><span class="keywordtype">bool</span> result = declassify (val &lt; 0);</div></div><!-- fragment --> </div></div><!-- contents -->
+<p>Listing 6: Declassify example </p><div class="fragment"><div class="line"><span class="keyword">private</span> <span class="keywordtype">int</span> val;</div><div class="line"><span class="comment">// read the val from database</span></div><div class="line"><span class="comment">// do some computation on data</span></div><div class="line"><span class="keywordtype">bool</span> result = declassify (val &lt; 0);</div></div><!-- fragment --><h2><a class="anchor" id="comma_operator"></a>
+Comma operator</h2>
+<p>The binary comma operator first evaluates its first argument and then evaluates its second argument. The result of the first argument is discarded, and the result of the second argument is returned.</p>
+<p>The comma operator is distinct from commas used as separators as in function parameter lists, function argument lists, variable declarations etc. To use the comma operator in such contexts one must first parenthesize the expression or subexpression containing the comma operator. The comma operator is most useful in contexts where additional side-effects are required in an expression, such as in the initialization and increment expressions of a for-loop, for example:</p>
+<p>Listing 7: Example of comma operator used in the increment expression of a for-loop </p><div class="fragment"><div class="line"><span class="keywordflow">for</span> (uint count = 0, offset = 10; count &lt; 100; ++count, ++offset)</div><div class="line">        myArray[offset] = f(i);</div></div><!-- fragment --> </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 15:44:31 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 4 2019 13:55:19 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

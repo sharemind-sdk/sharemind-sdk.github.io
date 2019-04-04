@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.4.1 (2018.12.1)</span>
+   &#160;<span id="projectnumber">2.5.0 (2019.03)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -75,6 +75,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga24bbfd367a945a01f092b075e305f100"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
 <tr class="memitem:ga24bbfd367a945a01f092b075e305f100"><td class="memTemplItemLeft" align="right" valign="top">D bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bl__strequals.html#ga24bbfd367a945a01f092b075e305f100">bl_strEquals</a> (D xor_uint8[[1]] s, D xor_uint8[[1]] t)</td></tr>
 <tr class="separator:ga24bbfd367a945a01f092b075e305f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2eb07910d29d5fb2ecf22186976caeaa"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p &gt; </td></tr>
+<tr class="memitem:ga2eb07910d29d5fb2ecf22186976caeaa"><td class="memTemplItemLeft" align="right" valign="top">D bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__bl__strequals.html#ga2eb07910d29d5fb2ecf22186976caeaa">bl_strEquals</a> (<a class="el" href="struct_bl_string_vector.html">BlStringVector</a>&lt; D &gt; s, <a class="el" href="struct_bl_string_vector.html">BlStringVector</a>&lt; D &gt; t)</td></tr>
+<tr class="separator:ga2eb07910d29d5fb2ecf22186976caeaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Compare two string with each other. </p>
@@ -94,7 +97,7 @@ Supported types - <a class="el" href="data_types.html#xor_uint8">xor_uint8</a> <
 </dl>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga24bbfd367a945a01f092b075e305f100"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga24bbfd367a945a01f092b075e305f100">&#9670;&nbsp;</a></span>bl_strEquals()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga24bbfd367a945a01f092b075e305f100">&#9670;&nbsp;</a></span>bl_strEquals() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -121,10 +124,53 @@ Supported types - <a class="el" href="data_types.html#xor_uint8">xor_uint8</a> <
 
 </div>
 </div>
+<a id="ga2eb07910d29d5fb2ecf22186976caeaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga2eb07910d29d5fb2ecf22186976caeaa">&#9670;&nbsp;</a></span>bl_strEquals() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D bool bl_strEquals </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_bl_string_vector.html">BlStringVector</a>&lt; D &gt;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_bl_string_vector.html">BlStringVector</a>&lt; D &gt;&#160;</td>
+          <td class="paramname"><em>t</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Performs pointwise equality comparison of bounded-length string vectors. </p>
+<dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>- string vector </td></tr>
+    <tr><td class="paramname">t</td><td>- string vector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>returns a boolean indicating if the strings in the corresponding position in s and t were equal </dd></dl>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jan 11 2019 15:44:31 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Apr 4 2019 13:55:20 for SecreC 2 language by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.14
 </small></address>

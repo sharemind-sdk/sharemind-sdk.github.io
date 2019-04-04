@@ -2,6 +2,8 @@ var searchData=
 [
   ['chisquared',['chiSquared',['../group__chisq.html',1,'']]],
   ['chisquared_28with_20codebook_29',['chiSquared(with codebook)',['../group__chisq__cb.html',1,'']]],
+  ['chisquared_28goodness_20of_20fit_29',['chiSquared(goodness of fit)',['../group__chisq__goodness__of__fit.html',1,'']]],
+  ['chisquared_28goodness_20of_20fit_20with_20probabilities_29',['chiSquared(goodness of fit with probabilities)',['../group__chisq__goodness__of__fit__prob.html',1,'']]],
   ['choose',['choose',['../group__choose.html',1,'']]],
   ['choose_28single_20condition_29',['choose(single condition)',['../group__choose1.html',1,'']]],
   ['choose_28multiple_20conditions_29',['choose(multiple conditions)',['../group__choose2.html',1,'']]],
