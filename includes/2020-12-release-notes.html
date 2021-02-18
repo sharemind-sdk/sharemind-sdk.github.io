@@ -1,0 +1,24 @@
+<h3>Compatibility notes</h3>
+
+<p>This version of the Sharemind SDK is not compatible with older versions of the Sharemind SDK, including on the network protocols, configuration and API/ABI levels.</p>
+
+<h3>Features</h3>
+
+<h4>SecreC compiler and standard library</h4>
+<ul>
+  <li>Several internal optimisations in the SecreC compiler.</li>
+  <li>Added weighted linear regression, LOESS regression, quantiles function to SecreC Standard Library.</li>
+  <li>Added <code>bl_strFind</code> that returns the index of the first occurrence of needle in haystack.</li>
+  <li>Optimised the Gauss method of solving systems of linear equations.</li>
+  <li>GLM now by default uses Gauss method for solving systems of linear equations.</li>
+  <li>Added <code>prefixSum</code> and <code>invPrefixSum</code> functions for vectors.</li>
+  <li>Added <i>shared3p_permutation</i> module for generating public and private permutations and permuting vectors and matrices by rows or columns.</li>
+  <li>Added fast matrix transpose that uses <code>gather</code> and <code>scatter</code> syscalls.</li>
+  <li>Added <code>clientAuth</code> function that returns the authentication string (name) of client application running the current SecreC program. Note that the client authentication string may be different on different computation parties.</li>
+</ul>
+
+<h3>Fixed issues</h3>
+<ul>
+  <li>Fixed a bug in SecreC Standard Library <code>bl_strLengthenBound</code> where the returned <code>BlStringVector</code> had the old bound.</li>
+  <li>Fixed <code>--xstr</code> construction invalid values in <code>sharemind-emulator</code>.</li>
+</ul>

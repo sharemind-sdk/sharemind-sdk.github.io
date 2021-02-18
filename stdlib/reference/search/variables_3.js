@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['family',['family',['../struct_g_l_m_result.html#accff59be507237aac2231befb0c23689',1,'GLMResult']]]
+  ['error_759',['error',['../struct_l_o_e_s_s_result.html#a3de5a7021a3455b560470aadacdbbea3',1,'LOESSResult']]]
 ];

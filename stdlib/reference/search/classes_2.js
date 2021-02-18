@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['pcaresult',['PCAResult',['../struct_p_c_a_result.html',1,'']]]
+  ['loessresult_462',['LOESSResult',['../struct_l_o_e_s_s_result.html',1,'']]]
 ];
