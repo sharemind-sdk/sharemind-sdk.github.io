@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.7.0 (2022.03)</span>
+   &#160;<span id="projectnumber">2.8.0 (2023.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -78,17 +78,62 @@ Functions</h2></td></tr>
 <tr class="memitem:gae366d467798b45edbbf1524ec14ada31"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p , dim N&gt; </td></tr>
 <tr class="memitem:gae366d467798b45edbbf1524ec14ada31"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__ln.html#gae366d467798b45edbbf1524ec14ada31">ln</a> (D float64[[N]] x)</td></tr>
 <tr class="separator:gae366d467798b45edbbf1524ec14ada31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae99345e3c127849c64cba41d9d682e4"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p , dim N&gt; </td></tr>
+<tr class="memitem:gaae99345e3c127849c64cba41d9d682e4"><td class="memTemplItemLeft" align="right" valign="top">D fix32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__ln.html#gaae99345e3c127849c64cba41d9d682e4">ln</a> (D fix32[[N]] x)</td></tr>
+<tr class="separator:gaae99345e3c127849c64cba41d9d682e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad8ca38710e395ddce0c86ed92a7f2bb8"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p , dim N&gt; </td></tr>
+<tr class="memitem:gad8ca38710e395ddce0c86ed92a7f2bb8"><td class="memTemplItemLeft" align="right" valign="top">D fix64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__ln.html#gad8ca38710e395ddce0c86ed92a7f2bb8">ln</a> (D fix64[[N]] x)</td></tr>
+<tr class="separator:gad8ca38710e395ddce0c86ed92a7f2bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Function for finding the natural logarithm of a value. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> / <a class="el" href="data_types.html#fix32">fix32</a> / <a class="el" href="data_types.html#fix64">fix64</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>returns the natural logarithms of the input array </dd></dl>
-<p>&lt;dl class= </p>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="gaae99345e3c127849c64cba41d9d682e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaae99345e3c127849c64cba41d9d682e4">&#9670;&nbsp;</a></span>ln() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D fix32 ln </td>
+          <td>(</td>
+          <td class="paramtype">D fix32[[N]]&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="gad8ca38710e395ddce0c86ed92a7f2bb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gad8ca38710e395ddce0c86ed92a7f2bb8">&#9670;&nbsp;</a></span>ln() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D fix64 ln </td>
+          <td>(</td>
+          <td class="paramtype">D fix64[[N]]&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="gaa04a01ac14781f46d795413fed130bbb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa04a01ac14781f46d795413fed130bbb">&#9670;&nbsp;</a></span>ln() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gaa04a01ac14781f46d795413fed130bbb">&#9670;&nbsp;</a></span>ln() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -106,7 +151,7 @@ Supported types - <a class="el" href="data_types.html#float32">float32</a> / <a 
 </div>
 </div>
 <a id="gae366d467798b45edbbf1524ec14ada31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gae366d467798b45edbbf1524ec14ada31">&#9670;&nbsp;</a></span>ln() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#gae366d467798b45edbbf1524ec14ada31">&#9670;&nbsp;</a></span>ln() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -126,7 +171,7 @@ Supported types - <a class="el" href="data_types.html#float32">float32</a> / <a 
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 25 2022 15:53:56 for SecreC 2 language by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

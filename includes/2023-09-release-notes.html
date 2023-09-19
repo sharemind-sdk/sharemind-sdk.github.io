@@ -1,0 +1,10 @@
+<h3>Compatibility notes</h3>
+<p>This version of the Sharemind Application Server is not compatible with older versions of the Sharemind Application Server and Sharemind Client API, including on the network protocols, configuration and API/ABI levels.</p>
+<p>Added support for Debian 12 (Bookworm) and Ubuntu 22.04 (Jammy Jellyfish). Removed support for Ubuntu 18.04 (Bionic Beaver).</p>
+
+<h3>Features</h3>
+<h4>SecreC compiler and standard library</h4>
+<ul>
+  <li>Added exponent and logarithm (<code>exp</code>, <code>log</code>, <code>ln</code>) operations for fixed-point numbers to SecreC Standard Library.</li>
+  <li>Added oblivious RAM (ORAM) functionality to SecreC Standard Library. This can be used to read from and write to secret-shared vectors by secret indices. See <em>shared3p_oblivious_ram</em> module for more details.</li>
+</ul>

@@ -22,7 +22,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SecreC 2 language
-   &#160;<span id="projectnumber">2.7.0 (2022.03)</span>
+   &#160;<span id="projectnumber">2.8.0 (2023.09)</span>
    </div>
    <div id="projectbrief">Language and standard library reference</div>
   </td>
@@ -78,21 +78,86 @@ Functions</h2></td></tr>
 <tr class="memitem:ga422f3d78bf569d85a2233d9f7fa0060b"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p , dim N&gt; </td></tr>
 <tr class="memitem:ga422f3d78bf569d85a2233d9f7fa0060b"><td class="memTemplItemLeft" align="right" valign="top">D float64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__log.html#ga422f3d78bf569d85a2233d9f7fa0060b">log</a> (D float64[[N]] x, D float64[[N]] b)</td></tr>
 <tr class="separator:ga422f3d78bf569d85a2233d9f7fa0060b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3df4426ecf5cb712b0f23d8d97fbbcbc"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p , dim N&gt; </td></tr>
+<tr class="memitem:ga3df4426ecf5cb712b0f23d8d97fbbcbc"><td class="memTemplItemLeft" align="right" valign="top">D fix32&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__log.html#ga3df4426ecf5cb712b0f23d8d97fbbcbc">log</a> (D fix32[[N]] x, D fix32[[N]] b)</td></tr>
+<tr class="separator:ga3df4426ecf5cb712b0f23d8d97fbbcbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga05f1b0c5a2e64d5ebe5bcf684b1b2ae0"><td class="memTemplParams" colspan="2">template&lt;domain D :shared3p , dim N&gt; </td></tr>
+<tr class="memitem:ga05f1b0c5a2e64d5ebe5bcf684b1b2ae0"><td class="memTemplItemLeft" align="right" valign="top">D fix64&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__shared3p__log.html#ga05f1b0c5a2e64d5ebe5bcf684b1b2ae0">log</a> (D fix64[[N]] x, D fix64[[N]] b)</td></tr>
+<tr class="separator:ga05f1b0c5a2e64d5ebe5bcf684b1b2ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Function for finding the logarithm of a value. </p>
 <dl class="section note"><dt>Note</dt><dd><b>D</b> - shared3p protection domain </dd>
 <dd>
-Supported types - <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> </dd></dl>
+Supported types - <a class="el" href="data_types.html#float32">float32</a> / <a class="el" href="data_types.html#float64">float64</a> / <a class="el" href="data_types.html#fix32">fix32</a> / <a class="el" href="data_types.html#fix64">fix64</a> </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>x input </dd>
 <dd>
 b logarithm base </dd>
 <dd>
 returns the logarithms of the input array </dd></dl>
-<p>&lt;dl class= </p>
+<dl class="bug">
+<dt>Leakage</dt>
+<dd>None</dd>
+</dl>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ga3df4426ecf5cb712b0f23d8d97fbbcbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga3df4426ecf5cb712b0f23d8d97fbbcbc">&#9670;&nbsp;</a></span>log() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D fix32 log </td>
+          <td>(</td>
+          <td class="paramtype">D fix32[[N]]&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D fix32[[N]]&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ga05f1b0c5a2e64d5ebe5bcf684b1b2ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga05f1b0c5a2e64d5ebe5bcf684b1b2ae0">&#9670;&nbsp;</a></span>log() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">D fix64 log </td>
+          <td>(</td>
+          <td class="paramtype">D fix64[[N]]&#160;</td>
+          <td class="paramname"><em>x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">D fix64[[N]]&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ga024eef5072f6e7d34d3614278468474c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga024eef5072f6e7d34d3614278468474c">&#9670;&nbsp;</a></span>log() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga024eef5072f6e7d34d3614278468474c">&#9670;&nbsp;</a></span>log() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -120,7 +185,7 @@ returns the logarithms of the input array </dd></dl>
 </div>
 </div>
 <a id="ga422f3d78bf569d85a2233d9f7fa0060b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga422f3d78bf569d85a2233d9f7fa0060b">&#9670;&nbsp;</a></span>log() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ga422f3d78bf569d85a2233d9f7fa0060b">&#9670;&nbsp;</a></span>log() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -150,7 +215,7 @@ returns the logarithms of the input array </dd></dl>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Mar 25 2022 15:53:56 for SecreC 2 language by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
 </small></address>
 </body>
 </html>

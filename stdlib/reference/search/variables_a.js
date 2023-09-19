@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nextkeysize_786',['nextKeySize',['../struct_scan_cursor.html#a8f546de0e95699e05845947277dce360',1,'ScanCursor']]]
+  ['nextkeysize_796',['nextKeySize',['../struct_scan_cursor.html#a8f546de0e95699e05845947277dce360',1,'ScanCursor']]]
 ];
