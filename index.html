@@ -36,7 +36,7 @@
         <li><a href="release-notes.html#release-notes">Release notes</a></li>
       </ul>
       <ul class="actions vertical">
-        <li><a href="https://sharemind.cyber.ee/sharemind-mpc/#sdk" target="_blank" class="button fit">Download VM</a></li>
+        <li><a href="#download" target="_blank" class="button fit">Download VM</a></li>
         <li><a href="https://github.com/sharemind-sdk/build-sdk" target="_blank" class="button fit">Build from source</a></li>
       </ul>
     </nav>
@@ -47,17 +47,17 @@
       <div id="faq" class="main container">
         <div class="row">
           <div class="12u align-center">
-            <a href="https://sharemind.cyber.ee/data-protection/"><img src="assets/images/sharemind-by-cybernetica.png" width="220px" alt="Sharemind"></a>
+            <a href="https://cyber.ee/solutions/privacy-enhancement/"><img src="assets/images/sharemind-by-cybernetica.png" width="220px" alt="Sharemind"></a>
           </div>
         </div>
         <div class="row">
           <section class="6u 12u$(medium)">
             <h2>What is Sharemind?</h2>
-            <p>Sharemind is a novel database and application server that collects data in an encrypted form and uses techniques like homomorphic encryption, <a href="https://sharemind.cyber.ee/sharemind-mpc/multi-party-computation/" target="_blank">secure multi-party computation</a> and <a href="https://sharemind.cyber.ee/sharemind-hi/" target="_blank">hardware isolation</a> to process it <em>without leaking the private inputs even to the machine memory</em>, providing <em>end-to-end encrypted data processing</em>. As such, Sharemind helps achieve compliance with the General Data Protection Regulation (<a href="https://sharemind.cyber.ee/data-protection/" target="_blank">GDPR</a>) and similar laws.</p>
+            <p>Sharemind is a novel database and application server that collects data in an encrypted form and uses techniques like homomorphic encryption, <a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">secure multi-party computation</a> and <a href="https://cyber.ee/products/sharemind-hi/" target="_blank">hardware isolation</a> to process it <em>without leaking the private inputs even to the machine memory</em>, providing <em>end-to-end encrypted data processing</em>. As such, Sharemind helps achieve compliance with the General Data Protection Regulation (GDPR) and similar laws.</p>
           </section>
           <section class="6u 12u$(medium)">
             <h2>How to use Sharemind?</h2>
-            <p>The <a href="https://sharemind.cyber.ee/secure-computing-platform/" target="_blank">Sharemind Application Server</a> is a commercial offering from <a href="https://cyber.ee/en/" target="_blank">Cybernetica</a> that offers consulting, licensing and engineering services for secure computing applications. Find contacts on the <a href="https://sharemind.cyber.ee/" target="_blank">Sharemind web page</a>.</p>
+            <p>The <a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind Application Server</a> is a commercial offering from <a href="https://cyber.ee/solutions/privacy-enhancement/" target="_blank">Cybernetica</a> that offers consulting, licensing and engineering services for secure computing applications.</p>
           </section>
         </div>
 
@@ -87,13 +87,20 @@
               <h2 class="large">Download SDK version 2023.09</h2>
               <h3>There are two ways for getting the SDK:</h3>
               <ol>
-                <li>Download a preinstalled virtual machine image from the <a href="https://sharemind.cyber.ee/sharemind-mpc/#sdk" target="_blank">SDK download page</a>. The image can be used with virtualization products like <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a>, <a href="http://www.vmware.com/" target="_blank">VMWare</a> on x86_64 machines (Intel and AMD 
-                processors) or <a href="https://mac.getutm.app/" target="_blank">UTM</a> on arm64 (Macs with Apple Silicon, see <a href="sdk-arm64.html">tutorial here</a>).
+                <li>Download a preinstalled virtual machine image suitable for your computer architecture.<br/>
+                  The x86_64 image can be used with Intel and AMD processors with virtualization products like <a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a>, <a href="http://www.vmware.com/" target="_blank">VMWare</a>.
+                  The arm64 image can be run on Macs with Apple Silicon using <a href="https://mac.getutm.app/" target="_blank">UTM</a> software (see <a href="sdk-arm64.html">tutorial here</a>).
                 </li>
-                <li>Build the tools from the source code found on <a href="https://github.com/sharemind-sdk/build-sdk" target="_blank">Github</a>.</li>
               </ol>
               <ul class="actions" id="downloadButtonList">
-                <li><a href="https://sharemind.cyber.ee/sharemind-mpc/#sdk" target="_blank" class="button">Download preinstalled VM</a></li>
+                <li><a href="https://repo.cyber.ee/sharemind/www/files/sdk/sharemind-sdk-release_2023.09.ova" class="button">Download VM (x86_64)</a></li>
+                <li><a href="https://repo.cyber.ee/sharemind/www/files/sdk/sharemind-sdk-release_2022.03-arm64.utm.zip" class="button">Download VM (arm64)</a></li>
+              </ul>
+
+              <ol start="2">
+              <li>Build the tools from the source code found on <a href="https://github.com/sharemind-sdk/build-sdk" target="_blank">Github</a>.</li>
+              </ol>
+              <ul class="actions" id="downloadButtonList">
                 <li><a href="https://github.com/sharemind-sdk/build-sdk" target="_blank" class="button">Build from source</a></li>
               </ul>
             </section>
@@ -155,28 +162,28 @@
               <td>Secret-shared data, collected on three servers, passive security</td>
               <td><a href="https://github.com/sharemind-sdk/mod_shared3p_emu" target="_blank">Supported</a></td>
               <td>Supported</td>
-              <td><a href="https://sharemind.cyber.ee/" target="_blank">Sharemind</a></td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind</a></td>
             </tr>
             <tr>
               <td>shared2p</td>
               <td>Secret-shared data, collected on two servers, passive security</td>
               <td>-</td>
               <td>In development</td>
-              <td><a href="https://sharemind.cyber.ee/" target="_blank">Sharemind</a></td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind</a></td>
             </tr>
             <tr>
               <td>sharednp</td>
               <td>Secret-shared data, collected on N servers, passive security</td>
               <td>-</td>
               <td>In development</td>
-              <td><a href="https://sharemind.cyber.ee/" target="_blank">Sharemind</a></td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind</a></td>
             </tr>
             <tr>
               <td>shared2a</td>
               <td>Secret-shared data, collected on two servers, active security</td>
               <td>-</td>
               <td>In development</td>
-              <td><a href="https://sharemind.cyber.ee/" target="_blank">Sharemind</a></td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind</a></td>
             </tr>
             <tr>
               <td>aby</td>
@@ -218,7 +225,7 @@
 
       <section>
         <h2>Known issues</h2>
-        <p>The SDK is limited to developing and profiling single secure programs. To license the full Sharemind system, <a href="https://sharemind.cyber.ee/sharemind-mpc/#sdk" target="_blank">please contact Cybernetica</a>.
+        <p>The SDK is limited to developing and profiling single secure programs. To license the full Sharemind system, <a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">please contact Cybernetica</a>.
         </p>
 
         <p>These issues affect version 2023.09:</p>
@@ -229,7 +236,7 @@
       </section>
       <section>
         <h2>About Performance</h2>
-        <p>Secure computing has its distinct overhead. Also, optimizing algorithms for secure computing is a complex task. E.g., parallel operations are much more efficient than sequential operations (try multiplying two integers vs multiplying two 100 000-element vectors). For further information see <a href="https://sharemind.cyber.ee/research" target="_blank">our research page</a>.</p>
+        <p>Secure computing has its distinct overhead. Also, optimizing algorithms for secure computing is a complex task. E.g., parallel operations are much more efficient than sequential operations (try multiplying two integers vs multiplying two 100 000-element vectors). For further information see <a href="https://cyber.ee/research/library" target="_blank">our research page</a>.</p>
       </section>
     </div>
 
