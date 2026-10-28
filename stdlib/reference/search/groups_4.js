@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['endsection_903',['endSection',['../group__profiling__end__section.html',1,'']]],
-  ['erf_904',['erf',['../group__erf.html',1,'(Global Namespace)'],['../group__shared3p__erf.html',1,'(Global Namespace)']]],
-  ['error_20codes_905',['Error codes',['../group___sharemind_tdb_error.html',1,'']]],
-  ['exp_906',['exp',['../group__exp.html',1,'(Global Namespace)'],['../group__shared3p__exp.html',1,'(Global Namespace)']]]
+  ['abs_0',['abs',['../group__shared2p__abs.html',1,'abs'],['../group__shared3p__abs.html',1,'abs'],['../group__abs.html',1,'abs']]],
+  ['aesencryptecb_1',['aesEncryptEcb',['../group__aes__encrypt.html',1,'']]],
+  ['aesexpandkey_2',['aesExpandKey',['../group__aes__expandkey.html',1,'']]],
+  ['aesgenkey_3',['aesGenkey',['../group__aes__genkey.html',1,'']]],
+  ['all_4',['all',['../group__all1.html',1,'all'],['../group__shared2p__all.html',1,'all'],['../group__all.html',1,'all'],['../group__shared3p__all.html',1,'all']]],
+  ['all_20parts_5',['all(parts)',['../group__all2.html',1,'']]],
+  ['any_6',['any',['../group__any.html',1,'any'],['../group__shared2p__any.html',1,'any'],['../group__shared3p__any.html',1,'any'],['../group__any1.html',1,'any']]],
+  ['any_20parts_7',['any(parts)',['../group__any2.html',1,'']]],
+  ['applyprivatepermutation_8',['applyPrivatePermutation',['../group__shared3p__apply__private__permutation.html',1,'']]],
+  ['applyprivatepermutationcols_9',['applyPrivatePermutationCols',['../group__shared3p__apply__private__permutation__cols.html',1,'']]],
+  ['applyprivatepermutationrows_10',['applyPrivatePermutationRows',['../group__shared3p__apply__private__permutation__rows.html',1,'']]],
+  ['applypublicpermutation_11',['applyPublicPermutation',['../group__shared3p__apply__public__permutation.html',1,'']]],
+  ['applypublicpermutationcols_12',['applyPublicPermutationCols',['../group__shared3p__apply__public__permutation__cols.html',1,'']]],
+  ['applypublicpermutationrows_13',['applyPublicPermutationRows',['../group__shared3p__apply__public__permutation__rows.html',1,'']]],
+  ['argument_14',['argument',['../group__argument.html',1,'argument'],['../group__shared3p__argument.html',1,'argument'],['../group__shared2p__argument.html',1,'argument']]],
+  ['arraytostring_15',['arrayToString',['../group__arraytostring.html',1,'']]]
 ];

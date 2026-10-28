@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['scancursor_469',['ScanCursor',['../struct_scan_cursor.html',1,'']]]
+  ['scancursor_0',['ScanCursor',['../struct_scan_cursor.html',1,'']]]
 ];

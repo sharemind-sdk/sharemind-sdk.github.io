@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['secrec_20standard_20library_1175',['SecreC standard Library',['../index.html',1,'']]]
+  ['operator_20definitions_0',['Operator definitions',['../operatordefinitions.html',1,'']]],
+  ['operators_1',['Operators',['../operators.html',1,'']]]
 ];

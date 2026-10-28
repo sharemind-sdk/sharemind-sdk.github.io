@@ -15,7 +15,7 @@
 
     <!-- Header -->
     <header id="header">
-      <h1 id="large-header-heading"><a href="#">Sharemind&reg; SDK 2023.09 Beta</a></h1>
+      <h1 id="large-header-heading"><a href="#">Sharemind&reg; SDK 2026.10 Beta</a></h1>
       <h1 id="small-header-heading"><a href="#">Sharemind&reg; SDK Beta</a></h1>
       <ul class="links">
         <li><a href="#"><span class="icon fa-home"></span></a></li>
@@ -51,6 +51,15 @@
           </div>
         </div>
         <div class="row">
+          <section class="12u 12u$(medium)">
+            <h2>Celebrating 20 years of Sharemind</h2>
+            <p>This release of Sharemind MPC will celebrate 20 years of Sharemind. The first still remaining codebases, still with a <tt>history.txt</tt>, as was customary for some projects at the time, dates Sharemind's beginnings to the end of 2006. Maybe one or two lines of comments still remain from that time.</p>
+            <p>The mission has remained the same - make it embarrassingly easy to use MPC for privacy of data or other applications. To be the general-purpose MPC platform that you can rely on, where there is a company who is your partner when you decide to deploy in production. Cybernetica has built systems for governments and industry for all continents on the planet since 1997 so we know what it takes to make a technology really work for its users.</p>
+            <p>Thank you to all who have worked with us on this journey!</p>
+            <p>&mdash; Sharemind team</p>
+          </section>
+        </div>
+        <div class="row">
           <section class="6u 12u$(medium)">
             <h2>What is Sharemind?</h2>
             <p>Sharemind is a novel database and application server that collects data in an encrypted form and uses techniques like homomorphic encryption, <a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">secure multi-party computation</a> and <a href="https://cyber.ee/products/sharemind-hi/" target="_blank">hardware isolation</a> to process it <em>without leaking the private inputs even to the machine memory</em>, providing <em>end-to-end encrypted data processing</em>. As such, Sharemind helps achieve compliance with the General Data Protection Regulation (GDPR) and similar laws.</p>
@@ -84,7 +93,7 @@
       <!-- Content -->
           <div class="9u 12u$(medium)">
             <section>
-              <h2 class="large">Download SDK version 2023.09</h2>
+              <h2 class="large">Download SDK version 2026.10</h2>
               <h3>There are two ways for getting the SDK:</h3>
               <ol>
                 <li>Download a preinstalled virtual machine image suitable for your computer architecture.<br/>
@@ -93,7 +102,7 @@
                 </li>
               </ol>
               <ul class="actions" id="downloadButtonList">
-                <li><a href="https://repo.cyber.ee/sharemind/www/files/sdk/sharemind-sdk-release_2023.09.ova" class="button">Download VM (x86_64)</a></li>
+                <li><a href="https://repo.cyber.ee/sharemind/www/files/sdk/sharemind-sdk-release_2026.10.ova" class="button">Download VM (x86_64)</a></li>
                 <li><a href="https://repo.cyber.ee/sharemind/www/files/sdk/sharemind-sdk-release_2022.03-arm64.utm.zip" class="button">Download VM (arm64)</a></li>
               </ul>
 
@@ -111,10 +120,10 @@
             <section>
               <h3>Release notes</h3>
               <ul class="alt">
+                <li class="large"><a href="release-notes.html#2026-10">2026.10</a></li>
                 <li class="large"><a href="release-notes.html#2023-09">2023.09</a></li>
                 <li class="large"><a href="release-notes.html#2022-03">2022.03</a></li>
                 <li class="large"><a href="release-notes.html#2020-12">2020.12</a></li>
-                <li class="large"><a href="release-notes.html#2019-03">2019.03</a></li>
                 <li class="large"><a href="release-notes.html">&hellip;</a></li>
               </ul>
             </section>
@@ -162,42 +171,35 @@
               <td>Secret-shared data, collected on three servers, passive security</td>
               <td><a href="https://github.com/sharemind-sdk/mod_shared3p_emu" target="_blank">Supported</a></td>
               <td>Supported</td>
-              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind</a></td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind MPC</a></td>
             </tr>
             <tr>
               <td>shared2p</td>
               <td>Secret-shared data, collected on two servers, passive security</td>
               <td>-</td>
               <td>In development</td>
-              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind</a></td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind MPC</a></td>
             </tr>
             <tr>
               <td>sharednp</td>
               <td>Secret-shared data, collected on N servers, passive security</td>
               <td>-</td>
               <td>In development</td>
-              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind</a></td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind MPC</a></td>
             </tr>
             <tr>
               <td>shared2a</td>
               <td>Secret-shared data, collected on two servers, active security</td>
               <td>-</td>
               <td>In development</td>
-              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind</a></td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind MPC</a></td>
             </tr>
             <tr>
-              <td>aby</td>
-              <td>Additive, boolean and Yao's circuits, collected on two servers, passive security</td>
-              <td><a href="https://github.com/sharemind-sdk/mod_aby_emu" target="_blank">Supported</a></td>
+              <td>shared3a</td>
+              <td>Secret-shared data, collected on three servers, active security</td>
               <td>-</td>
-              <td><a href="https://github.com/encryptogroup/ABY" target="_blank">ABY</a></td>
-            </tr>
-            <tr>
-              <td>spdz_fresco</td>
-              <td>Arithmetic circuits, collected on two servers, active security</td>
-              <td><a href="https://github.com/sharemind-sdk/mod_spdz_fresco_emu" target="_blank">Supported</a></td>
-              <td>-</td>
-              <td><a href="http://alexandra.dk/" target="_blank">Fresco</a></td>
+              <td>In development</td>
+              <td><a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">Sharemind MPC</a></td>
             </tr>
           </tbody>
         </table>
@@ -228,9 +230,10 @@
         <p>The SDK is limited to developing and profiling single secure programs. To license the full Sharemind system, <a href="https://cyber.ee/products/sharemind-mpc/" target="_blank">please contact Cybernetica</a>.
         </p>
 
-        <p>These issues affect version 2023.09:</p>
+        <p>These issues affect version 2026.10:</p>
         <ul class="plain">
           <li>The performance models currently represent a deployment with direct 1 Gbit network connections between the servers. Future versions will be more configurable.</li>
+          <li>The TableDB module (<i>mod_tabledb</i>) bundled with Sharemind Runtime based emulator is an in-memory mock. Therefore, data is not persisted across emulator runs.</li>
         </ul>
         <p>Please report other issues on <a href="https://github.com/sharemind-sdk/build-sdk/issues" target="_blank">the SDK Github issues page</a>.</p>
       </section>

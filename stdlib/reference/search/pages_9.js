@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['variables_1179',['Variables',['../variables.html',1,'']]],
-  ['vector_20map_1180',['Vector map',['../tdb_vmap.html',1,'']]]
+  ['table_20database_0',['Table database',['../table_database.html',1,'']]],
+  ['templates_1',['Templates',['../templates.html',1,'']]],
+  ['types_2',['types',['../data_types.html',1,'Data types'],['../types.html',1,'Types']]]
 ];

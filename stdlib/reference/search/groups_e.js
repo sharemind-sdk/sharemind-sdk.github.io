@@ -1,17 +1,12 @@
 var searchData=
 [
-  ['pairedttest_1001',['pairedTTest',['../group__paired__t__test.html',1,'']]],
-  ['pcaresult_1002',['PCAResult',['../group__shared3p__pca__result.html',1,'']]],
-  ['pow_1003',['pow',['../group__shared3p__pow.html',1,'']]],
-  ['prefixsum_1004',['prefixSum',['../group__shared3p__prefix__sum.html',1,'']]],
-  ['print3darray_1005',['print3dArray',['../group__print3darray.html',1,'']]],
-  ['printarray_1006',['printArray',['../group__printarray.html',1,'']]],
-  ['printmatrix_1007',['printMatrix',['../group__printmatrix.html',1,'']]],
-  ['printvector_1008',['printVector',['../group__printvector.html',1,'']]],
-  ['privaterandompermutation_1009',['privateRandomPermutation',['../group__shared3p__private__random__permutation.html',1,'']]],
-  ['product_1010',['product',['../group__product.html',1,'(Global Namespace)'],['../group__product1.html',1,'(Global Namespace)'],['../group__shared2p__product.html',1,'(Global Namespace)'],['../group__shared2p__product__vec.html',1,'(Global Namespace)'],['../group__shared3p__product.html',1,'(Global Namespace)'],['../group__shared3p__product__vec.html',1,'(Global Namespace)']]],
-  ['product_28parts_29_1011',['product(parts)',['../group__product2.html',1,'(Global Namespace)'],['../group__shared2p__product__k.html',1,'(Global Namespace)'],['../group__shared3p__product__k.html',1,'(Global Namespace)']]],
-  ['profiling_2esc_1012',['profiling.sc',['../group__profiling.html',1,'']]],
-  ['publicrandompermutation_1013',['publicRandomPermutation',['../group__shared3p__public__random__permutation.html',1,'']]],
-  ['publish_1014',['publish',['../group__publish.html',1,'(Global Namespace)'],['../group__shared2p__publish.html',1,'(Global Namespace)'],['../group__shared3p__publish.html',1,'(Global Namespace)']]]
+  ['lefttransposedmultiplication_0',['leftTransposedMultiplication',['../group__lefttransposedmultiplication.html',1,'']]],
+  ['linearregression_1',['linearRegression',['../group__shared3p__linear__regression.html',1,'']]],
+  ['linearregressioncg_2',['linearRegressionCG',['../group__shared3p__linear__regression__cg.html',1,'']]],
+  ['ln_3',['ln',['../group__ln.html',1,'ln'],['../group__shared3p__ln.html',1,'ln']]],
+  ['loess_4',['loess',['../group__shared3p__regression__loess.html',1,'']]],
+  ['loessresult_5',['LOESSResult',['../group__shared3p__regression__loess__result.html',1,'']]],
+  ['log_6',['log',['../group__shared3p__log.html',1,'']]],
+  ['log10_7',['log10',['../group__shared3p__log10.html',1,'']]],
+  ['loggamma_8',['logGamma',['../group__shared3p__log__gamma.html',1,'']]]
 ];

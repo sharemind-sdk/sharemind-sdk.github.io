@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['lefttransposedmultiplication_954',['leftTransposedMultiplication',['../group__lefttransposedmultiplication.html',1,'']]],
-  ['linearregression_955',['linearRegression',['../group__shared3p__linear__regression.html',1,'']]],
-  ['linearregressioncg_956',['linearRegressionCG',['../group__shared3p__linear__regression__cg.html',1,'']]],
-  ['ln_957',['ln',['../group__ln.html',1,'(Global Namespace)'],['../group__shared3p__ln.html',1,'(Global Namespace)']]],
-  ['loess_958',['loess',['../group__shared3p__regression__loess.html',1,'']]],
-  ['loessresult_959',['LOESSResult',['../group__shared3p__regression__loess__result.html',1,'']]],
-  ['log_960',['log',['../group__shared3p__log.html',1,'']]],
-  ['log10_961',['log10',['../group__shared3p__log10.html',1,'']]],
-  ['loggamma_962',['logGamma',['../group__shared3p__log__gamma.html',1,'']]]
+  ['generalizedlinearmodel_0',['generalizedLinearModel',['../group__shared3p__generalized__linear__model.html',1,'']]],
+  ['generalizedlinearmodel_20with_20method_20parameter_1',['generalizedLinearModel(with method parameter)',['../group__shared3p__generalized__linear__model__method.html',1,'']]],
+  ['glmaic_2',['GLMAIC',['../group__shared3p__glm__aic.html',1,'']]],
+  ['glmaic_20direct_3',['GLMAIC(direct)',['../group__shared3p__glm__aic__direct.html',1,'']]],
+  ['glmresult_4',['GLMResult',['../group__shared3p__glm__result.html',1,'']]],
+  ['glmstandarderrors_5',['glmStandardErrors',['../group__shared3p__glm__stderr.html',1,'']]],
+  ['goodness_20of_20fit_6',['chiSquared(goodness of fit)',['../group__chisq__goodness__of__fit.html',1,'']]],
+  ['goodness_20of_20fit_20with_20probabilities_7',['chiSquared(goodness of fit with probabilities)',['../group__chisq__goodness__of__fit__prob.html',1,'']]],
+  ['gspca_8',['gspca',['../group__shared3p__gspca.html',1,'']]]
 ];

@@ -1,0 +1,26 @@
+<h3>Compatibility notes</h3>
+<p>This version of the Sharemind Application Server is not compatible with older versions of the Sharemind Application Server and Sharemind Client API, including on the network protocols, configuration and API/ABI levels.</p>
+
+<p>Added support for Debian 13 (Trixie),  Ubuntu 24.04 (Noble Numbat) and Ubuntu 26.04 (Resolute Raccoon). Removed support for Debian 10 (Buster), Debian 11 (Bullseye),  Ubuntu 20.04 (Focal Fossa) and Ubuntu 22.04 (Jammy Jellyfish).</p>
+
+<h3>Features</h3>
+<h4>Emulator</h4>
+<ul>
+  <li>Sharemind Emulator included in the Sharemind SDK VM is now based on the new <a href="https://github.com/sharemind-sdk/runtime">Sharemind MPC Runtime library</a>.</li>
+</ul>
+
+<h4>KeyDB</h4>
+<ul>
+  <li>Added an option to the KeyDB module configuration to turn off access control so that all operations are allowed for all users and SecreC programs. By the default, access control is enabled and should be disabled only if other means for controlling access is in use.</li>
+</ul>
+
+<h4>SecreC compiler and standard library</h4>
+<ul>
+  <li>Added <code>N</code> dimensional fixed point <code>min</code> and <code>max</code> to SecreC Standard Library.</li>
+  <li>Matrix multiplication now uses a parallelised version by default that multiplies <code>N</code> pairs of matrices in batch using Eigen and OpenMP.</li>
+  <li>Faster floating point matrix multiplication algorithm. The difference is increased by new <i>shared3p</i> floating point protocols in this release.</li>
+  <li>SecreC arrays no longer have an extra byte allocated. This breaks compatibility with previous versions of Sharemind VM and SecreC compiler.</li>
+  <li>Faster reading and writing of array slices. Added <code>arrscatter</code> and <code>arrgather</code> syscalls for accessing and assigining an n-dimensional slice of an n-dimensional array. The SecreC compiler generates code that takes advantage of these built-in syscalls.</li>
+  <li>Improved SecreC Standard Library test coverage.</li>
+  <li>Added Emacs mode for SecreC</li>
+</ul>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['operator_20definitions_1173',['Operator definitions',['../operatordefinitions.html',1,'']]],
-  ['operators_1174',['Operators',['../operators.html',1,'']]]
+  ['map_0',['Vector map',['../tdb_vmap.html',1,'']]],
+  ['modules_1',['Modules',['../ref_modules.html',1,'']]]
 ];

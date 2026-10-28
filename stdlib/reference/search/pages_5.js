@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modules_1172',['Modules',['../ref_modules.html',1,'']]]
+  ['library_0',['SecreC standard Library',['../index.html',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_5frandomize_0',['_randomize',['../group__s2p__randomize.html#ga1ce6a04cb99567ada495407638dfbc78',1,'shared2p_random.sc']]]
+  ['0_20initial_20hash_0',['CRC(0 initial hash)',['../group___c_r_c2.html',1,'']]]
 ];
